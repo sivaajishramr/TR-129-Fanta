@@ -10,7 +10,7 @@ An AI-powered web platform that audits public transport accessibility across Tam
 
 ## 🎯 Problem Statement
 
-Public transport systems across India often lack critical accessibility infrastructure for persons with disabilities — missing ramps, broken tactile paths, locked accessible toilets, and absent audio announcements. There is no centralized, data-driven system to audit, visualize, and prioritize these gaps..
+Public transport systems across India often lack critical accessibility infrastructure for persons with disabilities — missing ramps, broken tactile paths, locked accessible toilets, and absent audio announcements. There is no centralized, data-driven system to audit, visualize, and prioritize these gaps.
 
 ## 💡 Our Solution
 
