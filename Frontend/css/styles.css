@@ -1751,3 +1751,65 @@ body {
     border-radius: var(--radius-sm);
     border-left: 3px solid #1a237e;
 }
+
+/* ===== AI SCORE BADGE ===== */
+.contractor-name-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.ai-score-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.ai-score-value {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.ai-score-label {
+    font-size: 7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.85;
+    line-height: 1;
+    margin-top: 2px;
+}
+
+.ai-score-grade {
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1;
+    margin-top: 1px;
+    background: rgba(255,255,255,0.25);
+    padding: 1px 6px;
+    border-radius: 4px;
+}
+
+.ai-score-stats {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #eee;
+}
+
+.ai-score-stats span {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}

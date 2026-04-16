@@ -377,8 +377,22 @@ function renderCommonIssues(issues) {
                 
                 <div class="issue-contractor">
                     <div class="contractor-label">🏢 Responsible Contractor</div>
-                    <div class="contractor-name">${issue.contractor_name}</div>
-                    <div class="contractor-type">${issue.contractor_type} — ${issue.contractor_detail}</div>
+                    <div class="contractor-name-row">
+                        <div>
+                            <div class="contractor-name">${issue.contractor_name}</div>
+                            <div class="contractor-type">${issue.contractor_type} — ${issue.contractor_detail}</div>
+                        </div>
+                        <div class="ai-score-badge" style="background:${issue.ai_score >= 75 ? '#2e7d32' : issue.ai_score >= 55 ? '#f9a825' : issue.ai_score >= 35 ? '#ef6c00' : '#d32f2f'}">
+                            <span class="ai-score-value">${issue.ai_score}</span>
+                            <span class="ai-score-label">AI Score</span>
+                            <span class="ai-score-grade">${issue.ai_grade}</span>
+                        </div>
+                    </div>
+                    <div class="ai-score-stats">
+                        <span>📋 ${issue.contractor_total_grievances} total grievances</span>
+                        <span>🔴 ${issue.contractor_high_count} high severity</span>
+                        <span>📍 ${issue.contractor_stops_affected} stops affected</span>
+                    </div>
                 </div>
                 
                 <div class="fault-analysis" style="margin-top:10px;">

@@ -430,6 +430,94 @@ def get_common_issues():
         
         results.sort(key=lambda x: x['count'], reverse=True)
         
+        # ── AI Contractor Scoring Engine ──
+        # Aggregate stats per contractor
+        contractor_stats = {}
+        total_grievances = len(grievances)
+        total_stops = len(stops)
+        
+        for issue in results:
+            cname = issue['contractor_name']
+            if cname not in contractor_stats:
+                contractor_stats[cname] = {
+                    'total_grievances': 0,
+                    'high_count': 0,
+                    'medium_count': 0,
+                    'low_count': 0,
+                    'contractor_fault_count': 0,
+                    'affected_stops': set(),
+                    'issue_types': 0
+                }
+            stats = contractor_stats[cname]
+            stats['total_grievances'] += issue['count']
+            stats['issue_types'] += 1
+            stats['affected_stops'].update(issue['affected_stops'])
+            if issue['priority'] == 'High':
+                stats['high_count'] += issue['count']
+            elif issue['priority'] == 'Medium':
+                stats['medium_count'] += issue['count']
+            else:
+                stats['low_count'] += issue['count']
+            if issue['fault_by'] in ('Contractor', 'Both'):
+                stats['contractor_fault_count'] += issue['count']
+        
+        # Compute AI score (0-100, higher = better performance)
+        for cname, stats in contractor_stats.items():
+            g_count = stats['total_grievances']
+            stops_affected = len(stats['affected_stops'])
+            
+            # Base score starts at 100
+            score = 100.0
+            
+            # Penalty: grievance volume relative to total (-0 to -25)
+            volume_ratio = g_count / max(total_grievances, 1)
+            score -= volume_ratio * 25
+            
+            # Penalty: severity weighting (-0 to -30)
+            severity_penalty = (stats['high_count'] * 3 + stats['medium_count'] * 1.5 + stats['low_count'] * 0.5)
+            max_severity = g_count * 3
+            severity_ratio = severity_penalty / max(max_severity, 1)
+            score -= severity_ratio * 30
+            
+            # Penalty: contractor at fault ratio (-0 to -25)
+            fault_ratio = stats['contractor_fault_count'] / max(g_count, 1)
+            score -= fault_ratio * 25
+            
+            # Penalty: geographic spread (-0 to -20)
+            spread_ratio = stops_affected / max(total_stops, 1)
+            score -= spread_ratio * 20
+            
+            stats['ai_score'] = round(max(0, min(100, score)), 1)
+            
+            # Grade
+            s = stats['ai_score']
+            if s >= 85:
+                stats['grade'] = 'A+'
+            elif s >= 75:
+                stats['grade'] = 'A'
+            elif s >= 65:
+                stats['grade'] = 'B+'
+            elif s >= 55:
+                stats['grade'] = 'B'
+            elif s >= 45:
+                stats['grade'] = 'C'
+            elif s >= 35:
+                stats['grade'] = 'D'
+            else:
+                stats['grade'] = 'F'
+            
+            stats['affected_stops'] = len(stats['affected_stops'])
+        
+        # Inject AI score into each issue
+        for issue in results:
+            cname = issue['contractor_name']
+            stats = contractor_stats.get(cname, {})
+            issue['ai_score'] = stats.get('ai_score', 0)
+            issue['ai_grade'] = stats.get('grade', '?')
+            issue['contractor_total_grievances'] = stats.get('total_grievances', 0)
+            issue['contractor_high_count'] = stats.get('high_count', 0)
+            issue['contractor_stops_affected'] = stats.get('affected_stops', 0)
+        
         return jsonify({
             'success': True,
             'data': results[:10]  # Top 10 most common issues
