@@ -155,6 +155,14 @@ function buildPopupContent(stop) {
     }
 
     return `
+        <div class="popup-image-wrap">
+            <iframe 
+                src="https://maps.google.com/maps?q=${stop.lat},${stop.lng}&t=k&z=18&ie=UTF8&iwloc=&output=embed" 
+                width="100%" height="150" 
+                style="border:0; border-radius:8px; margin-bottom:8px;" 
+                allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
         <div class="popup-title">${stop.name}</div>
         <div class="popup-detail">Type: ${stop.type.replace(/_/g, ' ').toUpperCase()}</div>
         <div class="popup-detail">Daily footfall: ${stop.daily_footfall.toLocaleString()}</div>
@@ -165,7 +173,15 @@ function buildPopupContent(stop) {
         <div class="popup-detail">Grievances: ${stop.grievance_count}</div>
         <div class="popup-detail">Rank: #${stop.rank} of 30</div>
         <div class="popup-features">${featuresHtml}</div>
-        <button class="btn-analytics" onclick="openStopModal('${stop.id}')">View Deep Analytics 🔍</button>
+        <div style="display:flex; gap:6px; margin-top:8px;">
+            <button class="btn-analytics" onclick="openStopModal('${stop.id}')">View Deep Analytics 🔍</button>
+            <a href="https://www.google.com/maps/@${stop.lat},${stop.lng},3a,75y,90t/data=!3m6!1e1!3m4!1s!2e0!7i16384!8i8192" 
+               target="_blank" 
+               class="btn-analytics" 
+               style="text-decoration:none; text-align:center; background:#2e7d32;">
+               📷 Street View
+            </a>
+        </div>
     `;
 }
 
@@ -184,8 +200,8 @@ function populateMap(stops) {
         }).addTo(mapInstance);
         
         marker.bindPopup(buildPopupContent(stop), {
-            maxWidth: 340,
-            minWidth: 260
+            maxWidth: 380,
+            minWidth: 300
         });
         
         marker.stopData = stop;
