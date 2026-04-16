@@ -1,0 +1,1294 @@
+[
+  {
+    "id": "S001",
+    "name": "Chatram Bus Stand (Central)",
+    "lat": 10.805,
+    "lng": 78.6856,
+    "type": "bus_terminal",
+    "daily_footfall": 15000,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2026-01-04"
+  },
+  {
+    "id": "S002",
+    "name": "Srirangam Bus Stand",
+    "lat": 10.8627,
+    "lng": 78.6896,
+    "type": "bus_stand",
+    "daily_footfall": 8000,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-07-17"
+  },
+  {
+    "id": "S003",
+    "name": "Trichy Junction Railway Station",
+    "lat": 10.7905,
+    "lng": 78.6874,
+    "type": "railway_station",
+    "daily_footfall": 25000,
+    "features": {
+      "ramp": true,
+      "tactile_path": true,
+      "audio_signal": true,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-12-13"
+  },
+  {
+    "id": "S004",
+    "name": "Thillai Nagar Bus Stop",
+    "lat": 10.813,
+    "lng": 78.692,
+    "type": "bus_stop",
+    "daily_footfall": 5000,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-04-24"
+  },
+  {
+    "id": "S005",
+    "name": "Cantonment Bus Stop",
+    "lat": 10.798,
+    "lng": 78.695,
+    "type": "bus_stop",
+    "daily_footfall": 4500,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-11-19"
+  },
+  {
+    "id": "S006",
+    "name": "KK Nagar Bus Stop",
+    "lat": 10.787,
+    "lng": 78.705,
+    "type": "bus_stop",
+    "daily_footfall": 3500,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-02-07"
+  },
+  {
+    "id": "S007",
+    "name": "Woraiyur Bus Stop",
+    "lat": 10.82,
+    "lng": 78.678,
+    "type": "bus_stop",
+    "daily_footfall": 4000,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-10-09"
+  },
+  {
+    "id": "S008",
+    "name": "Thiruverumbur Bus Stand",
+    "lat": 10.77,
+    "lng": 78.728,
+    "type": "bus_stand",
+    "daily_footfall": 6000,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-06-28"
+  },
+  {
+    "id": "S009",
+    "name": "Mannarpuram Bus Stop",
+    "lat": 10.783,
+    "lng": 78.71,
+    "type": "bus_stop",
+    "daily_footfall": 3000,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-07-17"
+  },
+  {
+    "id": "S010",
+    "name": "Puthur Bus Stop",
+    "lat": 10.826,
+    "lng": 78.683,
+    "type": "bus_stop",
+    "daily_footfall": 3200,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-04-30"
+  },
+  {
+    "id": "S011",
+    "name": "Teppakulam Bus Stop",
+    "lat": 10.81,
+    "lng": 78.683,
+    "type": "bus_stop",
+    "daily_footfall": 4200,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-02-28"
+  },
+  {
+    "id": "S012",
+    "name": "Palakkarai Bus Stop",
+    "lat": 10.807,
+    "lng": 78.69,
+    "type": "bus_stop",
+    "daily_footfall": 5500,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-07-10"
+  },
+  {
+    "id": "S013",
+    "name": "Ariyamangalam Bus Stop",
+    "lat": 10.775,
+    "lng": 78.72,
+    "type": "bus_stop",
+    "daily_footfall": 2800,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-01-10"
+  },
+  {
+    "id": "S014",
+    "name": "Karumandapam Bus Stop",
+    "lat": 10.795,
+    "lng": 78.715,
+    "type": "bus_stop",
+    "daily_footfall": 3800,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2026-01-16"
+  },
+  {
+    "id": "S015",
+    "name": "Ponmalai (Golden Rock) Station",
+    "lat": 10.785,
+    "lng": 78.665,
+    "type": "railway_station",
+    "daily_footfall": 7000,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-11-30"
+  },
+  {
+    "id": "S016",
+    "name": "Bikshandarkoil Bus Stop",
+    "lat": 10.835,
+    "lng": 78.67,
+    "type": "bus_stop",
+    "daily_footfall": 2500,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-08-18"
+  },
+  {
+    "id": "S017",
+    "name": "Samayapuram Bus Stop",
+    "lat": 10.875,
+    "lng": 78.712,
+    "type": "bus_stop",
+    "daily_footfall": 6500,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-11-18"
+  },
+  {
+    "id": "S018",
+    "name": "Lalgudi Bus Stand",
+    "lat": 10.873,
+    "lng": 78.817,
+    "type": "bus_stand",
+    "daily_footfall": 4000,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-03-28"
+  },
+  {
+    "id": "S019",
+    "name": "Thuvakudi Bus Stop",
+    "lat": 10.8,
+    "lng": 78.74,
+    "type": "bus_stop",
+    "daily_footfall": 3500,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-02-17"
+  },
+  {
+    "id": "S020",
+    "name": "Crawford Bus Stop",
+    "lat": 10.802,
+    "lng": 78.693,
+    "type": "bus_stop",
+    "daily_footfall": 4800,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-06-20"
+  },
+  {
+    "id": "S021",
+    "name": "Khajamalai Bus Stop",
+    "lat": 10.817,
+    "lng": 78.687,
+    "type": "bus_stop",
+    "daily_footfall": 3000,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-11-24"
+  },
+  {
+    "id": "S022",
+    "name": "Trichy Airport Terminal",
+    "lat": 10.7654,
+    "lng": 78.7097,
+    "type": "airport",
+    "daily_footfall": 5000,
+    "features": {
+      "ramp": true,
+      "tactile_path": true,
+      "audio_signal": true,
+      "wheelchair_space": true,
+      "braille_signage": true,
+      "elevator": true,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-08-29"
+  },
+  {
+    "id": "S023",
+    "name": "Chinthamani Bus Stop",
+    "lat": 10.809,
+    "lng": 78.681,
+    "type": "bus_stop",
+    "daily_footfall": 3600,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-08-12"
+  },
+  {
+    "id": "S024",
+    "name": "Manapparai Bus Stand",
+    "lat": 10.618,
+    "lng": 78.428,
+    "type": "bus_stand",
+    "daily_footfall": 5500,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-12-09"
+  },
+  {
+    "id": "S025",
+    "name": "Musiri Bus Stand",
+    "lat": 10.954,
+    "lng": 78.443,
+    "type": "bus_stand",
+    "daily_footfall": 4200,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-07-05"
+  },
+  {
+    "id": "S026",
+    "name": "TV Kovil Bus Stop",
+    "lat": 10.83,
+    "lng": 78.695,
+    "type": "bus_stop",
+    "daily_footfall": 2800,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-04-07"
+  },
+  {
+    "id": "S027",
+    "name": "MGR Bus Stand (Periyar)",
+    "lat": 10.804,
+    "lng": 78.6845,
+    "type": "bus_terminal",
+    "daily_footfall": 12000,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-09-30"
+  },
+  {
+    "id": "S028",
+    "name": "Anna Nagar Bus Stop",
+    "lat": 10.815,
+    "lng": 78.7,
+    "type": "bus_stop",
+    "daily_footfall": 3400,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-04-28"
+  },
+  {
+    "id": "S029",
+    "name": "Senthaneerpuram Bus Stop",
+    "lat": 10.822,
+    "lng": 78.675,
+    "type": "bus_stop",
+    "daily_footfall": 2600,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-02-06"
+  },
+  {
+    "id": "S030",
+    "name": "Trichy Fort Station Bus Stop",
+    "lat": 10.806,
+    "lng": 78.688,
+    "type": "bus_stop",
+    "daily_footfall": 5200,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-05-15"
+  },
+  {
+    "id": "S031",
+    "name": "Chennai Mofussil Bus Terminus (CMBT)",
+    "lat": 13.0674,
+    "lng": 80.2052,
+    "type": "bus_terminal",
+    "daily_footfall": 50000,
+    "features": {
+      "ramp": true,
+      "tactile_path": true,
+      "audio_signal": true,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-05-31"
+  },
+  {
+    "id": "S032",
+    "name": "Chennai Central Railway Station",
+    "lat": 13.0827,
+    "lng": 80.2707,
+    "type": "railway_station",
+    "daily_footfall": 80000,
+    "features": {
+      "ramp": true,
+      "tactile_path": true,
+      "audio_signal": true,
+      "wheelchair_space": true,
+      "braille_signage": true,
+      "elevator": true,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2026-02-21"
+  },
+  {
+    "id": "S033",
+    "name": "Gandhipuram Central Bus Stand (Coimbatore)",
+    "lat": 11.0183,
+    "lng": 76.9658,
+    "type": "bus_terminal",
+    "daily_footfall": 25000,
+    "features": {
+      "ramp": true,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-03-09"
+  },
+  {
+    "id": "S034",
+    "name": "Madurai Mattuthavani Bus Stand",
+    "lat": 9.9482,
+    "lng": 78.1565,
+    "type": "bus_terminal",
+    "daily_footfall": 30000,
+    "features": {
+      "ramp": true,
+      "tactile_path": true,
+      "audio_signal": true,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2026-03-13"
+  },
+  {
+    "id": "S035",
+    "name": "Salem New Bus Stand",
+    "lat": 11.6741,
+    "lng": 78.1408,
+    "type": "bus_terminal",
+    "daily_footfall": 18000,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2026-03-17"
+  },
+  {
+    "id": "S036",
+    "name": "Vellore New Bus Stand",
+    "lat": 12.9348,
+    "lng": 79.1387,
+    "type": "bus_stand",
+    "daily_footfall": 15000,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2026-03-16"
+  },
+  {
+    "id": "S037",
+    "name": "Erode Central Bus Terminus",
+    "lat": 11.3323,
+    "lng": 77.7282,
+    "type": "bus_terminal",
+    "daily_footfall": 12000,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-07-07"
+  },
+  {
+    "id": "S038",
+    "name": "Thanjavur New Bus Stand",
+    "lat": 10.7588,
+    "lng": 79.1226,
+    "type": "bus_stand",
+    "daily_footfall": 10000,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-05-15"
+  },
+  {
+    "id": "S039",
+    "name": "Tirunelveli New Bus Stand",
+    "lat": 8.7231,
+    "lng": 77.7473,
+    "type": "bus_terminal",
+    "daily_footfall": 14000,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-10-30"
+  },
+  {
+    "id": "S040",
+    "name": "Kanyakumari Bus Stand",
+    "lat": 8.0863,
+    "lng": 77.5451,
+    "type": "bus_stand",
+    "daily_footfall": 8000,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-03-11"
+  },
+  {
+    "id": "S041",
+    "name": "Ariyalur New Bus Stand",
+    "lat": 11.1385,
+    "lng": 79.0747,
+    "type": "bus_stand",
+    "daily_footfall": 15360,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-10-18"
+  },
+  {
+    "id": "S042",
+    "name": "Chengalpattu New Bus Stand",
+    "lat": 12.6841,
+    "lng": 79.9836,
+    "type": "bus_stand",
+    "daily_footfall": 11689,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-10-07"
+  },
+  {
+    "id": "S043",
+    "name": "Cuddalore New Bus Stand",
+    "lat": 11.748,
+    "lng": 79.7714,
+    "type": "bus_stand",
+    "daily_footfall": 16102,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2026-03-16"
+  },
+  {
+    "id": "S044",
+    "name": "Dharmapuri New Bus Stand",
+    "lat": 12.1211,
+    "lng": 78.1582,
+    "type": "bus_stand",
+    "daily_footfall": 11145,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-03-23"
+  },
+  {
+    "id": "S045",
+    "name": "Dindigul New Bus Stand",
+    "lat": 10.3673,
+    "lng": 77.9803,
+    "type": "bus_stand",
+    "daily_footfall": 8034,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-08-14"
+  },
+  {
+    "id": "S046",
+    "name": "Kallakurichi New Bus Stand",
+    "lat": 11.7377,
+    "lng": 78.9624,
+    "type": "bus_stand",
+    "daily_footfall": 11533,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-11-20"
+  },
+  {
+    "id": "S047",
+    "name": "Kanchipuram New Bus Stand",
+    "lat": 12.8342,
+    "lng": 79.7036,
+    "type": "bus_stand",
+    "daily_footfall": 18120,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-10-14"
+  },
+  {
+    "id": "S048",
+    "name": "Karur New Bus Stand",
+    "lat": 10.9598,
+    "lng": 78.0766,
+    "type": "bus_stand",
+    "daily_footfall": 7985,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-09-10"
+  },
+  {
+    "id": "S049",
+    "name": "Krishnagiri New Bus Stand",
+    "lat": 12.5276,
+    "lng": 78.2185,
+    "type": "bus_stand",
+    "daily_footfall": 8639,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2026-02-03"
+  },
+  {
+    "id": "S050",
+    "name": "Mayiladuthurai New Bus Stand",
+    "lat": 11.1018,
+    "lng": 79.6521,
+    "type": "bus_stand",
+    "daily_footfall": 15857,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-03-16"
+  },
+  {
+    "id": "S051",
+    "name": "Nagapattinam New Bus Stand",
+    "lat": 10.7672,
+    "lng": 79.8449,
+    "type": "bus_stand",
+    "daily_footfall": 10740,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2026-02-09"
+  },
+  {
+    "id": "S052",
+    "name": "Namakkal New Bus Stand",
+    "lat": 11.2189,
+    "lng": 78.1674,
+    "type": "bus_stand",
+    "daily_footfall": 19483,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-07-21"
+  },
+  {
+    "id": "S053",
+    "name": "Ooty Central Bus Stand",
+    "lat": 11.4085,
+    "lng": 76.6997,
+    "type": "bus_stand",
+    "daily_footfall": 14220,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-11-20"
+  },
+  {
+    "id": "S054",
+    "name": "Perambalur New Bus Stand",
+    "lat": 11.2335,
+    "lng": 78.8624,
+    "type": "bus_stand",
+    "daily_footfall": 15759,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-05-24"
+  },
+  {
+    "id": "S055",
+    "name": "Pudukkottai New Bus Stand",
+    "lat": 10.3807,
+    "lng": 78.8205,
+    "type": "bus_stand",
+    "daily_footfall": 16884,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-07-26"
+  },
+  {
+    "id": "S056",
+    "name": "Ramanathapuram New Bus Stand",
+    "lat": 9.3639,
+    "lng": 78.8321,
+    "type": "bus_stand",
+    "daily_footfall": 4713,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-07-11"
+  },
+  {
+    "id": "S057",
+    "name": "Ranipet New Bus Stand",
+    "lat": 12.9275,
+    "lng": 79.333,
+    "type": "bus_stand",
+    "daily_footfall": 16041,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-12-01"
+  },
+  {
+    "id": "S058",
+    "name": "Sivaganga New Bus Stand",
+    "lat": 9.8433,
+    "lng": 78.4809,
+    "type": "bus_stand",
+    "daily_footfall": 5667,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-10-10"
+  },
+  {
+    "id": "S059",
+    "name": "Tenkasi New Bus Stand",
+    "lat": 8.9594,
+    "lng": 77.3161,
+    "type": "bus_stand",
+    "daily_footfall": 16845,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-05-01"
+  },
+  {
+    "id": "S060",
+    "name": "Theni New Bus Stand",
+    "lat": 10.0104,
+    "lng": 77.4768,
+    "type": "bus_stand",
+    "daily_footfall": 10696,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-04-30"
+  },
+  {
+    "id": "S061",
+    "name": "Thoothukudi New Bus Stand",
+    "lat": 8.7642,
+    "lng": 78.1348,
+    "type": "bus_stand",
+    "daily_footfall": 6843,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2026-03-17"
+  },
+  {
+    "id": "S062",
+    "name": "Tirupathur New Bus Stand",
+    "lat": 12.4939,
+    "lng": 78.5663,
+    "type": "bus_stand",
+    "daily_footfall": 9667,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2026-01-01"
+  },
+  {
+    "id": "S063",
+    "name": "Tiruppur New Bus Stand",
+    "lat": 11.1085,
+    "lng": 77.3411,
+    "type": "bus_stand",
+    "daily_footfall": 15425,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-04-07"
+  },
+  {
+    "id": "S064",
+    "name": "Tiruvallur New Bus Stand",
+    "lat": 13.1416,
+    "lng": 79.9071,
+    "type": "bus_stand",
+    "daily_footfall": 5235,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-07-08"
+  },
+  {
+    "id": "S065",
+    "name": "Tiruvannamalai New Bus Stand",
+    "lat": 12.2253,
+    "lng": 79.0747,
+    "type": "bus_stand",
+    "daily_footfall": 13682,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-05-07"
+  },
+  {
+    "id": "S066",
+    "name": "Tiruvarur New Bus Stand",
+    "lat": 10.7661,
+    "lng": 79.6385,
+    "type": "bus_stand",
+    "daily_footfall": 9790,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-09-26"
+  },
+  {
+    "id": "S067",
+    "name": "Villupuram New Bus Stand",
+    "lat": 11.9401,
+    "lng": 79.4861,
+    "type": "bus_stand",
+    "daily_footfall": 19564,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-06-25"
+  },
+  {
+    "id": "S068",
+    "name": "Virudhunagar New Bus Stand",
+    "lat": 9.5855,
+    "lng": 77.9614,
+    "type": "bus_stand",
+    "daily_footfall": 10407,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-06-07"
+  }
+]

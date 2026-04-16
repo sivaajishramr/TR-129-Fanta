@@ -1,0 +1,70 @@
+{
+  "standard": "Rights of Persons with Disabilities Act (RPwD) 2016 + Harmonized Guidelines (MoHUA) + NBC India 2016",
+  "criteria": [
+    {
+      "id": "C1",
+      "name": "Wheelchair Ramp",
+      "description": "Ramp with 1:12 slope ratio, minimum 1200mm width, with handrails on both sides",
+      "weight": 10,
+      "field": "ramp",
+      "source": "RPwD Act 2016, Section 40-46"
+    },
+    {
+      "id": "C2",
+      "name": "Tactile Guiding Path",
+      "description": "Tactile ground surface indicators (TGSIs) for visually impaired navigation from entrance to boarding point",
+      "weight": 8,
+      "field": "tactile_path",
+      "source": "Harmonized Guidelines, MoHUA"
+    },
+    {
+      "id": "C3",
+      "name": "Audio Signals & Announcements",
+      "description": "Audio announcement system for bus/train arrivals, route numbers, and safety warnings",
+      "weight": 8,
+      "field": "audio_signal",
+      "source": "Accessible India Campaign (Sugamya Bharat)"
+    },
+    {
+      "id": "C4",
+      "name": "Wheelchair Space",
+      "description": "Designated wheelchair parking/boarding area with minimum 900mm x 1500mm clear space",
+      "weight": 9,
+      "field": "wheelchair_space",
+      "source": "NBC India 2016, Part 3"
+    },
+    {
+      "id": "C5",
+      "name": "Braille Signage",
+      "description": "Braille information boards with route maps, platform numbers, and facility locations",
+      "weight": 6,
+      "field": "braille_signage",
+      "source": "RPwD Act 2016, Section 40"
+    },
+    {
+      "id": "C6",
+      "name": "Elevator / Lift Access",
+      "description": "Accessible elevator with braille buttons, audio floor indicators, minimum 1100mm x 1400mm cabin",
+      "weight": 7,
+      "field": "elevator",
+      "source": "NBC India 2016, Part 3"
+    },
+    {
+      "id": "C7",
+      "name": "Accessible Toilet",
+      "description": "Wheelchair-accessible toilet with grab bars, adequate turning radius (1500mm), and emergency alarm",
+      "weight": 7,
+      "field": "accessible_toilet",
+      "source": "Harmonized Guidelines, MoHUA"
+    },
+    {
+      "id": "C8",
+      "name": "Staff Assistance & Training",
+      "description": "Trained staff available to assist persons with disabilities, with disability awareness training",
+      "weight": 5,
+      "field": "staff_assistance",
+      "source": "RPwD Act 2016, Section 41"
+    }
+  ],
+  "max_score": 60
+}

@@ -1,0 +1,14 @@
+[
+  { "month": "Apr", "year": 2025, "avg_gap_score": 75.2, "good_stops": 10, "critical_stops": 45, "total_grievances": 200 },
+  { "month": "May", "year": 2025, "avg_gap_score": 74.5, "good_stops": 12, "critical_stops": 43, "total_grievances": 185 },
+  { "month": "Jun", "year": 2025, "avg_gap_score": 72.1, "good_stops": 15, "critical_stops": 38, "total_grievances": 160 },
+  { "month": "Jul", "year": 2025, "avg_gap_score": 69.8, "good_stops": 18, "critical_stops": 32, "total_grievances": 140 },
+  { "month": "Aug", "year": 2025, "avg_gap_score": 68.5, "good_stops": 20, "critical_stops": 28, "total_grievances": 130 },
+  { "month": "Sep", "year": 2025, "avg_gap_score": 66.4, "good_stops": 22, "critical_stops": 25, "total_grievances": 120 },
+  { "month": "Oct", "year": 2025, "avg_gap_score": 65.0, "good_stops": 25, "critical_stops": 20, "total_grievances": 105 },
+  { "month": "Nov", "year": 2025, "avg_gap_score": 63.2, "good_stops": 27, "critical_stops": 18, "total_grievances": 95 },
+  { "month": "Dec", "year": 2025, "avg_gap_score": 61.8, "good_stops": 29, "critical_stops": 15, "total_grievances": 85 },
+  { "month": "Jan", "year": 2026, "avg_gap_score": 60.5, "good_stops": 30, "critical_stops": 12, "total_grievances": 75 },
+  { "month": "Feb", "year": 2026, "avg_gap_score": 59.1, "good_stops": 32, "critical_stops": 10, "total_grievances": 65 },
+  { "month": "Mar", "year": 2026, "avg_gap_score": 58.0, "good_stops": 35, "critical_stops": 8, "total_grievances": 55 }
+]

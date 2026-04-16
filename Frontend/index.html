@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-Powered Accessibility Gap Detection System for Urban Public Transport in Tiruchirappalli (Trichy)">
+    <title>AccessAudit AI — Trichy Public Transport Accessibility Auditor</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- jsPDF + html2canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader-content">
+            <div class="loader-icon">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                    <circle cx="32" cy="32" r="28" stroke="url(#grad)" stroke-width="4" stroke-linecap="round" stroke-dasharray="120 40" class="loader-circle"/>
+                    <defs>
+                        <linearGradient id="grad" x1="0" y1="0" x2="64" y2="64">
+                            <stop offset="0%" stop-color="#111111"/>
+                            <stop offset="100%" stop-color="#555555"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <h2>AccessAudit AI</h2>
+            <p>Analyzing Trichy transit network...</p>
+            <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header" class="header">
+        <div class="header-left">
+            <div class="logo">
+                <div class="logo-icon">♿</div>
+                <div class="logo-text">
+                    <h1>AccessAudit AI</h1>
+                    <span class="logo-subtitle">Trichy Public Transport • Accessibility Auditor</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="header-stats">
+                <div class="header-stat" id="header-coverage">
+                    <span class="stat-value">--</span>
+                    <span class="stat-label">Coverage</span>
+                </div>
+                <div class="header-stat" id="header-stops">
+                    <span class="stat-value">--</span>
+                    <span class="stat-label">Stops</span>
+                </div>
+                <div class="header-stat" id="header-grievances">
+                    <span class="stat-value">--</span>
+                    <span class="stat-label">Grievances</span>
+                </div>
+            </div>
+            <button id="btn-export-pdf" class="btn-primary" onclick="generatePDF()">
+                <span class="btn-icon">📄</span> Export PDF Report
+            </button>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav id="main-nav" class="nav-tabs">
+        <button class="nav-tab active" data-tab="dashboard" onclick="switchTab('dashboard')">
+            <span>📊</span> Dashboard
+        </button>
+        <button class="nav-tab" data-tab="map" onclick="switchTab('map')">
+            <span>🗺️</span> Priority Map
+        </button>
+        <button class="nav-tab" data-tab="grievances" onclick="switchTab('grievances')">
+            <span>💬</span> Grievance Analysis
+        </button>
+        <button class="nav-tab" data-tab="stops" onclick="switchTab('stops')">
+            <span>🚏</span> Stop Details
+        </button>
+        <button class="nav-tab" data-tab="report" onclick="switchTab('report')">
+            <span>📋</span> Audit Report
+        </button>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        
+        <!-- ====== DASHBOARD TAB ====== -->
+        <section id="tab-dashboard" class="tab-content active">
+            <!-- Summary Cards -->
+            <div class="summary-cards">
+                <div class="card summary-card card-critical" id="card-critical">
+                    <div class="card-icon">🔴</div>
+                    <div class="card-info">
+                        <span class="card-number" id="stat-critical">--</span>
+                        <span class="card-label">Critical Stops</span>
+                    </div>
+                    <div class="card-trend">Needs Immediate Fix</div>
+                </div>
+                <div class="card summary-card card-warning" id="card-warning">
+                    <div class="card-icon">🟡</div>
+                    <div class="card-info">
+                        <span class="card-number" id="stat-warning">--</span>
+                        <span class="card-label">Warning Stops</span>
+                    </div>
+                    <div class="card-trend">Needs Improvement</div>
+                </div>
+                <div class="card summary-card card-good" id="card-good">
+                    <div class="card-icon">🟢</div>
+                    <div class="card-info">
+                        <span class="card-number" id="stat-good">--</span>
+                        <span class="card-label">Accessible Stops</span>
+                    </div>
+                    <div class="card-trend">Meets Standards</div>
+                </div>
+                <div class="card summary-card card-avg" id="card-avg">
+                    <div class="card-icon">📊</div>
+                    <div class="card-info">
+                        <span class="card-number" id="stat-avg-gap">--</span>
+                        <span class="card-label">Avg Gap Score</span>
+                    </div>
+                    <div class="card-trend">City Average</div>
+                </div>
+            </div>
+
+            <!-- Charts Row -->
+            <div class="charts-row">
+                <div class="card chart-card">
+                    <div class="card-header">
+                        <h3>Gap Score Distribution</h3>
+                        <span class="badge">All Stops</span>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="chart-gap-distribution"></canvas>
+                    </div>
+                </div>
+                <div class="card chart-card">
+                    <div class="card-header">
+                        <h3>Priority Breakdown</h3>
+                        <span class="badge">By Category</span>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="chart-priority-pie"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Historical Trend Chart -->
+            <div class="card chart-card" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+                <div class="card-header">
+                    <h3>12-Month Accessibility Improvement Trend</h3>
+                    <span class="badge" style="background:#111;color:#fff;">Historical Data</span>
+                </div>
+                <div class="chart-container" style="height: 300px;">
+                    <canvas id="chart-historical-trends"></canvas>
+                </div>
+            </div>
+
+            <!-- Top Priority Stops -->
+            <div class="card">
+                <div class="card-header">
+                    <h3>🚨 Top 10 Priority Stops — Fix First</h3>
+                    <span class="badge badge-red">Urgent</span>
+                </div>
+                <div class="table-wrapper">
+                    <table id="priority-table" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Stop Name</th>
+                                <th>Type</th>
+                                <th>Gap Score</th>
+                                <th>Grievances</th>
+                                <th>Daily Footfall</th>
+                                <th>Priority</th>
+                                <th>Missing Features</th>
+                            </tr>
+                        </thead>
+                        <tbody id="priority-table-body">
+                            <!-- Filled by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== MAP TAB ====== -->
+        <section id="tab-map" class="tab-content">
+            <div class="map-container-wrapper">
+                <div class="card map-card">
+                    <div class="card-header">
+                        <h3>Trichy Transit Accessibility Priority Map</h3>
+                        <div class="map-legend">
+                            <span class="legend-item"><span class="legend-dot dot-red"></span> Critical</span>
+                            <span class="legend-item"><span class="legend-dot dot-yellow"></span> Warning</span>
+                            <span class="legend-item"><span class="legend-dot dot-green"></span> Good</span>
+                        </div>
+                    </div>
+                    <div class="map-toolbar">
+                        <div class="map-search-box">
+                            <span class="map-search-icon">&#128269;</span>
+                            <input type="text" id="map-stop-search" placeholder="Search for a bus stop or station..." oninput="searchStopOnMap(this.value)">
+                            <div class="map-search-results" id="map-search-results"></div>
+                        </div>
+                        <button class="btn-location" id="btn-my-location" onclick="locateUser()">
+                            <span>&#128205;</span> My Location
+                        </button>
+                        <button class="btn-location" onclick="mapInstance && mapInstance.flyTo([10.8050, 78.6856], 12, {duration: 1})">
+                            <span>&#127968;</span> Show All Trichy
+                        </button>
+                        <button class="btn-location" onclick="mapInstance && mapInstance.flyTo([11.0, 78.2], 7, {duration: 1.5})">
+                            <span>&#127758;</span> Tamil Nadu View
+                        </button>
+                    </div>
+                    <div id="map" class="map-container"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== GRIEVANCES TAB ====== -->
+        <section id="tab-grievances" class="tab-content">
+            <!-- Silhouette Score Banner -->
+            <div class="card silhouette-card" id="silhouette-banner">
+                <div class="silhouette-info">
+                    <h3>🧠 AI Clustering Quality</h3>
+                    <p>Grievances automatically classified using TF-IDF keyword analysis</p>
+                </div>
+                <div class="silhouette-score">
+                    <span class="silhouette-value" id="silhouette-value">--</span>
+                    <span class="silhouette-label">Silhouette Score</span>
+                    <span class="silhouette-quality" id="silhouette-quality">--</span>
+                </div>
+            </div>
+
+            <!-- Cluster Cards -->
+            <div class="cluster-grid" id="cluster-grid">
+                <!-- Filled by JS -->
+            </div>
+
+            <!-- Grievance Cluster Chart -->
+            <div class="card chart-card">
+                <div class="card-header">
+                    <h3>Grievance Theme Distribution</h3>
+                    <span class="badge">NLP Clustering</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="chart-grievance-clusters"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== STOPS TAB ====== -->
+        <section id="tab-stops" class="tab-content">
+            <div class="card">
+                <div class="card-header">
+                    <h3>🚏 All Transit Stops — Detailed Accessibility Audit</h3>
+                    <div class="search-box">
+                        <input type="text" id="stop-search" placeholder="Search stops..." oninput="filterStops()">
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <table id="stops-table" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Stop Name</th>
+                                <th>Type</th>
+                                <th>Gap Score</th>
+                                <th>Ramp</th>
+                                <th>Tactile</th>
+                                <th>Audio</th>
+                                <th>Wheelchair</th>
+                                <th>Braille</th>
+                                <th>Elevator</th>
+                                <th>Toilet</th>
+                                <th>Staff</th>
+                                <th>Complaints</th>
+                            </tr>
+                        </thead>
+                        <tbody id="stops-table-body">
+                            <!-- Filled by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== REPORT TAB ====== -->
+        <section id="tab-report" class="tab-content">
+            <div id="report-content" class="report-container">
+                <div class="card report-header-card">
+                    <div class="report-title-section">
+                        <h2>📋 Public Transport Accessibility Audit Report</h2>
+                        <p class="report-subtitle">Tiruchirappalli (Trichy), Tamil Nadu</p>
+                        <div class="report-meta">
+                            <span id="report-date">--</span>
+                            <span id="report-gen-time">Report generated in -- seconds</span>
+                        </div>
+                    </div>
+                    <div class="report-sdg">
+                        <div class="sdg-badge sdg-10">SDG 10: Reduced Inequalities</div>
+                        <div class="sdg-badge sdg-11">SDG 11: Sustainable Cities</div>
+                    </div>
+                </div>
+
+                <div class="report-stats-grid">
+                    <div class="card report-stat-card">
+                        <h4>Total Stops Analyzed</h4>
+                        <span class="report-stat-number" id="report-total-stops">--</span>
+                    </div>
+                    <div class="card report-stat-card">
+                        <h4>Network Coverage</h4>
+                        <span class="report-stat-number" id="report-coverage">--</span>
+                    </div>
+                    <div class="card report-stat-card">
+                        <h4>Critical Stops</h4>
+                        <span class="report-stat-number red" id="report-critical">--</span>
+                    </div>
+                    <div class="card report-stat-card">
+                        <h4>Silhouette Score</h4>
+                        <span class="report-stat-number" id="report-silhouette">--</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Top 10 Stops Needing Immediate Intervention</h3>
+                    </div>
+                    <div class="table-wrapper">
+                        <table class="data-table" id="report-priority-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Stop Name</th>
+                                    <th>Gap Score</th>
+                                    <th>Grievances</th>
+                                    <th>Priority Score</th>
+                                    <th>Missing Features</th>
+                                </tr>
+                            </thead>
+                            <tbody id="report-priority-body">
+                                <!-- Filled by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Grievance Analysis Summary</h3>
+                    </div>
+                    <div id="report-grievance-summary">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Recommendations</h3>
+                    </div>
+                    <div class="recommendations" id="report-recommendations">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+
+                <div class="report-footer">
+                    <p>Generated by <strong>AccessAudit AI</strong> — Tensor'26 Hackathon</p>
+                    <p>Aligned with UN SDG 10 (Reduced Inequalities) & SDG 11 (Sustainable Cities)</p>
+                    <p>Team Fanta • Tiruchirappalli, Tamil Nadu</p>
+                </div>
+            </div>
+
+            <div class="report-actions">
+                <button class="btn-primary btn-large" onclick="generatePDF()">
+                    <span class="btn-icon">📄</span> Download PDF Report
+                </button>
+                <span id="pdf-timer" class="pdf-timer"></span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <span>♿ AccessAudit AI — Tensor'26 Hackathon • Team Fanta</span>
+            <span>SDG 10 & SDG 11 • Tiruchirappalli, Tamil Nadu</span>
+        </div>
+    </footer>
+
+    <!-- Stop Details Modal -->
+    <div id="stop-details-modal" class="modal-backdrop hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">
+                    <h2 id="modal-stop-name">--</h2>
+                    <span class="badge badge-green" id="modal-audit-date">Last Audit: --</span>
+                </div>
+                <button class="modal-close" onclick="closeStopModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-grid">
+                    <!-- Left column: Trend Chart -->
+                    <div class="modal-column">
+                        <div class="card chart-card">
+                            <div class="card-header">
+                                <h3>Stop Grievance Breakdown</h3>
+                            </div>
+                            <div class="chart-container" style="height: 250px;">
+                                <canvas id="chart-stop-trend"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right column: Grievance List -->
+                    <div class="modal-column">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Recent Grievances</h3>
+                            </div>
+                            <div class="grievance-list-container" id="modal-grievance-list">
+                                <!-- Filled by JS -->
+                                <div class="loading-state">Loading grievances...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/api.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/report.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
