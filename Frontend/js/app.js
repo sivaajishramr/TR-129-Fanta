@@ -426,12 +426,19 @@ async function openStopModal(stopId) {
                 const pColor = priorityColors[g.priority] || '#555';
                 const secAuth = g.secondary_authority ? `<span class="grievance-tag" style="background:#f0f0f0;">📋 ${g.secondary_authority}</span>` : '';
                 
+                // Fault badge colors
+                const faultColors = { 'Contractor': '#d32f2f', 'Government': '#1565c0', 'Civilian': '#f57f17', 'Both': '#7b1fa2', 'Unknown': '#555' };
+                const fColor = faultColors[g.fault_by] || '#555';
+                const faultIcons = { 'Contractor': '🏗️', 'Government': '🏛️', 'Civilian': '👥', 'Both': '⚖️', 'Unknown': '❓' };
+                const fIcon = faultIcons[g.fault_by] || '❓';
+                
                 return `
                 <div class="grievance-item" style="border-left: 3px solid ${g.cluster_color || '#111'}">
                     <p>"${g.text}"</p>
                     <div class="grievance-meta">
                         <span class="grievance-tag" style="color:${g.cluster_color || '#555'}">${g.cluster_label || 'Unclassified'}</span>
                         <span class="grievance-tag" style="background:${pColor}15; color:${pColor}; border:1px solid ${pColor}30; font-weight:800;">${g.priority}</span>
+                        <span class="grievance-tag" style="background:${fColor}15; color:${fColor}; border:1px solid ${fColor}30; font-weight:800;">${fIcon} ${g.fault_by}</span>
                         <span class="grievance-tag" style="opacity: 0.6;">${g.date}</span>
                     </div>
                     <div class="grievance-subproblem">⚠️ ${g.sub_problem}</div>
@@ -439,6 +446,21 @@ async function openStopModal(stopId) {
                         <span class="grievance-tag" style="background:#111;color:#fff;">🏛️ ${g.primary_authority}</span>
                         ${secAuth}
                     </div>
+                    
+                    <div class="fault-analysis">
+                        <div class="fault-header">📊 Responsibility Analysis</div>
+                        <div class="fault-row">
+                            <div class="fault-party contractor">
+                                <span class="fault-label">🏗️ Contractor / Authority</span>
+                                <span class="fault-text">${g.contractor_resp || 'N/A'}</span>
+                            </div>
+                            <div class="fault-party civilian">
+                                <span class="fault-label">👥 Civilian / Public</span>
+                                <span class="fault-text">${g.civilian_resp || 'N/A'}</span>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="grievance-suggestion">
                         <span class="suggestion-icon">💡</span>
                         <span class="suggestion-text">${g.suggestion}</span>

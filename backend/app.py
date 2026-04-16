@@ -249,7 +249,10 @@ def get_stop_details(stop_id):
                 'primary_authority': sub['primary_authority'],
                 'secondary_authority': sub['secondary_authority'],
                 'priority': sub['priority'],
-                'suggestion': sub['action']
+                'suggestion': sub['action'],
+                'fault_by': sub.get('fault_by', 'Unknown'),
+                'contractor_resp': sub.get('contractor_resp', ''),
+                'civilian_resp': sub.get('civilian_resp', '')
             })
             
         # Build categorical breakdown

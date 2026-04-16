@@ -402,10 +402,177 @@ SUB_PROBLEM_RULES = {
 }
 
 
+# ===== RESPONSIBILITY ANALYSIS: CONTRACTOR vs CIVILIAN =====
+RESPONSIBILITY_MAP = {
+    # Toilet & Facilities
+    'Toilet not clean': {
+        'fault_by': 'Contractor',
+        'contractor_resp': 'Legally responsible for "Site Clearance" and daily sanitation per O&M contract. S.R. Vedhaah must maintain 3x/day cleaning schedule with documented logs.',
+        'civilian_resp': 'Public misuse (throwing trash, spitting) accelerates deterioration. Trichy Corp. must install CCTV and impose fines for misuse.'
+    },
+    'No water supply': {
+        'fault_by': 'Government',
+        'contractor_resp': 'Private Plumbing Contractor must maintain pipelines and tank connections in working condition per SLA.',
+        'civilian_resp': 'Wastage of water by public (leaving taps open) strains supply. Water-saving signage and auto-shutoff taps recommended.'
+    },
+    'Water not coming regularly': {
+        'fault_by': 'Government',
+        'contractor_resp': 'Municipality Water Supply Division responsible for scheduling and ensuring supply pressure.',
+        'civilian_resp': 'N/A — supply timing is a government infrastructure issue, not civilian-caused.'
+    },
+    'Poor water quality': {
+        'fault_by': 'Contractor',
+        'contractor_resp': 'Private Tank Maintenance Contractor failed to clean water tanks per quarterly schedule. Penalty applicable.',
+        'civilian_resp': 'Contamination may occur from unauthorized connections or dumping near water source.'
+    },
+    'Water tank not cleaned': {
+        'fault_by': 'Contractor',
+        'contractor_resp': 'Tank Maintenance Contractor violated contract KPI. Must clean tanks quarterly with documented water quality reports.',
+        'civilian_resp': 'N/A — tank maintenance is purely a contractor obligation.'
+    },
+    'Broken flush or fittings': {
+        'fault_by': 'Both',
+        'contractor_resp': 'Plumbing Contractor must replace broken fittings within 48 hours per maintenance SLA. Failure = penalty deduction.',
+        'civilian_resp': 'Vandalism and rough usage by public is a major cause. CCTV surveillance and vandal-proof fixtures recommended.'
+    },
+    'No soap or handwash': {
+        'fault_by': 'Contractor',
+        'contractor_resp': 'Housekeeping Contractor must refill soap dispensers daily per contract checklist. Lapse = penalty.',
+        'civilian_resp': 'Theft of soap/dispensers by public reported. Wall-mounted tamper-proof dispensers recommended.'
+    },
+    'Bad smell': {
+        'fault_by': 'Contractor',
+        'contractor_resp': 'Cleaning Contractor not meeting frequency and quality standards. Must apply enzymatic deodorizer and increase cleaning shifts.',
+        'civilian_resp': 'Public urination outside toilets and littering worsen the problem. Fencing and signage needed.'
+    },
+    'No disabled-friendly toilet': {
+        'fault_by': 'Government',
+        'contractor_resp': 'Civil Contractor must construct accessible toilet as per RPWD Act specs when work order is issued.',
+        'civilian_resp': 'N/A — this is a planning and infrastructure gap, not civilian-caused.'
+    },
+    # Infrastructure & Safety
+    'Broken pavement': {
+        'fault_by': 'Both',
+        'contractor_resp': 'Civil Contractor used sub-standard materials or failed to maintain. Warranty claim applicable if within defect liability period.',
+        'civilian_resp': 'Heavy vehicle parking and unauthorized encroachment by vendors accelerate pavement damage.'
+    },
+    'Potholes near bus stop': {
+        'fault_by': 'Contractor',
+        'contractor_resp': 'Road Contractor failed to maintain approach roads. Must fill potholes within 7 days per TNRSP norms.',
+        'civilian_resp': 'Overloaded vehicles and rainwater seepage (drainage failure) contribute to pothole formation.'
+    },
+    'No shelter': {
+        'fault_by': 'Government',
+        'contractor_resp': 'Civil Contractor must construct shelter when tender is awarded. Delay = contract penalty.',
+        'civilian_resp': 'N/A — shelter absence is a government planning/budget issue.'
+    },
+    'Waterlogging': {
+        'fault_by': 'Both',
+        'contractor_resp': 'Drainage Contractor failed to clear storm drains before monsoon season. Blockage = SLA violation.',
+        'civilian_resp': 'Plastic waste and garbage dumping by public blocks drains. Waste segregation enforcement needed.'
+    },
+    'No seating': {
+        'fault_by': 'Government',
+        'contractor_resp': 'Furniture Contractor must install benches when work order is issued.',
+        'civilian_resp': 'Vandalism and theft of seating by public reported at some locations. Anti-theft concrete benches recommended.'
+    },
+    'Unsafe structure': {
+        'fault_by': 'Contractor',
+        'contractor_resp': 'Original Civil Contractor liable if within defect liability period. Structural failure = legal action.',
+        'civilian_resp': 'Unauthorized modifications or overloading by vendors may weaken structure.'
+    },
+    'Lights not working': {
+        'fault_by': 'Both',
+        'contractor_resp': 'Private Electrical Contractor must replace faulty fixtures within 24 hours. TANGEDCO responsible for power supply.',
+        'civilian_resp': 'Vandalism (stone-throwing, wire theft) is a major cause. Vandal-proof LED housings recommended.'
+    },
+    # Audio & Visual
+    'No announcement system': {
+        'fault_by': 'Government',
+        'contractor_resp': 'IT/AV Vendor must install PA system when purchase order is issued by TNSTC.',
+        'civilian_resp': 'N/A — absence of system is a government procurement/budget issue.'
+    },
+    'Speaker not working': {
+        'fault_by': 'Both',
+        'contractor_resp': 'AV Maintenance Contractor must repair speakers within 48 hours per AMC (Annual Maintenance Contract).',
+        'civilian_resp': 'Tampering and theft of speaker wiring reported. Tamper-proof enclosures needed.'
+    },
+    'Display board not working': {
+        'fault_by': 'Contractor',
+        'contractor_resp': 'Private IT Vendor failed to maintain LED display hardware/software. AMC penalty applicable.',
+        'civilian_resp': 'Rare civilian involvement. Occasionally damaged by thrown objects.'
+    },
+    'Wrong or outdated information': {
+        'fault_by': 'Government',
+        'contractor_resp': 'TNSTC IT Cell and vendor must update route database. Automated sync recommended.',
+        'civilian_resp': 'N/A — data accuracy is entirely an operational responsibility.'
+    },
+    # Signage & Braille
+    'No signboards': {
+        'fault_by': 'Government',
+        'contractor_resp': 'Signage Contractor must fabricate and install when work order is issued.',
+        'civilian_resp': 'N/A — absence is a government planning gap.'
+    },
+    'Faded or unreadable boards': {
+        'fault_by': 'Both',
+        'contractor_resp': 'Signage Contractor must replace faded signs under warranty/AMC. Weather-resistant materials required.',
+        'civilian_resp': 'Defacement with posters, stickers, and graffiti by public accelerates deterioration.'
+    },
+    'No Braille signage': {
+        'fault_by': 'Government',
+        'contractor_resp': 'Accessibility Contractor must install Braille maps when mandated by RPWD compliance order.',
+        'civilian_resp': 'N/A — Braille absence is a policy/compliance gap.'
+    },
+    'Wrong directions': {
+        'fault_by': 'Contractor',
+        'contractor_resp': 'Signage Contractor installed incorrect information. Must audit and correct immediately.',
+        'civilian_resp': 'Unauthorized sign relocation or tampering by public/vendors possible.'
+    },
+    # Staff & Assistance
+    'Staff not helping': {
+        'fault_by': 'Government',
+        'contractor_resp': 'TNSTC HR must enforce passenger assistance protocols. Staff performance review needed.',
+        'civilian_resp': 'N/A — staff behavior is entirely an employment/training issue.'
+    },
+    'Rude behavior': {
+        'fault_by': 'Government',
+        'contractor_resp': 'TNSTC HR must take disciplinary action. Mandatory sensitivity training required.',
+        'civilian_resp': 'Verbal abuse from passengers may provoke staff. De-escalation training for both sides recommended.'
+    },
+    'No assistance for disabled': {
+        'fault_by': 'Both',
+        'contractor_resp': 'Depot Manager must assign accessibility assistants. Help-desk Contractor must staff reception.',
+        'civilian_resp': 'Lack of public awareness about assisting disabled co-passengers. Community awareness campaigns needed.'
+    },
+    # Ramp & Wheelchair
+    'No ramp installed': {
+        'fault_by': 'Government',
+        'contractor_resp': 'Civil Contractor must construct ramp when work order is issued per RPWD mandate.',
+        'civilian_resp': 'N/A — ramp absence is a government infrastructure planning failure.'
+    },
+    'Ramp too steep': {
+        'fault_by': 'Contractor',
+        'contractor_resp': 'Civil Contractor built ramp violating IS 17802 standards (1:12 slope). Must demolish and rebuild at contractor cost.',
+        'civilian_resp': 'N/A — construction quality is entirely a contractor issue.'
+    },
+    'Pathway too narrow for wheelchair': {
+        'fault_by': 'Both',
+        'contractor_resp': 'Civil Contractor built pathway below minimum 1200mm width. Reconstruction required.',
+        'civilian_resp': 'Encroachment by parked vehicles and vendors narrows accessible pathways. Enforcement needed.'
+    },
+    'No handrails': {
+        'fault_by': 'Contractor',
+        'contractor_resp': 'Civil Contractor omitted handrails from construction. Must install within 10 days at contractor cost.',
+        'civilian_resp': 'Theft of metal handrails for scrap value reported at some locations. Welded/embedded fixtures recommended.'
+    }
+}
+
+
 def classify_sub_problem(text, category):
     """
     Given a grievance text and its detected category, classify the specific
-    sub-problem and return authority mapping, priority, and suggested action.
+    sub-problem and return authority mapping, priority, suggested action,
+    and responsibility analysis (contractor vs civilian fault).
     """
     text_lower = text.lower()
     rules = SUB_PROBLEM_RULES.get(category, [])
@@ -423,12 +590,17 @@ def classify_sub_problem(text, category):
             best_match = rule
     
     if best_match:
+        sub = best_match['sub_problem']
+        resp = RESPONSIBILITY_MAP.get(sub, {})
         return {
-            'sub_problem': best_match['sub_problem'],
+            'sub_problem': sub,
             'primary_authority': best_match['primary_authority'],
             'secondary_authority': best_match['secondary_authority'],
             'priority': best_match['priority'],
-            'action': best_match['action']
+            'action': best_match['action'],
+            'fault_by': resp.get('fault_by', 'Unknown'),
+            'contractor_resp': resp.get('contractor_resp', ''),
+            'civilian_resp': resp.get('civilian_resp', '')
         }
     
     # Fallback defaults per category (Trichy-specific)
@@ -441,13 +613,17 @@ def classify_sub_problem(text, category):
         'ramp_wheelchair': {'sub_problem': 'General accessibility barrier', 'primary_authority': 'Trichy City Corporation - Works Division', 'secondary_authority': 'Private Civil Contractor', 'priority': 'High', 'action': 'Conduct accessibility audit per RPWD Act 2016 guidelines'}
     }
     
-    return fallback.get(category, {
+    fb = fallback.get(category, {
         'sub_problem': 'Unclassified issue',
         'primary_authority': 'Transport Department',
         'secondary_authority': None,
         'priority': 'Medium',
         'action': 'Investigate and resolve the reported issue'
     })
+    fb['fault_by'] = 'Unknown'
+    fb['contractor_resp'] = 'Requires investigation to determine contractor obligation.'
+    fb['civilian_resp'] = 'Requires investigation to determine if public misuse contributed.'
+    return fb
 
 
 
