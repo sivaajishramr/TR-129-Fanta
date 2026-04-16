@@ -359,3 +359,194 @@ window.createStopTrendChart = function(breakdownData) {
         }
     });
 };
+
+// ===== 12-MONTH BUS STOP TREND CHART =====
+let stopTrendChart = null;
+let stopTrendData = null;
+let trendMonths = [];
+
+function initStopTrendChart(trendsResponse) {
+    if (!trendsResponse) return;
+    
+    stopTrendData = trendsResponse.stop_trends || {};
+    trendMonths = trendsResponse.months || [];
+    const cityData = trendsResponse.data || [];
+    
+    // Populate dropdown
+    const selector = document.getElementById('trend-stop-selector');
+    if (!selector) return;
+    
+    // Sort stops by name
+    const sortedStops = Object.entries(stopTrendData)
+        .sort((a, b) => a[1].name.localeCompare(b[1].name));
+    
+    sortedStops.forEach(([id, data]) => {
+        const opt = document.createElement('option');
+        opt.value = id;
+        opt.textContent = data.name;
+        selector.appendChild(opt);
+    });
+    
+    // Store city-wide data for "All" option
+    stopTrendData['all'] = {
+        name: 'All Stops (City Average)',
+        gap_scores: cityData.map(d => d.avg_gap_score),
+        grievance_counts: cityData.map(d => Math.round(d.total_grievances / 10)),
+        start_gap: cityData.length ? cityData[0].avg_gap_score : 0,
+        current_gap: cityData.length ? cityData[cityData.length - 1].avg_gap_score : 0,
+        improvement: cityData.length ? 
+            Math.round((cityData[0].avg_gap_score - cityData[cityData.length - 1].avg_gap_score) * 10) / 10 : 0
+    };
+    
+    updateStopTrendChart();
+}
+
+function updateStopTrendChart() {
+    const selector = document.getElementById('trend-stop-selector');
+    const selectedId = selector ? selector.value : 'all';
+    const data = stopTrendData ? stopTrendData[selectedId] : null;
+    
+    if (!data) return;
+    
+    const ctx = document.getElementById('chart-stop-trend');
+    if (!ctx) return;
+    
+    if (stopTrendChart) {
+        stopTrendChart.destroy();
+    }
+    
+    const gapScores = data.gap_scores;
+    const grievanceCounts = data.grievance_counts;
+    const improvement = data.improvement;
+    
+    // Color based on improvement
+    const lineColor = improvement > 0 ? '#2e7d32' : '#d32f2f';
+    const lineBg = improvement > 0 ? 'rgba(46,125,50,0.08)' : 'rgba(211,47,47,0.08)';
+    
+    stopTrendChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: trendMonths,
+            datasets: [
+                {
+                    type: 'line',
+                    label: 'Gap Score (%)',
+                    data: gapScores,
+                    borderColor: lineColor,
+                    backgroundColor: lineBg,
+                    borderWidth: 3,
+                    pointRadius: 5,
+                    pointBackgroundColor: '#fff',
+                    pointBorderColor: lineColor,
+                    pointBorderWidth: 2,
+                    pointHoverRadius: 7,
+                    tension: 0.3,
+                    fill: true,
+                    yAxisID: 'y',
+                    order: 1
+                },
+                {
+                    type: 'bar',
+                    label: 'Grievances',
+                    data: grievanceCounts,
+                    backgroundColor: 'rgba(25, 118, 210, 0.18)',
+                    borderColor: 'rgba(25, 118, 210, 0.4)',
+                    borderWidth: 1,
+                    borderRadius: 4,
+                    yAxisID: 'y1',
+                    order: 2
+                }
+            ]
+        },
+        options: {
+            ...darkThemeDefaults,
+            interaction: {
+                mode: 'index',
+                intersect: false
+            },
+            scales: {
+                y: {
+                    position: 'left',
+                    min: 0,
+                    max: 100,
+                    title: {
+                        display: true,
+                        text: 'Gap Score (%)',
+                        color: chartColors.textColor,
+                        font: { size: 12, weight: '600' }
+                    },
+                    grid: { color: chartColors.gridColor },
+                    ticks: {
+                        color: chartColors.textColor,
+                        font: { size: 11 },
+                        callback: v => v + '%'
+                    }
+                },
+                y1: {
+                    position: 'right',
+                    min: 0,
+                    title: {
+                        display: true,
+                        text: 'Grievances',
+                        color: '#1976d2',
+                        font: { size: 12, weight: '600' }
+                    },
+                    grid: { drawOnChartArea: false },
+                    ticks: {
+                        color: '#1976d2',
+                        font: { size: 11 }
+                    }
+                },
+                x: {
+                    grid: { display: false },
+                    ticks: {
+                        color: chartColors.textColor,
+                        font: { size: 11, weight: '600' }
+                    }
+                }
+            },
+            plugins: {
+                ...darkThemeDefaults.plugins,
+                tooltip: {
+                    ...darkThemeDefaults.plugins.tooltip,
+                    callbacks: {
+                        label: function(ctx) {
+                            if (ctx.dataset.label === 'Gap Score (%)') {
+                                return `Gap Score: ${ctx.parsed.y}%`;
+                            }
+                            return `Grievances: ${ctx.parsed.y}`;
+                        }
+                    }
+                }
+            }
+        }
+    });
+    
+    // Update summary
+    const summaryEl = document.getElementById('trend-summary');
+    if (summaryEl) {
+        const arrow = improvement > 0 ? '📉' : '📈';
+        const color = improvement > 0 ? '#2e7d32' : '#d32f2f';
+        const word = improvement > 0 ? 'Improved' : 'Declined';
+        const totalGrievances = grievanceCounts.reduce((a, b) => a + b, 0);
+        
+        summaryEl.innerHTML = `
+            <div class="trend-stat">
+                <span class="trend-stat-label">Start (Apr 2025)</span>
+                <span class="trend-stat-value">${data.start_gap}%</span>
+            </div>
+            <div class="trend-stat">
+                <span class="trend-stat-label">Current (Mar 2026)</span>
+                <span class="trend-stat-value">${data.current_gap}%</span>
+            </div>
+            <div class="trend-stat">
+                <span class="trend-stat-label">${arrow} Change</span>
+                <span class="trend-stat-value" style="color:${color};font-weight:900;">${word} ${Math.abs(improvement)}%</span>
+            </div>
+            <div class="trend-stat">
+                <span class="trend-stat-label">📋 Total Grievances</span>
+                <span class="trend-stat-value">${totalGrievances}</span>
+            </div>
+        `;
+    }
+}

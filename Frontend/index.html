@@ -161,6 +161,25 @@
                 </div>
             </div>
 
+            <!-- 12-Month Bus Stop Trend Chart -->
+            <div class="card" style="margin-top: 1.5rem;">
+                <div class="card-header">
+                    <h3>📈 12-Month Bus Stop Performance Trend</h3>
+                    <div style="display:flex;gap:10px;align-items:center;">
+                        <select id="trend-stop-selector" class="trend-selector" onchange="updateStopTrendChart()">
+                            <option value="all">🏙️ All Stops (City Average)</option>
+                        </select>
+                        <span class="badge" style="background:#111;color:#fff;">Apr 2025 – Mar 2026</span>
+                    </div>
+                </div>
+                <div class="chart-container" style="height:320px;">
+                    <canvas id="chart-stop-trend"></canvas>
+                </div>
+                <div class="trend-summary" id="trend-summary">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+
             <!-- Common Issues & Responsible Contractors -->
             <div class="card" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
                 <div class="card-header">

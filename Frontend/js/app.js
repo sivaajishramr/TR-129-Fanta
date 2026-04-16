@@ -297,10 +297,11 @@ async function initApp() {
     
     try {
         // Fetch data in parallel
-        const [stopsData, grievanceData, commonIssues] = await Promise.all([
+        const [stopsData, grievanceData, commonIssues, trendsResponse] = await Promise.all([
             api.getStops(),
             api.getGrievances(),
-            api.getCommonIssues()
+            api.getCommonIssues(),
+            api.getTrends()
         ]);
         
         appData.stops = stopsData;
@@ -315,6 +316,9 @@ async function initApp() {
         createGapDistributionChart(stopsData.stops);
         createPriorityPieChart(stopsData.summary);
         if (commonIssues) renderCommonIssues(commonIssues);
+        
+        // 12-Month Trend Chart
+        if (trendsResponse) initStopTrendChart(trendsResponse);
         
         // Map
         initMap();

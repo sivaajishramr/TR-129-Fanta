@@ -1813,3 +1813,51 @@ body {
     font-weight: 600;
     color: var(--text-secondary);
 }
+
+/* ===== TREND CHART ===== */
+.trend-selector {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-radius: var(--radius-sm);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    background: #fff;
+    color: #333;
+    cursor: pointer;
+    min-width: 220px;
+}
+
+.trend-selector:focus {
+    outline: none;
+    border-color: #1a237e;
+    box-shadow: 0 0 0 2px rgba(26,35,126,0.15);
+}
+
+.trend-summary {
+    display: flex;
+    gap: 16px;
+    padding: 14px 20px;
+    border-top: 1px solid #eee;
+    margin-top: 10px;
+}
+
+.trend-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.trend-stat-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #999;
+}
+
+.trend-stat-value {
+    font-size: 16px;
+    font-weight: 800;
+    color: #111;
+}

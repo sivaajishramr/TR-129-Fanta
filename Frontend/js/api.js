@@ -42,8 +42,8 @@ const api = {
     async getTrends() {
         try {
             const response = await fetch(`${API_BASE}/trends`);
-            const data = await response.json();
-            return data.data;
+            const result = await response.json();
+            return result;
         } catch (error) {
             console.error('Error fetching trends:', error);
             return null;
