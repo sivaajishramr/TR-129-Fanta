@@ -116,7 +116,7 @@ def get_trends():
     """Get 12-month historical trend data with per-stop breakdowns"""
     try:
         import json, random
-        from services.scoring_engine import load_stops, score_stop, load_grievances
+        from services.scoring_engine import load_stops, load_checklist, calculate_gap_score
         
         file_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'historical_trends.json')
         with open(file_path, 'r') as f:
@@ -124,12 +124,12 @@ def get_trends():
         
         # Generate per-stop 12-month trends based on current gap scores
         stops = load_stops()
-        grievances = load_grievances()
+        checklist = load_checklist()
         months = ['Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar']
         
         stop_trends = {}
         for stop in stops:
-            scored = score_stop(stop, grievances)
+            scored = calculate_gap_score(stop, checklist)
             current_gap = scored['gap_score']
             stop_id = stop['id']
             

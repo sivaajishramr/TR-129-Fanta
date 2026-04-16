@@ -318,7 +318,7 @@ async function initApp() {
         if (commonIssues) renderCommonIssues(commonIssues);
         
         // 12-Month Trend Chart
-        if (trendsResponse) initStopTrendChart(trendsResponse);
+        if (trendsResponse) initHistoricalTrendChart(trendsResponse);
         
         // Map
         initMap();

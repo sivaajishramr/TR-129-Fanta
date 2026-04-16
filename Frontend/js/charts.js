@@ -361,14 +361,14 @@ window.createStopTrendChart = function(breakdownData) {
 };
 
 // ===== 12-MONTH BUS STOP TREND CHART =====
-let stopTrendChart = null;
-let stopTrendData = null;
+let historicalTrendChart = null;
+let historicalTrendData = null;
 let trendMonths = [];
 
-function initStopTrendChart(trendsResponse) {
+function initHistoricalTrendChart(trendsResponse) {
     if (!trendsResponse) return;
     
-    stopTrendData = trendsResponse.stop_trends || {};
+    historicalTrendData = trendsResponse.stop_trends || {};
     trendMonths = trendsResponse.months || [];
     const cityData = trendsResponse.data || [];
     
@@ -377,7 +377,7 @@ function initStopTrendChart(trendsResponse) {
     if (!selector) return;
     
     // Sort stops by name
-    const sortedStops = Object.entries(stopTrendData)
+    const sortedStops = Object.entries(historicalTrendData)
         .sort((a, b) => a[1].name.localeCompare(b[1].name));
     
     sortedStops.forEach(([id, data]) => {
@@ -388,7 +388,7 @@ function initStopTrendChart(trendsResponse) {
     });
     
     // Store city-wide data for "All" option
-    stopTrendData['all'] = {
+    historicalTrendData['all'] = {
         name: 'All Stops (City Average)',
         gap_scores: cityData.map(d => d.avg_gap_score),
         grievance_counts: cityData.map(d => Math.round(d.total_grievances / 10)),
@@ -398,21 +398,21 @@ function initStopTrendChart(trendsResponse) {
             Math.round((cityData[0].avg_gap_score - cityData[cityData.length - 1].avg_gap_score) * 10) / 10 : 0
     };
     
-    updateStopTrendChart();
+    updateHistoricalTrendChart();
 }
 
-function updateStopTrendChart() {
+function updateHistoricalTrendChart() {
     const selector = document.getElementById('trend-stop-selector');
     const selectedId = selector ? selector.value : 'all';
-    const data = stopTrendData ? stopTrendData[selectedId] : null;
+    const data = historicalTrendData ? historicalTrendData[selectedId] : null;
     
     if (!data) return;
     
     const ctx = document.getElementById('chart-stop-trend');
     if (!ctx) return;
     
-    if (stopTrendChart) {
-        stopTrendChart.destroy();
+    if (historicalTrendChart) {
+        historicalTrendChart.destroy();
     }
     
     const gapScores = data.gap_scores;
@@ -423,7 +423,7 @@ function updateStopTrendChart() {
     const lineColor = improvement > 0 ? '#2e7d32' : '#d32f2f';
     const lineBg = improvement > 0 ? 'rgba(46,125,50,0.08)' : 'rgba(211,47,47,0.08)';
     
-    stopTrendChart = new Chart(ctx, {
+    historicalTrendChart = new Chart(ctx, {
         type: 'bar',
         data: {
             labels: trendMonths,
