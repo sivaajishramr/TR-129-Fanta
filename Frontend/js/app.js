@@ -755,3 +755,140 @@ async function sendChatMessage() {
         addChatMessage('❌ Connection error. Make sure the server is running.', false);
     }
 }
+
+// ===== PHOTO AUDIT =====
+function handlePhotoUpload(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+    
+    // Preview image
+    const preview = document.getElementById('photo-preview');
+    const placeholder = document.getElementById('upload-placeholder');
+    const reader = new FileReader();
+    
+    reader.onload = function(e) {
+        preview.src = e.target.result;
+        preview.style.display = 'block';
+        placeholder.style.display = 'none';
+    };
+    reader.readAsDataURL(file);
+    
+    // Upload and analyze
+    analyzePhoto(file);
+}
+
+async function analyzePhoto(file) {
+    const resultsDiv = document.getElementById('photo-audit-results');
+    const scoreHeader = document.getElementById('audit-score-header');
+    const featuresGrid = document.getElementById('audit-features-grid');
+    const recsDiv = document.getElementById('audit-recommendations');
+    
+    // Show loading
+    resultsDiv.style.display = 'block';
+    scoreHeader.innerHTML = `
+        <div class="audit-loading">
+            <div class="audit-spinner"></div>
+            <span>🤖 AI is analyzing your photo...</span>
+        </div>
+    `;
+    featuresGrid.innerHTML = '';
+    recsDiv.innerHTML = '';
+    
+    try {
+        const formData = new FormData();
+        formData.append('photo', file);
+        
+        const response = await fetch(`${API_BASE}/photo-audit`, {
+            method: 'POST',
+            body: formData
+        });
+        const result = await response.json();
+        
+        if (!result.success) {
+            scoreHeader.innerHTML = `<div class="audit-error">❌ ${result.error}</div>`;
+            return;
+        }
+        
+        renderPhotoAuditResults(result.data);
+    } catch (error) {
+        scoreHeader.innerHTML = `<div class="audit-error">❌ Connection error. Please try again.</div>`;
+    }
+}
+
+function renderPhotoAuditResults(data) {
+    const scoreHeader = document.getElementById('audit-score-header');
+    const featuresGrid = document.getElementById('audit-features-grid');
+    const recsDiv = document.getElementById('audit-recommendations');
+    
+    // Score header
+    scoreHeader.innerHTML = `
+        <div class="audit-score-circle" style="border-color:${data.grade_color};">
+            <span class="audit-score-value">${data.accessibility_score}</span>
+            <span class="audit-score-label">/ 100</span>
+        </div>
+        <div class="audit-score-info">
+            <div class="audit-grade" style="color:${data.grade_color};">Grade ${data.grade} — ${data.grade_label}</div>
+            <div class="audit-score-stats">
+                <span>✅ ${data.features_detected} detected</span>
+                <span>❌ ${data.features_missing} missing</span>
+                <span>📊 ${data.total_features} checked</span>
+            </div>
+        </div>
+    `;
+    
+    // Features grid
+    const detections = data.detections;
+    featuresGrid.innerHTML = `<h4 style="grid-column:1/-1;margin:0;font-size:14px;font-weight:700;">Feature Detection Results</h4>` +
+        Object.entries(detections).map(([key, det]) => `
+            <div class="audit-feature-card ${det.detected ? 'detected' : 'missing'}">
+                <div class="audit-feature-icon">${det.icon}</div>
+                <div class="audit-feature-name">${det.name}</div>
+                <div class="audit-feature-status">
+                    ${det.detected 
+                        ? `<span class="status-badge present">✅ Detected</span>` 
+                        : `<span class="status-badge absent">❌ Not Found</span>`}
+                </div>
+                <div class="audit-feature-confidence">
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" style="width:${det.confidence}%;background:${det.detected ? '#2e7d32' : '#d32f2f'};"></div>
+                    </div>
+                    <span class="confidence-text">${det.confidence}% confidence</span>
+                </div>
+            </div>
+        `).join('');
+    
+    // Recommendations
+    if (data.recommendations.length > 0) {
+        recsDiv.innerHTML = `
+            <h4 style="margin:0 0 12px;font-size:14px;font-weight:700;">🔧 Recommendations</h4>
+            ${data.recommendations.map(rec => `
+                <div class="audit-rec-item">
+                    <span class="rec-priority ${rec.priority.toLowerCase()}">${rec.priority}</span>
+                    <span class="rec-icon">${rec.icon}</span>
+                    <span class="rec-text">${rec.action}</span>
+                </div>
+            `).join('')}
+        `;
+    }
+}
+
+// Drag-and-drop support
+document.addEventListener('DOMContentLoaded', function() {
+    const zone = document.getElementById('photo-upload-zone');
+    if (!zone) return;
+    
+    zone.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        zone.classList.add('drag-over');
+    });
+    zone.addEventListener('dragleave', () => zone.classList.remove('drag-over'));
+    zone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        zone.classList.remove('drag-over');
+        const file = e.dataTransfer.files[0];
+        if (file && file.type.startsWith('image/')) {
+            document.getElementById('photo-file-input').files = e.dataTransfer.files;
+            handlePhotoUpload({target: {files: [file]}});
+        }
+    });
+});

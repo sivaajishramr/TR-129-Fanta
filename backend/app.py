@@ -186,6 +186,30 @@ def chat():
         return jsonify({'success': False, 'error': str(e)}), 500
 
 
+@app.route('/api/photo-audit', methods=['POST'])
+def photo_audit():
+    """Analyze uploaded bus stop photo for accessibility features"""
+    try:
+        from services.photo_audit_engine import analyze_image
+        
+        if 'photo' not in request.files:
+            return jsonify({'success': False, 'error': 'No photo uploaded'}), 400
+        
+        file = request.files['photo']
+        if file.filename == '':
+            return jsonify({'success': False, 'error': 'No file selected'}), 400
+        
+        image_bytes = file.read()
+        result = analyze_image(image_bytes)
+        
+        if 'error' in result:
+            return jsonify({'success': False, 'error': result['error']}), 400
+        
+        return jsonify({'success': True, 'data': result})
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
 # Real Trichy contractor mapping
 TRICHY_CONTRACTORS = {
     'cleaning': {'name': 'S.R. Vedhaah', 'type': 'Sanitation & Cleaning', 'detail': 'Primary private agency for city-wide sanitation across all 65 wards'},

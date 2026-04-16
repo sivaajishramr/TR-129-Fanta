@@ -93,6 +93,9 @@
         <button class="nav-tab" data-tab="stops" onclick="switchTab('stops')">
             <span>🚏</span> Stop Details
         </button>
+        <button class="nav-tab" data-tab="photo-audit" onclick="switchTab('photo-audit')">
+            <span>📸</span> Photo Audit
+        </button>
         <button class="nav-tab" data-tab="report" onclick="switchTab('report')">
             <span>📋</span> Audit Report
         </button>
@@ -461,6 +464,42 @@
                 </div>
             </div>
         </div>
+
+        <!-- ====== PHOTO AUDIT TAB ====== -->
+        <section id="tab-photo-audit" class="tab-content">
+            <div class="card">
+                <div class="card-header">
+                    <h3>📸 AI Photo-Based Accessibility Audit</h3>
+                    <span class="badge" style="background:#1a237e;color:#fff;">Computer Vision</span>
+                </div>
+                <p style="padding:0 24px;color:#666;font-size:13px;margin-bottom:16px;">Upload a photo of any bus stop to instantly detect accessibility features and get an AI-generated compliance report.</p>
+                
+                <div class="photo-audit-container">
+                    <div class="photo-upload-zone" id="photo-upload-zone" onclick="document.getElementById('photo-file-input').click()">
+                        <input type="file" id="photo-file-input" accept="image/*" style="display:none" onchange="handlePhotoUpload(event)">
+                        <div class="upload-placeholder" id="upload-placeholder">
+                            <span class="upload-icon">📷</span>
+                            <span class="upload-title">Drop a bus stop photo here</span>
+                            <span class="upload-subtitle">or click to browse — JPG, PNG up to 10MB</span>
+                        </div>
+                        <img id="photo-preview" class="photo-preview" style="display:none" alt="Uploaded bus stop photo">
+                    </div>
+                    
+                    <div class="photo-audit-results" id="photo-audit-results" style="display:none;">
+                        <div class="audit-score-header" id="audit-score-header">
+                            <!-- Filled by JS -->
+                        </div>
+                        <div class="audit-features-grid" id="audit-features-grid">
+                            <!-- Filled by JS -->
+                        </div>
+                        <div class="audit-recommendations" id="audit-recommendations">
+                            <!-- Filled by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
 
     <!-- AI Chatbot Widget -->
