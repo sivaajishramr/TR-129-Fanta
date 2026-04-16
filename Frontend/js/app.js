@@ -408,6 +408,10 @@ function renderCommonIssues(issues) {
                     <span class="suggestion-icon">💡</span>
                     <span class="suggestion-text">${issue.action}</span>
                 </div>
+                
+                <button class="btn-company-profile" onclick="openCompanyProfile('${issue.contractor_name.replace(/'/g, "\\'")}')">
+                    🏢 View Company Profile — ${issue.contractor_name}
+                </button>
             </div>
         </div>`;
     }).join('');
@@ -515,4 +519,116 @@ window.addEventListener('click', (e) => {
     if (e.target === modal) {
         closeStopModal();
     }
+    const companyModal = document.getElementById('company-profile-modal');
+    if (e.target === companyModal) {
+        closeCompanyModal();
+    }
 });
+
+// ===== COMPANY PROFILE MODAL =====
+async function openCompanyProfile(companyName) {
+    // Create modal if it doesn't exist
+    let modal = document.getElementById('company-profile-modal');
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'company-profile-modal';
+        modal.className = 'modal-overlay hidden';
+        modal.innerHTML = `
+            <div class="modal-container company-modal">
+                <div class="modal-header">
+                    <h2 id="company-modal-name">Loading...</h2>
+                    <button class="modal-close" onclick="closeCompanyModal()">✕</button>
+                </div>
+                <div class="modal-body" id="company-modal-body">
+                    <div class="loading-state">Fetching company profile...</div>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+    }
+
+    const nameEl = document.getElementById('company-modal-name');
+    const bodyEl = document.getElementById('company-modal-body');
+
+    nameEl.textContent = companyName;
+    bodyEl.innerHTML = '<div class="loading-state">Fetching company profile...</div>';
+    modal.classList.remove('hidden');
+
+    try {
+        const response = await fetch(`${API_BASE}/company-profile/${encodeURIComponent(companyName)}`);
+        const result = await response.json();
+
+        if (!result.success) throw new Error('Not found');
+        const p = result.data;
+
+        const starRating = parseFloat(p.rating) || 0;
+        const fullStars = Math.floor(starRating);
+        const halfStar = starRating % 1 >= 0.5 ? 1 : 0;
+        const emptyStars = 5 - fullStars - halfStar;
+        const starsHtml = '★'.repeat(fullStars) + (halfStar ? '½' : '') + '☆'.repeat(emptyStars);
+
+        bodyEl.innerHTML = `
+            <div class="company-info-grid">
+                <div class="company-stat">
+                    <span class="company-stat-label">📋 Type</span>
+                    <span class="company-stat-value">${p.type}</span>
+                </div>
+                <div class="company-stat">
+                    <span class="company-stat-label">📍 Location</span>
+                    <span class="company-stat-value">${p.location}</span>
+                </div>
+                <div class="company-stat">
+                    <span class="company-stat-label">👤 Operations</span>
+                    <span class="company-stat-value">${p.operations_head}</span>
+                </div>
+                <div class="company-stat">
+                    <span class="company-stat-label">🤝 Contract With</span>
+                    <span class="company-stat-value">${p.contract_with}</span>
+                </div>
+                <div class="company-stat">
+                    <span class="company-stat-label">📅 Active Since</span>
+                    <span class="company-stat-value">${p.since}</span>
+                </div>
+                <div class="company-stat">
+                    <span class="company-stat-label">👷 Workforce</span>
+                    <span class="company-stat-value">${p.workforce}</span>
+                </div>
+                <div class="company-stat">
+                    <span class="company-stat-label">🗺️ Coverage</span>
+                    <span class="company-stat-value">${p.coverage}</span>
+                </div>
+                <div class="company-stat">
+                    <span class="company-stat-label">⭐ Rating</span>
+                    <span class="company-stat-value" style="color:#f9a825;">${starsHtml} ${p.rating}</span>
+                </div>
+            </div>
+
+            <div class="company-section">
+                <h3>🏗️ Key Projects</h3>
+                <ul class="company-list">
+                    ${p.key_projects.map(proj => `<li>${proj}</li>`).join('')}
+                </ul>
+            </div>
+
+            <div class="company-section">
+                <h3>🎯 Specializations</h3>
+                <div class="company-tags">
+                    ${p.specializations.map(s => `<span class="company-tag">${s}</span>`).join('')}
+                </div>
+            </div>
+
+            <div class="company-section">
+                <h3>📊 Performance Summary</h3>
+                <p class="company-performance">${p.performance}</p>
+            </div>
+        `;
+    } catch (e) {
+        console.error(e);
+        bodyEl.innerHTML = '<div class="loading-state" style="color:var(--red);">Company profile not found.</div>';
+    }
+}
+
+function closeCompanyModal() {
+    const modal = document.getElementById('company-profile-modal');
+    if (modal) modal.classList.add('hidden');
+}

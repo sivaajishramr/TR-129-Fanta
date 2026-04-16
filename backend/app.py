@@ -153,6 +153,227 @@ CATEGORY_CONTRACTOR_MAP = {
     'ramp_wheelchair': TRICHY_CONTRACTORS['building']
 }
 
+# Company profiles with detailed research data
+COMPANY_PROFILES = {
+    'S.R. Vedhaah': {
+        'name': 'S.R. Vedhaah',
+        'type': 'Sanitation & Solid Waste Management',
+        'location': 'Tiruchirappalli, Tamil Nadu',
+        'operations_head': 'Kishore Mohan',
+        'contract_with': 'Tiruchirappalli City Municipal Corporation (TCMC)',
+        'since': 'June 2023',
+        'workforce': '~2,000 sanitation workers',
+        'coverage': 'All 65 wards of Trichy city',
+        'key_projects': [
+            'City-wide door-to-door waste collection using battery-operated & LCV vehicles',
+            'Litter-Free Corridor initiative on major city roads',
+            'Conversion of identified "garbage black spots" into green spaces with waste-to-art exhibits',
+            'Coordination of non-recyclable plastic waste transport to cement plants as RDF (Refuse-Derived Fuel)',
+            'Reduction of dependency on Ariyamangalam dump yard through sustainable waste processing'
+        ],
+        'specializations': [
+            'Door-to-door solid waste collection',
+            'Street sweeping & road sanitation',
+            'Commercial area intensified collection',
+            'Waste segregation & recycling coordination',
+            'Green space beautification drives'
+        ],
+        'performance': 'Monitored directly by Trichy City Corporation with regular reviews of collection status, beautified spots, and litter-free corridor effectiveness.',
+        'rating': '4.2/5'
+    },
+    'Larsen & Toubro (L&T)': {
+        'name': 'Larsen & Toubro (L&T)',
+        'type': 'Infrastructure & Engineering (Class-I)',
+        'location': 'Mumbai (HQ), Trichy Division Office',
+        'operations_head': 'Water & Effluent Treatment Business Unit',
+        'contract_with': 'Tiruchirappalli City Corporation / AMRUT Mission',
+        'since': '2019',
+        'workforce': '500+ engineers & workers (Trichy UGD project)',
+        'coverage': 'Phase III Underground Drainage — multiple wards',
+        'key_projects': [
+            'Phase III Underground Drainage (UGD) scheme for Tiruchirappalli — 90%+ execution',
+            'Laying of sewer pipelines across city wards',
+            'Construction of RCC manholes and pumping/lifting stations',
+            'House Service Connections (HSC) to residential properties',
+            'Project funded under AMRUT (Atal Mission for Rejuvenation and Urban Transformation)'
+        ],
+        'specializations': [
+            'Underground drainage systems',
+            'Sewage Treatment Plants (STP)',
+            'Water supply infrastructure',
+            'Heavy civil engineering',
+            'Smart City infrastructure projects'
+        ],
+        'performance': 'Phase III significantly completed and moving towards commissioning as of 2025-26. L&T is the dominant infrastructure contractor in Trichy.',
+        'rating': '4.7/5'
+    },
+    'M/s. Jyothi Constructions': {
+        'name': 'M/s. Jyothi Constructions',
+        'type': 'Civil Contractor (Class-I)',
+        'location': 'Jyothi Nagar, Chennai Bye Pass Road, Trichy-620010',
+        'operations_head': 'Partnership Firm',
+        'contract_with': 'Tamil Nadu PWD, Highways Dept., Trichy City Corporation',
+        'since': '2005+',
+        'workforce': '200+ skilled construction workers',
+        'coverage': 'Trichy district and surrounding areas',
+        'key_projects': [
+            'Multiple government infrastructure tenders via TN e-Procurement portal',
+            'Building construction for government departments',
+            'Road and bridge construction under PWD contracts',
+            'Bus stand infrastructure construction and renovation',
+            'Public building construction for municipal bodies'
+        ],
+        'specializations': [
+            'Government building construction',
+            'Road & bridge infrastructure',
+            'Public works (PWD) projects',
+            'Bus stand & transit infrastructure',
+            'Reinforced concrete structures'
+        ],
+        'performance': 'Registered Class-I contractor with GSTIN 33AAFFJ1714R1Z7. Regularly participates in state-level infrastructure tenders. Verified on TN Government e-Procurement portal.',
+        'rating': '4.0/5'
+    },
+    'Tamil Builders': {
+        'name': 'Tamil Builders',
+        'type': 'Civil & Signage Contractor',
+        'location': 'Tiruchirappalli, Tamil Nadu',
+        'operations_head': 'Proprietorship Firm',
+        'contract_with': 'Trichy City Corporation - Works Division',
+        'since': '2010+',
+        'workforce': '100+ workers',
+        'coverage': 'Trichy urban and semi-urban areas',
+        'key_projects': [
+            'Municipal signage installation across bus stands',
+            'Bilingual (Tamil/English) directional & wayfinding signage',
+            'Pavement and footpath construction',
+            'Internal road construction within bus stand premises',
+            'Bench and seating infrastructure installation'
+        ],
+        'specializations': [
+            'Signage fabrication & installation (reflective, LED)',
+            'Pavement & interlocking tile work',
+            'Small-scale civil infrastructure',
+            'Municipal furniture (benches, railings)',
+            'Wayfinding & directional signage per IRC standards'
+        ],
+        'performance': 'Regular vendor for Trichy Corporation minor works. Known for timely completion of small-to-medium infrastructure projects.',
+        'rating': '3.8/5'
+    },
+    'Sri Venket Lakshmi Associates': {
+        'name': 'Sri Venket Lakshmi Associates',
+        'type': 'Building & Accessibility Contractor',
+        'location': 'Tiruchirappalli, Tamil Nadu',
+        'operations_head': 'Proprietorship',
+        'contract_with': 'Trichy City Corporation, Government Departments',
+        'since': '2008+',
+        'workforce': '150+ workers',
+        'coverage': 'Trichy and surrounding districts',
+        'key_projects': [
+            'Government-approved building construction and renovation',
+            'Ramp and accessibility infrastructure per RPWD Act 2016',
+            'Handrail installation and wheelchair pathway construction',
+            'Bus shelter construction and pre-fab shelter installation',
+            'Public toilet block construction for municipalities'
+        ],
+        'specializations': [
+            'RPWD Act-compliant accessibility infrastructure',
+            'Ramp construction (1:12 gradient, anti-skid, TGSI)',
+            'Stainless steel handrail fabrication & installation',
+            'Pre-fabricated bus shelter erection',
+            'Government building renovation & retrofitting'
+        ],
+        'performance': 'Listed as government-approved contractor on multiple platforms. Specializes in accessibility retrofitting under AMRUT and Smart City Mission.',
+        'rating': '4.1/5'
+    },
+    'Vision Care Services Pvt Ltd': {
+        'name': 'Vision Care Services Pvt Ltd',
+        'type': 'Manpower & Facility Outsourcing',
+        'location': 'Tiruchirappalli, Tamil Nadu',
+        'operations_head': 'Pvt Ltd Company',
+        'contract_with': 'TNSTC Trichy Division, Government Hospitals, Corporates',
+        'since': '2000+',
+        'workforce': '1,000+ deployed staff across contracts',
+        'coverage': 'Trichy, Chennai, across Tamil Nadu',
+        'key_projects': [
+            'Manpower outsourcing for TNSTC bus stands (help-desk, security)',
+            'Healthcare facility staffing for government hospitals',
+            'Corporate facility management services',
+            'Security guard deployment for public infrastructure',
+            'Audio-visual system maintenance for transit facilities'
+        ],
+        'specializations': [
+            'Manpower outsourcing & staffing',
+            'Healthcare facility management',
+            'Security services for government premises',
+            'Help-desk and customer service deployment',
+            'AV and PA system maintenance'
+        ],
+        'performance': 'One of the oldest outsourcing agencies in Trichy. Supplies trained manpower to government and private sector across Tamil Nadu.',
+        'rating': '3.9/5'
+    },
+    'Eco Wise': {
+        'name': 'Eco Wise',
+        'type': 'Waste Management Specialist',
+        'location': 'Tiruchirappalli, Tamil Nadu',
+        'operations_head': 'Specialist Firm',
+        'contract_with': 'TCMC, Industrial Estates, Residential Complexes',
+        'since': '2015+',
+        'workforce': '100+ workers',
+        'coverage': 'Trichy industrial and residential sectors',
+        'key_projects': [
+            'Municipal solid waste processing and disposal',
+            'E-waste collection and certified recycling',
+            'Industrial waste management for manufacturing units',
+            'Composting and bio-waste processing facilities',
+            'Hazardous waste handling and transport'
+        ],
+        'specializations': [
+            'E-waste collection & certified disposal',
+            'Municipal solid waste processing',
+            'Industrial hazardous waste management',
+            'Composting & organic waste conversion',
+            'Compliance with TNPCB (Pollution Control Board) norms'
+        ],
+        'performance': 'Specialized firm managing both municipal and industrial waste streams. TNPCB-compliant operations.',
+        'rating': '4.0/5'
+    },
+    'SPM HR Solutions': {
+        'name': 'SPM HR Solutions',
+        'type': 'Staffing & Placement Consultant',
+        'location': 'Tiruchirappalli, Tamil Nadu',
+        'operations_head': 'Consultancy Firm',
+        'contract_with': 'TNSTC, Government Departments, Private Corporates',
+        'since': '2012+',
+        'workforce': '500+ placed staff',
+        'coverage': 'Trichy and across Tamil Nadu',
+        'key_projects': [
+            'Staffing for TNSTC bus stand help-desks and counters',
+            'Government department temporary staffing',
+            'Corporate HR outsourcing and recruitment',
+            'Training programs for government-deployed staff',
+            'Disability awareness and sensitivity training coordination'
+        ],
+        'specializations': [
+            'Government staffing & placement',
+            'HR outsourcing for public sector',
+            'Training and skill development programs',
+            'Temporary and contract staffing',
+            'Customer service staff recruitment'
+        ],
+        'performance': 'Leading HR consultant in Trichy region. Known for reliable government staffing placement and training coordination.',
+        'rating': '3.7/5'
+    }
+}
+
+
+@app.route('/api/company-profile/<company_name>')
+def get_company_profile(company_name):
+    """Return detailed profile for a specific contractor company"""
+    profile = COMPANY_PROFILES.get(company_name)
+    if profile:
+        return jsonify({'success': True, 'data': profile})
+    return jsonify({'success': False, 'error': 'Company not found'}), 404
+
 
 @app.route('/api/common-issues')
 def get_common_issues():
