@@ -408,10 +408,6 @@ function renderCommonIssues(issues) {
                     <span class="suggestion-icon">💡</span>
                     <span class="suggestion-text">${issue.action}</span>
                 </div>
-                
-                <button class="btn-company-profile" data-company="${issue.contractor_name.replace(/"/g, '&quot;')}">
-                    🏢 View Company Profile — ${issue.contractor_name}
-                </button>
             </div>
         </div>`;
     }).join('');
