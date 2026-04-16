@@ -385,11 +385,11 @@ function renderCommonIssues(issues) {
                     <div class="fault-header">📊 Responsibility Analysis</div>
                     <div class="fault-row">
                         <div class="fault-party contractor">
-                            <span class="fault-label">🏗️ Contractor / Authority</span>
+                            <span class="fault-label">🏗️ The Contractor</span>
                             <span class="fault-text">${issue.contractor_resp || 'N/A'}</span>
                         </div>
                         <div class="fault-party civilian">
-                            <span class="fault-label">👥 Civilian / Public</span>
+                            <span class="fault-label">👥 The Client/Owner</span>
                             <span class="fault-text">${issue.civilian_resp || 'N/A'}</span>
                         </div>
                     </div>
@@ -472,11 +472,11 @@ async function openStopModal(stopId) {
                         <div class="fault-header">📊 Responsibility Analysis</div>
                         <div class="fault-row">
                             <div class="fault-party contractor">
-                                <span class="fault-label">🏗️ Contractor / Authority</span>
+                                <span class="fault-label">🏗️ The Contractor</span>
                                 <span class="fault-text">${g.contractor_resp || 'N/A'}</span>
                             </div>
                             <div class="fault-party civilian">
-                                <span class="fault-label">👥 Civilian / Public</span>
+                                <span class="fault-label">👥 The Client/Owner</span>
                                 <span class="fault-text">${g.civilian_resp || 'N/A'}</span>
                             </div>
                         </div>

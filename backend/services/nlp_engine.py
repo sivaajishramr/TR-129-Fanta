@@ -404,166 +404,166 @@ SUB_PROBLEM_RULES = {
 
 # ===== RESPONSIBILITY ANALYSIS: CONTRACTOR vs CIVILIAN =====
 RESPONSIBILITY_MAP = {
-    # Toilet & Facilities
+    # ──── Toilet & Facilities ────
     'Toilet not clean': {
         'fault_by': 'Contractor',
-        'contractor_resp': 'Legally responsible for "Site Clearance" and daily sanitation per O&M contract. S.R. Vedhaah must maintain 3x/day cleaning schedule with documented logs.',
-        'civilian_resp': 'Public misuse (throwing trash, spitting) accelerates deterioration. Trichy Corp. must install CCTV and impose fines for misuse.'
+        'contractor_resp': 'The Contractor (S.R. Vedhaah) is legally responsible for "Site Clearance" under their O&M contract with Trichy City Corporation. This means removing all waste, sanitizing surfaces, and maintaining documented cleaning logs with 3x/day frequency. Most contracts for firms like S.R. Vedhaah include a "De-mobilization" clause where they must leave every shift with a clean, inspected site.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation) is responsible for security and public behavior management. If the site is "dirty" because civilians are entering and misusing the facility — throwing trash, spitting pan masala, or not flushing — the Corporation must provide better surveillance (CCTV), impose fines under Municipal Bylaws, and install tamper-proof fixtures to reduce civilian-caused damage.'
     },
     'No water supply': {
         'fault_by': 'Government',
-        'contractor_resp': 'Private Plumbing Contractor must maintain pipelines and tank connections in working condition per SLA.',
-        'civilian_resp': 'Wastage of water by public (leaving taps open) strains supply. Water-saving signage and auto-shutoff taps recommended.'
+        'contractor_resp': 'The Contractor (Private Plumbing Contractor) is responsible for maintaining all pipelines, valves, and overhead tank connections in working condition as per their Service Level Agreement (SLA). If supply fails due to pipeline blockage or pump failure within the premises, the plumbing contractor must restore it within 24 hours or face contractual penalties.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation - Water Supply Division) bears primary responsibility for ensuring municipal water supply reaches the bus stand. If civilians are wasting water — leaving taps running, washing clothes, or bathing at bus stand taps — the Corporation must install auto-shutoff sensor taps and water conservation signage to prevent public wastage.'
     },
     'Water not coming regularly': {
         'fault_by': 'Government',
-        'contractor_resp': 'Municipality Water Supply Division responsible for scheduling and ensuring supply pressure.',
-        'civilian_resp': 'N/A — supply timing is a government infrastructure issue, not civilian-caused.'
+        'contractor_resp': 'The Contractor has limited responsibility here. Their duty is to maintain internal plumbing so that when water arrives, it flows properly. Any pump or motor failures within the bus stand premises fall under their SLA.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation - Water Supply Division) is solely responsible for scheduling water supply timings and maintaining adequate pressure. This is a government infrastructure issue — not caused by civilians. The Corporation must coordinate with TWAD Board to ensure reliable supply scheduling.'
     },
     'Poor water quality': {
         'fault_by': 'Contractor',
-        'contractor_resp': 'Private Tank Maintenance Contractor failed to clean water tanks per quarterly schedule. Penalty applicable.',
-        'civilian_resp': 'Contamination may occur from unauthorized connections or dumping near water source.'
+        'contractor_resp': 'The Contractor (Private Tank Maintenance Contractor) failed to perform quarterly tank cleaning and water quality testing as mandated in their contract. They are legally liable for any health issues arising from contaminated water. Contract terms typically require them to submit lab-tested water quality reports every 90 days to the Corporation.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation - Health Wing) must ensure no unauthorized connections or external contamination sources exist near the water storage. If civilians are dumping waste near overhead tanks or water sources, the Corporation must erect barriers and enforce penalties under the TN Public Health Act.'
     },
     'Water tank not cleaned': {
         'fault_by': 'Contractor',
-        'contractor_resp': 'Tank Maintenance Contractor violated contract KPI. Must clean tanks quarterly with documented water quality reports.',
-        'civilian_resp': 'N/A — tank maintenance is purely a contractor obligation.'
+        'contractor_resp': 'The Contractor (Tank Maintenance Contractor) has violated their Key Performance Indicator (KPI) obligation. Per the O&M agreement, water tanks must be cleaned, disinfected, and documented quarterly. Failure to comply triggers automatic penalty deductions from their monthly billing. The contractor must produce photographic evidence and lab reports of each cleaning cycle.',
+        'civilian_resp': 'The Client/Owner has oversight responsibility. Tank cleaning is purely a contractual obligation of the maintenance contractor — civilians have no access to water tanks. However, the Corporation must audit contractor performance and not accept self-reported compliance without physical verification.'
     },
     'Broken flush or fittings': {
         'fault_by': 'Both',
-        'contractor_resp': 'Plumbing Contractor must replace broken fittings within 48 hours per maintenance SLA. Failure = penalty deduction.',
-        'civilian_resp': 'Vandalism and rough usage by public is a major cause. CCTV surveillance and vandal-proof fixtures recommended.'
+        'contractor_resp': 'The Contractor (Private Plumbing Contractor) is contractually required to replace broken fittings — flush mechanisms, taps, lever handles, door locks — within 48 hours of a reported complaint. Their SLA includes "Preventive Maintenance" clauses requiring weekly inspection of all toilet fixtures. Failure to replace within the stipulated time incurs penalty deductions.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation) acknowledges that civilian vandalism — forcing flush handles, breaking ceramic basins, stealing taps — is a major contributor. The Corporation must install vandal-proof stainless steel fixtures, deploy CCTV at toilet entrances, and engage VDoDay House Keeping for round-the-clock monitoring to deter misuse.'
     },
     'No soap or handwash': {
         'fault_by': 'Contractor',
-        'contractor_resp': 'Housekeeping Contractor must refill soap dispensers daily per contract checklist. Lapse = penalty.',
-        'civilian_resp': 'Theft of soap/dispensers by public reported. Wall-mounted tamper-proof dispensers recommended.'
+        'contractor_resp': 'The Contractor (VDoDay House Keeping / S.R. Vedhaah) must refill all soap dispensers as part of their daily cleaning checklist. The O&M contract specifies "consumables supply" — soap, tissue, and cleaning agents — as contractor obligations. Empty dispensers constitute a direct contract violation subject to penalty.',
+        'civilian_resp': 'The Client/Owner notes that theft of soap dispensers and liquid soap by the public has been documented at several bus stands. The Corporation must install wall-mounted, tamper-proof, lockable dispensers and use bulk liquid soap rather than bar soap to reduce theft incentive.'
     },
     'Bad smell': {
         'fault_by': 'Contractor',
-        'contractor_resp': 'Cleaning Contractor not meeting frequency and quality standards. Must apply enzymatic deodorizer and increase cleaning shifts.',
-        'civilian_resp': 'Public urination outside toilets and littering worsen the problem. Fencing and signage needed.'
+        'contractor_resp': 'The Contractor (S.R. Vedhaah) is not meeting the contractual cleaning frequency and quality standards. Per their agreement, all toilet blocks must be cleaned with enzymatic deodorizers, and drain traps must be acid-washed weekly. Persistent odor indicates the contractor is skipping shifts or using diluted cleaning agents — both constitute SLA violations subject to penalty.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation) must address civilian-caused odor sources: public urination on walls and outside toilet blocks, paan spitting, and littering of food waste. The Corporation must install physical barriers (fencing/walls), "No Urination" penalty signage with fine amounts displayed, and proper drainage to eliminate stagnant water.'
     },
     'No disabled-friendly toilet': {
         'fault_by': 'Government',
-        'contractor_resp': 'Civil Contractor must construct accessible toilet as per RPWD Act specs when work order is issued.',
-        'civilian_resp': 'N/A — this is a planning and infrastructure gap, not civilian-caused.'
+        'contractor_resp': 'The Contractor (M/s. Jyothi Constructions or equivalent Class-I Civil Contractor) is responsible for constructing the accessible toilet as per RPWD Act 2016 specifications once the Corporation issues a formal work order. Construction must include 900mm wide doors, grab bars, emergency pull cords, and wheelchair-turning space — all per IS 17802 standards.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation) bears sole responsibility for this gap. The absence of a disabled-friendly toilet is a planning and budgetary failure by the government, not a civilian-caused issue. The Corporation must allocate funds under Smart City Mission or AMRUT scheme and issue construction tenders immediately.'
     },
-    # Infrastructure & Safety
+    # ──── Infrastructure & Safety ────
     'Broken pavement': {
         'fault_by': 'Both',
-        'contractor_resp': 'Civil Contractor used sub-standard materials or failed to maintain. Warranty claim applicable if within defect liability period.',
-        'civilian_resp': 'Heavy vehicle parking and unauthorized encroachment by vendors accelerate pavement damage.'
+        'contractor_resp': 'The Contractor (Tamil Builders / M/s. Jyothi Constructions) is liable if the pavement failure is due to sub-standard materials, inadequate base preparation, or workmanship defects within the "Defect Liability Period" (typically 12-24 months post-construction). The contractor must repair at their own cost during this period, using anti-skid interlocking tiles per Corporation standards.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation) must control civilian-caused damage: heavy vehicle (auto/truck) parking on pedestrian pavements, unauthorized vendor encroachments placing heavy loads, and tree root damage. The Corporation must install bollards to prevent vehicle entry and enforce anti-encroachment drives regularly.'
     },
     'Potholes near bus stop': {
         'fault_by': 'Contractor',
-        'contractor_resp': 'Road Contractor failed to maintain approach roads. Must fill potholes within 7 days per TNRSP norms.',
-        'civilian_resp': 'Overloaded vehicles and rainwater seepage (drainage failure) contribute to pothole formation.'
+        'contractor_resp': 'The Contractor (L&T for major roads / Tamil Builders for internal roads) is contractually bound to fill potholes within 7 working days of reporting under TNRSP (Tamil Nadu Road Sector Project) norms. For National Highways near bus stops, NHAI-appointed contractors are responsible. Failure to repair within the stipulated timeframe triggers penalty clauses and may result in contract termination.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation - Roads Division / Highways Department) must address root causes: poor drainage causing water seepage that erodes road base, overloaded commercial vehicles exceeding axle-load limits, and unauthorized utility trenching by cable/pipe laying agencies. Weight enforcement checkpoints and proper drain outlets are the Corporation\'s responsibility.'
     },
     'No shelter': {
         'fault_by': 'Government',
-        'contractor_resp': 'Civil Contractor must construct shelter when tender is awarded. Delay = contract penalty.',
-        'civilian_resp': 'N/A — shelter absence is a government planning/budget issue.'
+        'contractor_resp': 'The Contractor (Sri Venket Lakshmi Associates / equivalent building contractor) will construct the shelter once a tender is awarded. Pre-fabricated bus shelters can be installed within 15-20 working days. Delay beyond the contracted timeline triggers daily penalty as per contract terms.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation / TNSTC Trichy Division) bears full responsibility. Shelter absence is a government planning and budgetary gap — not civilian-caused. The Corporation must allocate funds under Smart City Mission or AMRUT scheme and prioritize high-footfall stops.'
     },
     'Waterlogging': {
         'fault_by': 'Both',
-        'contractor_resp': 'Drainage Contractor failed to clear storm drains before monsoon season. Blockage = SLA violation.',
-        'civilian_resp': 'Plastic waste and garbage dumping by public blocks drains. Waste segregation enforcement needed.'
+        'contractor_resp': 'The Contractor (L&T for underground drainage / Private Drainage Contractor for surface drains) failed to clear storm water drains before the monsoon season. This is an SLA violation. Contracts mandate pre-monsoon drain clearing by September every year, with photographic documentation submitted to the Corporation.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation - Drainage Division) must address civilian-caused blockages: plastic bags, food waste, and construction debris dumped into drains by residents and vendors. The Corporation must enforce solid waste segregation, install drain-mouth gratings to prevent debris entry, and conduct weekly "Mega Cleaning Drives".'
     },
     'No seating': {
         'fault_by': 'Government',
-        'contractor_resp': 'Furniture Contractor must install benches when work order is issued.',
-        'civilian_resp': 'Vandalism and theft of seating by public reported at some locations. Anti-theft concrete benches recommended.'
+        'contractor_resp': 'The Contractor (Tamil Builders / furniture supplier) must manufacture and install stainless steel benches with armrests once a purchase order is issued. Standard municipal benches must be bolted into concrete foundations to prevent theft.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation) notes that vandalism and theft of metal seating for scrap value is documented at several bus stops. If seating disappears due to civilian theft, the Corporation must file FIR, install anti-theft concrete benches (which cannot be sold as scrap), and use CCTV surveillance.'
     },
     'Unsafe structure': {
         'fault_by': 'Contractor',
-        'contractor_resp': 'Original Civil Contractor liable if within defect liability period. Structural failure = legal action.',
-        'civilian_resp': 'Unauthorized modifications or overloading by vendors may weaken structure.'
+        'contractor_resp': 'The Contractor (original Civil Contractor — M/s. Jyothi Constructions or equivalent) is legally liable if the structural failure occurs within the Defect Liability Period. Under the Indian Contract Act and PWD guidelines, structural failures due to sub-standard concrete, inadequate reinforcement, or poor foundation work constitute criminal negligence. The contractor faces legal action and must bear all repair costs.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation - Engineering Wing) must ensure no unauthorized structural modifications. If vendors or unauthorized occupants have added weight (illegal constructions on rooftops, heavy signboards) or drilled into load-bearing walls, the Corporation must conduct immediate evacuation, engage a structural auditor, and remove all unauthorized additions.'
     },
     'Lights not working': {
         'fault_by': 'Both',
-        'contractor_resp': 'Private Electrical Contractor must replace faulty fixtures within 24 hours. TANGEDCO responsible for power supply.',
-        'civilian_resp': 'Vandalism (stone-throwing, wire theft) is a major cause. Vandal-proof LED housings recommended.'
+        'contractor_resp': 'The Contractor (Private Electrical Contractor engaged by Trichy Corporation) must replace faulty LED fixtures, wiring, and MCBs within 24 hours of a complaint. TANGEDCO is responsible if the failure is due to power supply issues (transformer failure, cable fault). The electrical contractor\'s AMC covers all internal fixtures; TANGEDCO covers the power feed.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation) acknowledges that civilian vandalism — stone-throwing at lights, copper wire theft, and unauthorized electricity tapping — is a major cause of lighting failures. The Corporation must install vandal-proof polycarbonate housings, underground armored cables, and CCTV at transformer locations to prevent theft.'
     },
-    # Audio & Visual
+    # ──── Audio & Visual ────
     'No announcement system': {
         'fault_by': 'Government',
-        'contractor_resp': 'IT/AV Vendor must install PA system when purchase order is issued by TNSTC.',
-        'civilian_resp': 'N/A — absence of system is a government procurement/budget issue.'
+        'contractor_resp': 'The Contractor (Private IT/AV Vendor) must install the PA system once TNSTC Trichy Division issues a purchase order. Installation includes speakers, amplifiers, microphones, and automated announcement software with multi-language support (Tamil/English/Hindi).',
+        'civilian_resp': 'The Client/Owner (TNSTC Trichy Division) bears full responsibility. Absence of an announcement system is a government procurement and budgetary gap. TNSTC must allocate funds and issue tenders. Civilians have no role in system procurement.'
     },
     'Speaker not working': {
         'fault_by': 'Both',
-        'contractor_resp': 'AV Maintenance Contractor must repair speakers within 48 hours per AMC (Annual Maintenance Contract).',
-        'civilian_resp': 'Tampering and theft of speaker wiring reported. Tamper-proof enclosures needed.'
+        'contractor_resp': 'The Contractor (Vision Care Services Pvt Ltd or AV Maintenance Vendor) is bound by their Annual Maintenance Contract (AMC) to repair all PA system faults within 48 hours. The AMC covers speaker replacement, amplifier repairs, and wiring restoration. Failure to respond within the SLA window triggers penalty deductions.',
+        'civilian_resp': 'The Client/Owner (TNSTC Trichy Division) notes that speaker wire theft (for copper scrap value) and physical tampering with speaker housings by unauthorized persons is documented. TNSTC must install tamper-proof speaker enclosures, use conduit-protected wiring, and deploy CCTV near PA system equipment.'
     },
     'Display board not working': {
         'fault_by': 'Contractor',
-        'contractor_resp': 'Private IT Vendor failed to maintain LED display hardware/software. AMC penalty applicable.',
-        'civilian_resp': 'Rare civilian involvement. Occasionally damaged by thrown objects.'
+        'contractor_resp': 'The Contractor (Private IT Vendor handling LED display systems) failed to maintain the hardware and software per their AMC. LED display boards require regular firmware updates, data feed connectivity checks, and panel replacements. The IT vendor is solely responsible for technical uptime and data accuracy. AMC penalty is applicable for downtime exceeding 24 hours.',
+        'civilian_resp': 'The Client/Owner (TNSTC Trichy Division) notes rare civilian involvement. Occasional damage from thrown objects or vandalism is possible. TNSTC must install protective glass screens over LED boards and mount them at heights inaccessible to the public.'
     },
     'Wrong or outdated information': {
         'fault_by': 'Government',
-        'contractor_resp': 'TNSTC IT Cell and vendor must update route database. Automated sync recommended.',
-        'civilian_resp': 'N/A — data accuracy is entirely an operational responsibility.'
+        'contractor_resp': 'The Contractor (Private IT Vendor + TNSTC IT Cell) must jointly maintain accurate route databases. The IT vendor is responsible for the software platform; TNSTC IT Cell must provide updated route, timing, and fare data. Automated data sync should be implemented to eliminate manual errors.',
+        'civilian_resp': 'The Client/Owner (TNSTC Trichy Division) bears full responsibility. Data accuracy is an operational issue — civilians have no role in route database management. TNSTC must implement automated GPS-based bus tracking to provide real-time, accurate information.'
     },
-    # Signage & Braille
+    # ──── Signage & Braille ────
     'No signboards': {
         'fault_by': 'Government',
-        'contractor_resp': 'Signage Contractor must fabricate and install when work order is issued.',
-        'civilian_resp': 'N/A — absence is a government planning gap.'
+        'contractor_resp': 'The Contractor (Tamil Builders / Private Signage Contractor) must fabricate and install bilingual signboards (Tamil/English) once the Corporation issues a work order. Signboards must use reflective, weather-resistant materials per IRC (Indian Road Congress) standards.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation - Works Division) bears sole responsibility. Absence of signboards is a government planning gap. Civilians cannot be blamed for infrastructure the government has not yet installed.'
     },
     'Faded or unreadable boards': {
         'fault_by': 'Both',
-        'contractor_resp': 'Signage Contractor must replace faded signs under warranty/AMC. Weather-resistant materials required.',
-        'civilian_resp': 'Defacement with posters, stickers, and graffiti by public accelerates deterioration.'
+        'contractor_resp': 'The Contractor (Private Signage Contractor) must replace faded signs under their warranty period or AMC. Original signage contracts typically include a 3-5 year warranty against fading, peeling, and material degradation. If the signs faded within warranty, the contractor must replace them at zero additional cost.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation) acknowledges that defacement by the public — pasting political posters, commercial advertisements, stickers, and spray-painting graffiti over directional signs — is a major cause of unreadability. The Corporation must enforce the TN Prevention of Defacement of Property Act, impose fines, and use anti-graffiti coatings on signboards.'
     },
     'No Braille signage': {
         'fault_by': 'Government',
-        'contractor_resp': 'Accessibility Contractor must install Braille maps when mandated by RPWD compliance order.',
-        'civilian_resp': 'N/A — Braille absence is a policy/compliance gap.'
+        'contractor_resp': 'The Contractor (Accessibility/Signage Contractor) must install Braille tactile route maps, tactile ground surface indicators (TGSI), and raised-letter signage when mandated by the RPWD compliance order. Specifications must follow IS 17802 and the Harmonised Guidelines issued by the Ministry of Urban Development.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation - Accessibility Cell / Dept. for Welfare of Differently Abled) bears sole responsibility. Braille absence is a policy and RPWD Act 2016 compliance failure by the government. Civilians have no role in accessibility infrastructure provision.'
     },
     'Wrong directions': {
         'fault_by': 'Contractor',
-        'contractor_resp': 'Signage Contractor installed incorrect information. Must audit and correct immediately.',
-        'civilian_resp': 'Unauthorized sign relocation or tampering by public/vendors possible.'
+        'contractor_resp': 'The Contractor (Private Signage Contractor) installed incorrect directional information. This is a fabrication error or installation mistake. The contractor must audit all directional signage, verify against GPS coordinates and current bus routes, and correct all errors within 15 working days at their own cost.',
+        'civilian_resp': 'The Client/Owner (TNSTC Trichy Division) must verify that no unauthorized sign relocation has occurred. Vendors or unauthorized persons sometimes move or rotate directional signs to benefit their shops. TNSTC must physically bolt signs into permanent positions and use tamper-evident fasteners.'
     },
-    # Staff & Assistance
+    # ──── Staff & Assistance ────
     'Staff not helping': {
         'fault_by': 'Government',
-        'contractor_resp': 'TNSTC HR must enforce passenger assistance protocols. Staff performance review needed.',
-        'civilian_resp': 'N/A — staff behavior is entirely an employment/training issue.'
+        'contractor_resp': 'The Contractor/Employer (TNSTC Trichy Division - HR Department) is the employer of record. Staff assistance is a core employment duty defined in TNSTC\'s Staff Conduct Rules. HR must enforce passenger assistance protocols through regular performance reviews, mystery audits, and mandatory training programs. Staff found violating assistance protocols face written warnings, salary deductions, and transfer to remote depots.',
+        'civilian_resp': 'The Client/Owner (TNSTC Management) acknowledges this is entirely an employment and training issue. Civilians are the complainants, not the cause. However, TNSTC should also establish a visible complaint mechanism (QR-code feedback boards, toll-free helpline) so passengers can report unhelpful staff in real-time.'
     },
     'Rude behavior': {
         'fault_by': 'Government',
-        'contractor_resp': 'TNSTC HR must take disciplinary action. Mandatory sensitivity training required.',
-        'civilian_resp': 'Verbal abuse from passengers may provoke staff. De-escalation training for both sides recommended.'
+        'contractor_resp': 'The Contractor/Employer (TNSTC Trichy Division - HR) must take immediate disciplinary action per TNSTC Service Rules. Rude behavior toward passengers — especially disabled, elderly, and women passengers — constitutes misconduct under State Transport Corporation employee regulations. Mandatory sensitivity training and disability awareness workshops must be conducted quarterly. Repeat offenders face suspension.',
+        'civilian_resp': 'The Client/Owner (TNSTC / Transport Commissioner Office) notes that verbal abuse from passengers toward staff can sometimes provoke rude responses. Both parties need de-escalation. However, as public servants, staff are held to a higher standard of conduct. TNSTC must install audio recording at counters and conflict resolution protocols.'
     },
     'No assistance for disabled': {
         'fault_by': 'Both',
-        'contractor_resp': 'Depot Manager must assign accessibility assistants. Help-desk Contractor must staff reception.',
-        'civilian_resp': 'Lack of public awareness about assisting disabled co-passengers. Community awareness campaigns needed.'
+        'contractor_resp': 'The Contractor (First Choice Outsourcing Services / SPM HR Solutions — Help-desk staffing agencies) must deploy trained accessibility assistants at help-desk counters during 6AM-10PM operating hours. The staffing contract specifies "Disability Assistance" as a key deliverable. The Depot Manager (TNSTC) must ensure coverage at peak hours.',
+        'civilian_resp': 'The Client/Owner (TNSTC / Trichy City Corporation) must also raise public awareness. Lack of "Good Samaritan" culture among fellow passengers means disabled travelers often wait without help. The Corporation must run awareness campaigns, install "Please Help" call buttons at platforms, and train ticket counter staff in basic sign language.'
     },
-    # Ramp & Wheelchair
+    # ──── Ramp & Wheelchair ────
     'No ramp installed': {
         'fault_by': 'Government',
-        'contractor_resp': 'Civil Contractor must construct ramp when work order is issued per RPWD mandate.',
-        'civilian_resp': 'N/A — ramp absence is a government infrastructure planning failure.'
+        'contractor_resp': 'The Contractor (Sri Venket Lakshmi Associates / M/s. Jyothi Constructions) must construct a 1:12 gradient ramp with anti-skid surface, dual handrails, and tactile edge indicators once the Corporation issues a formal work order per RPWD Act 2016 Section 40-46. Construction must comply with IS 17802 and NBC 2016 accessibility provisions.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation - Works Division) bears sole responsibility. Ramp absence is a government infrastructure planning failure, not a civilian-caused issue. The Corporation must conduct an accessibility audit of all 30 bus stops, identify gaps, allocate budget under AMRUT/Smart City Mission, and issue construction tenders within 90 days.'
     },
     'Ramp too steep': {
         'fault_by': 'Contractor',
-        'contractor_resp': 'Civil Contractor built ramp violating IS 17802 standards (1:12 slope). Must demolish and rebuild at contractor cost.',
-        'civilian_resp': 'N/A — construction quality is entirely a contractor issue.'
+        'contractor_resp': 'The Contractor (original Civil Contractor) built the ramp in violation of IS 17802 standards, which mandate a maximum slope of 1:12 (8.33%). This is a construction quality failure. The contractor must demolish the non-compliant ramp and rebuild it to specification entirely at their own cost within the Defect Liability Period. If the DLP has expired, the Corporation must issue a fresh tender.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation - Engineering Wing) must ensure quality inspection. This is not a civilian-caused issue — it is a construction supervision failure. The Corporation\'s Junior Engineer should have rejected the ramp during the "Measurement Book" inspection stage. Quality audit protocols must be strengthened.'
     },
     'Pathway too narrow for wheelchair': {
         'fault_by': 'Both',
-        'contractor_resp': 'Civil Contractor built pathway below minimum 1200mm width. Reconstruction required.',
-        'civilian_resp': 'Encroachment by parked vehicles and vendors narrows accessible pathways. Enforcement needed.'
+        'contractor_resp': 'The Contractor (Tamil Builders / Private Civil Contractor) built the pathway below the minimum 1200mm width required for wheelchair passage per IS 17802. This is a specifications violation. The contractor must widen the pathway, add TGSI (Tactile Ground Surface Indicator) strips on both edges, and ensure 1500mm turning space at corners — all at contractor cost if within DLP.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation) must address encroachment. Even if the pathway was built to specification, unauthorized parking of two-wheelers, vendor carts, and display boards by civilians often narrows the accessible route. The Corporation must install fixed bollards, conduct daily anti-encroachment drives, and impose fines on violators under Municipal Corporation bylaws.'
     },
     'No handrails': {
         'fault_by': 'Contractor',
-        'contractor_resp': 'Civil Contractor omitted handrails from construction. Must install within 10 days at contractor cost.',
-        'civilian_resp': 'Theft of metal handrails for scrap value reported at some locations. Welded/embedded fixtures recommended.'
+        'contractor_resp': 'The Contractor (Sri Venket Lakshmi Associates / Private Civil Contractor) omitted handrails from the ramp/stairway construction, violating the approved Building Plan and IS 17802 specifications. Dual-height stainless steel handrails (700mm and 900mm) on both sides are mandatory per RPWD Act. The contractor must install them within 10 working days at their own cost.',
+        'civilian_resp': 'The Client/Owner (Trichy City Corporation) notes that theft of metal handrails for scrap value has been documented at multiple locations across Tamil Nadu. If handrails were installed but subsequently stolen, the Corporation must file an FIR, replace with welded/embedded (non-removable) SS handrails, and install anti-theft surveillance.'
     }
 }
 
