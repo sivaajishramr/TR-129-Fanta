@@ -409,7 +409,7 @@ function renderCommonIssues(issues) {
                     <span class="suggestion-text">${issue.action}</span>
                 </div>
                 
-                <button class="btn-company-profile" onclick="openCompanyProfile('${issue.contractor_name.replace(/'/g, "\\'")}')">
+                <button class="btn-company-profile" data-company="${issue.contractor_name.replace(/"/g, '&quot;')}">
                     🏢 View Company Profile — ${issue.contractor_name}
                 </button>
             </div>
@@ -522,6 +522,17 @@ window.addEventListener('click', (e) => {
     const companyModal = document.getElementById('company-profile-modal');
     if (e.target === companyModal) {
         closeCompanyModal();
+    }
+});
+
+// Event delegation for company profile buttons
+document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.btn-company-profile');
+    if (btn) {
+        const companyName = btn.getAttribute('data-company');
+        if (companyName) {
+            openCompanyProfile(companyName);
+        }
     }
 });
 
