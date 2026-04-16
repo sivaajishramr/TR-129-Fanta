@@ -1,3 +1,15 @@
+---
+title: AccessAudit AI
+emoji: ♿
+colorFrom: gray
+colorTo: green
+sdk: docker
+app_port: 7860
+pinned: true
+license: mit
+short_description: AI-powered public transport accessibility auditor for Trichy
+---
+
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/BX0G0ttc)
 
 # ♿ AccessAudit AI — Inclusive Public Transport Accessibility Auditor
