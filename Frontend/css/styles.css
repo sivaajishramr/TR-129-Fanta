@@ -2381,3 +2381,135 @@ body {
     font-size: 12px;
     color: #555;
 }
+
+/* ===== COMPLAINT FORM ===== */
+.complaint-form-wrapper {
+    margin-top: 24px;
+    padding: 24px;
+    background: linear-gradient(135deg, #e8eaf6, #f3e5f5);
+    border-radius: 14px;
+    border: 1px solid #c5cae9;
+}
+
+.complaint-form-header h4 {
+    margin: 0 0 4px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #1a237e;
+}
+
+.complaint-form-header p {
+    margin: 0 0 16px;
+    font-size: 12px;
+    color: #666;
+}
+
+.complaint-form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.complaint-field label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.complaint-input {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+    background: #fff;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.complaint-input:focus {
+    outline: none;
+    border-color: #1a237e;
+    box-shadow: 0 0 0 2px rgba(26,35,126,0.1);
+}
+
+.complaint-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.complaint-issues {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.complaint-issue-tag {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    background: #fff;
+    border: 1px solid #ef9a9a;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #c62828;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.complaint-issue-tag:has(input:checked) {
+    background: #ffebee;
+    border-color: #d32f2f;
+}
+
+.complaint-issue-tag input {
+    width: 14px;
+    height: 14px;
+    accent-color: #d32f2f;
+}
+
+.complaint-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    gap: 16px;
+}
+
+.complaint-submit-btn {
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #1a237e, #3949ab);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    flex-shrink: 0;
+}
+
+.complaint-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(26,35,126,0.3);
+}
+
+.complaint-success {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    background: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.success-icon {
+    font-size: 24px;
+}

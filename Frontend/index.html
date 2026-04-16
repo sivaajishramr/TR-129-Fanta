@@ -497,6 +497,54 @@
                             <!-- Filled by JS -->
                         </div>
                     </div>
+
+                    <!-- Complaint Form (shown after audit) -->
+                    <div class="complaint-form-wrapper" id="audit-complaint-form" style="display:none;">
+                        <div class="complaint-form-header">
+                            <h4>📋 File a Complaint Based on Audit Results</h4>
+                            <p>Report the accessibility issues detected in this photo to the responsible authorities.</p>
+                        </div>
+                        
+                        <div class="complaint-form-grid">
+                            <div class="complaint-field">
+                                <label>🚏 Bus Stop</label>
+                                <select id="complaint-stop-select" class="complaint-input">
+                                    <option value="">— Select the bus stop —</option>
+                                </select>
+                            </div>
+                            <div class="complaint-field">
+                                <label>⚡ Severity</label>
+                                <select id="complaint-severity" class="complaint-input">
+                                    <option value="high">🔴 High — Safety risk</option>
+                                    <option value="medium" selected>🟡 Medium — Inconvenience</option>
+                                    <option value="low">🟢 Low — Minor issue</option>
+                                </select>
+                            </div>
+                            <div class="complaint-field">
+                                <label>👤 Your Name (optional)</label>
+                                <input type="text" id="complaint-name" class="complaint-input" placeholder="Anonymous">
+                            </div>
+                        </div>
+
+                        <div class="complaint-field" style="margin-top:12px;">
+                            <label>❌ Detected Issues</label>
+                            <div class="complaint-issues" id="complaint-issues-list">
+                                <!-- Filled by JS -->
+                            </div>
+                        </div>
+                        
+                        <div class="complaint-field" style="margin-top:12px;">
+                            <label>📝 Description</label>
+                            <textarea id="complaint-description" class="complaint-input complaint-textarea" rows="5" placeholder="Describe the accessibility issues..."></textarea>
+                        </div>
+                        
+                        <div class="complaint-actions">
+                            <div id="complaint-status"></div>
+                            <button class="complaint-submit-btn" onclick="submitComplaint()">
+                                📤 Submit Complaint
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

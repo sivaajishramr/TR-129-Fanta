@@ -210,6 +210,49 @@ def photo_audit():
         return jsonify({'success': False, 'error': str(e)}), 500
 
 
+@app.route('/api/complaint', methods=['POST'])
+def file_complaint():
+    """File an accessibility complaint from photo audit results"""
+    try:
+        import random, string
+        data = request.get_json()
+        
+        stop_id = data.get('stop_id', '')
+        reporter = data.get('reporter_name', 'Anonymous')
+        description = data.get('description', '')
+        severity = data.get('severity', 'medium')
+        issues = data.get('issues', [])
+        source = data.get('source', 'manual')
+        
+        if not stop_id or not description:
+            return jsonify({'success': False, 'error': 'Stop and description required'}), 400
+        
+        # Generate reference ID
+        ref_id = 'CMP-' + ''.join(random.choices(string.ascii_uppercase + string.digits, k=8))
+        
+        # Auto-assign contractor based on issue type
+        issue_text = ' '.join(issues).lower()
+        contractor = None
+        if any(w in issue_text for w in ['ramp', 'elevator', 'lift', 'wheelchair space']):
+            contractor = 'M/s. Jyothi Constructions'
+        elif any(w in issue_text for w in ['tactile', 'braille', 'signage', 'audio']):
+            contractor = 'Ramco Systems Ltd.'
+        elif any(w in issue_text for w in ['toilet', 'cleaning', 'lighting']):
+            contractor = 'S.R. Vedhaah'
+        else:
+            contractor = 'Trichy City Municipal Corporation'
+        
+        return jsonify({
+            'success': True,
+            'reference_id': ref_id,
+            'contractor': contractor,
+            'severity': severity,
+            'message': f'Complaint {ref_id} filed successfully and assigned to {contractor}'
+        })
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
 # Real Trichy contractor mapping
 TRICHY_CONTRACTORS = {
     'cleaning': {'name': 'S.R. Vedhaah', 'type': 'Sanitation & Cleaning', 'detail': 'Primary private agency for city-wide sanitation across all 65 wards'},

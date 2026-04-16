@@ -870,6 +870,46 @@ function renderPhotoAuditResults(data) {
             `).join('')}
         `;
     }
+    
+    // Show complaint form if issues found
+    if (data.features_missing > 0) {
+        const missingList = Object.values(data.detections)
+            .filter(d => !d.detected)
+            .map(d => d.name);
+        
+        const complaintDiv = document.getElementById('audit-complaint-form');
+        if (complaintDiv) {
+            complaintDiv.style.display = 'block';
+            
+            // Pre-fill description with missing features
+            const textarea = document.getElementById('complaint-description');
+            if (textarea) {
+                textarea.value = `Accessibility audit found the following issues:\n\n${missingList.map((f, i) => `${i+1}. ${f} — Not available`).join('\n')}\n\nThis bus stop needs urgent accessibility improvements to comply with RPWD Act 2016.`;
+            }
+            
+            // Pre-fill issues checkboxes
+            const issuesContainer = document.getElementById('complaint-issues-list');
+            if (issuesContainer) {
+                issuesContainer.innerHTML = missingList.map(f => `
+                    <label class="complaint-issue-tag">
+                        <input type="checkbox" checked value="${f}">
+                        <span>❌ ${f}</span>
+                    </label>
+                `).join('');
+            }
+            
+            // Populate stop selector if not already done
+            const stopSelect = document.getElementById('complaint-stop-select');
+            if (stopSelect && stopSelect.options.length <= 1 && appData.stops) {
+                appData.stops.stops.forEach(stop => {
+                    const opt = document.createElement('option');
+                    opt.value = stop.id;
+                    opt.textContent = stop.name;
+                    stopSelect.appendChild(opt);
+                });
+            }
+        }
+    }
 }
 
 // Drag-and-drop support
@@ -892,3 +932,64 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// ===== COMPLAINT FILING =====
+async function submitComplaint() {
+    const stopSelect = document.getElementById('complaint-stop-select');
+    const nameInput = document.getElementById('complaint-name');
+    const descTextarea = document.getElementById('complaint-description');
+    const severitySelect = document.getElementById('complaint-severity');
+    const statusDiv = document.getElementById('complaint-status');
+    
+    // Get selected issues
+    const checkedIssues = Array.from(document.querySelectorAll('#complaint-issues-list input:checked'))
+        .map(cb => cb.value);
+    
+    // Validate
+    if (!stopSelect.value) {
+        statusDiv.innerHTML = '<span style="color:#d32f2f;">⚠️ Please select a bus stop</span>';
+        return;
+    }
+    if (!descTextarea.value.trim()) {
+        statusDiv.innerHTML = '<span style="color:#d32f2f;">⚠️ Please provide a description</span>';
+        return;
+    }
+    
+    statusDiv.innerHTML = '<span style="color:#1a237e;">⏳ Submitting complaint...</span>';
+    
+    try {
+        const response = await fetch(`${API_BASE}/complaint`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                stop_id: stopSelect.value,
+                reporter_name: nameInput.value || 'Anonymous',
+                description: descTextarea.value,
+                severity: severitySelect.value,
+                issues: checkedIssues,
+                source: 'photo_audit'
+            })
+        });
+        const result = await response.json();
+        
+        if (result.success) {
+            statusDiv.innerHTML = `
+                <div class="complaint-success">
+                    <span class="success-icon">✅</span>
+                    <div>
+                        <strong>Complaint Filed Successfully!</strong><br>
+                        <span style="font-size:12px;color:#666;">Reference: ${result.reference_id} • ${result.contractor ? 'Assigned to: ' + result.contractor : 'Under review'}</span>
+                    </div>
+                </div>
+            `;
+            // Reset form
+            descTextarea.value = '';
+            nameInput.value = '';
+            stopSelect.selectedIndex = 0;
+        } else {
+            statusDiv.innerHTML = `<span style="color:#d32f2f;">❌ ${result.error || 'Failed to submit'}</span>`;
+        }
+    } catch (error) {
+        statusDiv.innerHTML = '<span style="color:#d32f2f;">❌ Connection error. Please try again.</span>';
+    }
+}
