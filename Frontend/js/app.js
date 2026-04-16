@@ -354,6 +354,10 @@ function renderCommonIssues(issues) {
     container.innerHTML = issues.map((issue, i) => {
         const priorityColors = { 'High': '#d32f2f', 'Medium': '#f9a825', 'Low': '#2e7d32' };
         const pColor = priorityColors[issue.priority] || '#555';
+        const faultColors = { 'Contractor': '#d32f2f', 'Government': '#1565c0', 'Civilian': '#f57f17', 'Both': '#7b1fa2', 'Unknown': '#555' };
+        const fColor = faultColors[issue.fault_by] || '#555';
+        const faultIcons = { 'Contractor': '🏗️', 'Government': '🏛️', 'Civilian': '👥', 'Both': '⚖️', 'Unknown': '❓' };
+        const fIcon = faultIcons[issue.fault_by] || '❓';
         const stopsPreview = issue.affected_stops.slice(0, 4).join(', ');
         const moreStops = issue.affected_stops.length > 4 ? ` +${issue.affected_stops.length - 4} more` : '';
 
@@ -363,7 +367,10 @@ function renderCommonIssues(issues) {
             <div class="issue-body">
                 <div class="issue-top-row">
                     <h4 class="issue-title">⚠️ ${issue.sub_problem}</h4>
-                    <span class="issue-priority" style="background:${pColor}15;color:${pColor};border:1px solid ${pColor}30;">${issue.priority}</span>
+                    <div style="display:flex;gap:6px;">
+                        <span class="issue-priority" style="background:${pColor}15;color:${pColor};border:1px solid ${pColor}30;">${issue.priority}</span>
+                        <span class="issue-priority" style="background:${fColor}15;color:${fColor};border:1px solid ${fColor}30;">${fIcon} ${issue.fault_by}</span>
+                    </div>
                 </div>
                 <span class="issue-category" style="color:${issue.category_color}">${issue.category}</span>
                 <span class="issue-count">${issue.count} grievances across ${issue.stops_affected_count} stops</span>
@@ -374,7 +381,21 @@ function renderCommonIssues(issues) {
                     <div class="contractor-type">${issue.contractor_type} — ${issue.contractor_detail}</div>
                 </div>
                 
-                <div class="issue-authority">
+                <div class="fault-analysis" style="margin-top:10px;">
+                    <div class="fault-header">📊 Responsibility Analysis</div>
+                    <div class="fault-row">
+                        <div class="fault-party contractor">
+                            <span class="fault-label">🏗️ Contractor / Authority</span>
+                            <span class="fault-text">${issue.contractor_resp || 'N/A'}</span>
+                        </div>
+                        <div class="fault-party civilian">
+                            <span class="fault-label">👥 Civilian / Public</span>
+                            <span class="fault-text">${issue.civilian_resp || 'N/A'}</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="issue-authority" style="margin-top:10px;">
                     <span class="grievance-tag" style="background:#111;color:#fff;">🏛️ ${issue.primary_authority}</span>
                 </div>
                 

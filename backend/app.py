@@ -188,7 +188,10 @@ def get_common_issues():
                     'action': sub['action'],
                     'contractor_name': contractor['name'],
                     'contractor_type': contractor['type'],
-                    'contractor_detail': contractor['detail']
+                    'contractor_detail': contractor['detail'],
+                    'fault_by': sub.get('fault_by', 'Unknown'),
+                    'contractor_resp': sub.get('contractor_resp', ''),
+                    'civilian_resp': sub.get('civilian_resp', '')
                 }
             
             issue_tracker[key]['count'] += 1
