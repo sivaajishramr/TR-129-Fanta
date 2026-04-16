@@ -366,13 +366,15 @@ COMPANY_PROFILES = {
 }
 
 
-@app.route('/api/company-profile/<company_name>')
-def get_company_profile(company_name):
+@app.route('/api/company-profile')
+def get_company_profile():
     """Return detailed profile for a specific contractor company"""
+    from flask import request
+    company_name = request.args.get('name', '')
     profile = COMPANY_PROFILES.get(company_name)
     if profile:
         return jsonify({'success': True, 'data': profile})
-    return jsonify({'success': False, 'error': 'Company not found'}), 404
+    return jsonify({'success': False, 'error': f'Company not found: {company_name}'}), 404
 
 
 @app.route('/api/common-issues')

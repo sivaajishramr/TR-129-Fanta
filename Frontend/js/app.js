@@ -555,7 +555,7 @@ async function openCompanyProfile(companyName) {
     modal.classList.remove('hidden');
 
     try {
-        const response = await fetch(`${API_BASE}/company-profile/${encodeURIComponent(companyName)}`);
+        const response = await fetch(`${API_BASE}/company-profile?name=${encodeURIComponent(companyName)}`);
         const result = await response.json();
 
         if (!result.success) throw new Error('Not found');
