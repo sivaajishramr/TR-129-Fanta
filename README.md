@@ -16,7 +16,7 @@ Public transport systems across India often lack critical accessibility infrastr
 
 **AccessAudit AI** combines NLP-powered grievance analysis with a weighted scoring engine to:
 
-1. **Score every transit stop** using a weighted accessibility gap formula
+1. **Score every transit stop** using a weighted accessibility gap formula.
 2. **Classify citizen grievances** into 6 categories using TF-IDF keyword matching
 3. **Visualize gaps on an interactive map** covering all 38 districts of Tamil Nadu
 4. **Generate actionable prevention suggestions** for each grievance
