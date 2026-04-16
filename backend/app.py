@@ -128,53 +128,97 @@ def get_trends():
         return jsonify({'success': False, 'error': str(e)}), 500
 
 
+# Real Trichy contractor mapping
+TRICHY_CONTRACTORS = {
+    'cleaning': {'name': 'S.R. Vedhaah', 'type': 'Sanitation & Cleaning', 'detail': 'Primary private agency for city-wide sanitation across all 65 wards'},
+    'housekeeping': {'name': 'VDoDay House Keeping', 'type': 'Facility Management', 'detail': 'Corporate & government facility management contractor'},
+    'waste': {'name': 'Eco Wise', 'type': 'Waste Management', 'detail': 'Municipal solid waste & e-waste specialist'},
+    'civil': {'name': 'M/s. Jyothi Constructions', 'type': 'Civil Contractor (Class-I)', 'detail': 'Government-approved, Palpannai, Trichy'},
+    'civil_alt': {'name': 'Tamil Builders', 'type': 'Civil Contractor', 'detail': 'Handles municipal civil infrastructure projects'},
+    'infra_major': {'name': 'Larsen & Toubro (L&T)', 'type': 'Infrastructure (Class-I)', 'detail': 'Executing 90%+ of underground drainage projects in Trichy'},
+    'manpower': {'name': 'Vision Care Services Pvt Ltd', 'type': 'Manpower Outsourcing', 'detail': 'Oldest agency in Trichy, healthcare & facility staffing'},
+    'manpower_alt': {'name': 'First Choice Outsourcing Services', 'type': 'Security & Manpower', 'detail': 'Government department manpower & security services'},
+    'staffing': {'name': 'SPM HR Solutions', 'type': 'Staffing & Placement', 'detail': 'Leading consultant for government & corporate staffing'},
+    'transport': {'name': 'Sri Renu Travels', 'type': 'Transport Services', 'detail': 'Fleet services for corporate & government'},
+    'building': {'name': 'Sri Venket Lakshmi Associates', 'type': 'Building Contractor', 'detail': 'High-rated government-approved infrastructure services'}
+}
+
+# Map each sub-problem category to its real contractor
+CATEGORY_CONTRACTOR_MAP = {
+    'toilet_facilities': TRICHY_CONTRACTORS['cleaning'],
+    'infrastructure': TRICHY_CONTRACTORS['civil'],
+    'audio_visual': TRICHY_CONTRACTORS['manpower'],
+    'signage_braille': TRICHY_CONTRACTORS['civil_alt'],
+    'staff_assistance': TRICHY_CONTRACTORS['staffing'],
+    'ramp_wheelchair': TRICHY_CONTRACTORS['building']
+}
+
+
+@app.route('/api/common-issues')
+def get_common_issues():
+    """Aggregate the most common grievance issues across all bus stands with contractor info"""
+    try:
+        from services.scoring_engine import load_stops, load_grievances
+        from services.nlp_engine import classify_grievance, classify_sub_problem, CLUSTER_DEFINITIONS
+
+        stops = load_stops()
+        grievances = load_grievances()
+        
+        # Build a stop name lookup
+        stop_names = {s['id']: s['name'] for s in stops}
+        
+        # Classify every grievance
+        issue_tracker = {}  # sub_problem -> {count, stops set, category, ...}
+        
+        for g in grievances:
+            cluster_id, _, _ = classify_grievance(g['text'])
+            sub = classify_sub_problem(g['text'], cluster_id)
+            
+            key = sub['sub_problem']
+            if key not in issue_tracker:
+                contractor = CATEGORY_CONTRACTOR_MAP.get(cluster_id, TRICHY_CONTRACTORS['civil'])
+                issue_tracker[key] = {
+                    'sub_problem': key,
+                    'category': CLUSTER_DEFINITIONS[cluster_id]['label'],
+                    'category_color': CLUSTER_DEFINITIONS[cluster_id]['color'],
+                    'count': 0,
+                    'affected_stops': set(),
+                    'primary_authority': sub['primary_authority'],
+                    'priority': sub['priority'],
+                    'action': sub['action'],
+                    'contractor_name': contractor['name'],
+                    'contractor_type': contractor['type'],
+                    'contractor_detail': contractor['detail']
+                }
+            
+            issue_tracker[key]['count'] += 1
+            stop_name = stop_names.get(g['stop_id'], g['stop_id'])
+            issue_tracker[key]['affected_stops'].add(stop_name)
+        
+        # Convert sets to lists and sort by frequency
+        results = []
+        for issue in issue_tracker.values():
+            issue['affected_stops'] = sorted(list(issue['affected_stops']))
+            issue['stops_affected_count'] = len(issue['affected_stops'])
+            results.append(issue)
+        
+        results.sort(key=lambda x: x['count'], reverse=True)
+        
+        return jsonify({
+            'success': True,
+            'data': results[:10]  # Top 10 most common issues
+        })
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
 @app.route('/api/stops/<stop_id>/details')
 def get_stop_details(stop_id):
     """Get rich deep-analytics metadata for a specific stop"""
     try:
         from services.scoring_engine import load_stops, load_grievances
-        from services.nlp_engine import classify_grievance, CLUSTER_DEFINITIONS
+        from services.nlp_engine import classify_grievance, classify_sub_problem, CLUSTER_DEFINITIONS
         import random
-        
-        # Prevention suggestions mapped to each category
-        SUGGESTIONS = {
-            'ramp_wheelchair': [
-                'Install ramps with 1:12 slope ratio at all entry/exit points',
-                'Add anti-skid strips on ramp surfaces for wet weather safety',
-                'Widen doorways to minimum 900mm for wheelchair clearance',
-                'Deploy portable ramps for buses without low-floor access'
-            ],
-            'audio_visual': [
-                'Install audio announcement systems for bus arrivals and departures',
-                'Add LED display boards showing route numbers and destinations',
-                'Deploy text-to-speech kiosks for visually impaired passengers',
-                'Install beeping signals at pedestrian crossings near the stop'
-            ],
-            'signage_braille': [
-                'Install Braille route maps at all boarding points',
-                'Add tactile floor markers guiding to ticket counters and platforms',
-                'Place high-contrast signage with large fonts at eye level',
-                'Deploy QR-code based audio guide stickers on signboards'
-            ],
-            'toilet_facilities': [
-                'Ensure accessible toilets are unlocked, clean, and well-maintained',
-                'Install grab bars and emergency pull cords in all restrooms',
-                'Add sheltered seating with backrests in the waiting area',
-                'Provide drinking water stations at wheelchair-accessible height'
-            ],
-            'staff_assistance': [
-                'Conduct quarterly disability awareness training for all staff',
-                'Assign dedicated accessibility help-desk at peak hours',
-                'Display staff assistance contact numbers at visible locations',
-                'Establish a buddy-system for assisting passengers with disabilities'
-            ],
-            'infrastructure': [
-                'Repair potholes and uneven surfaces on the approach road',
-                'Install adequate LED lighting for safe night-time navigation',
-                'Remove parked vehicles and obstructions from accessible pathways',
-                'Add tactile ground surface indicators (TGSI) on all walkways'
-            ]
-        }
         
         stops = load_stops()
         all_grievances = load_grievances()
@@ -186,7 +230,7 @@ def get_stop_details(stop_id):
         # Filter grievances
         raw_grievances = [g for g in all_grievances if g['stop_id'] == stop_id]
         
-        # Process them through NLP classifier
+        # Process them through NLP classifier + sub-problem detector
         stop_grievances = []
         category_counts = {cid: 0 for cid in CLUSTER_DEFINITIONS.keys()}
         
@@ -194,15 +238,18 @@ def get_stop_details(stop_id):
             cluster_id, confidence, _ = classify_grievance(g['text'])
             category_counts[cluster_id] += 1
             
-            # Pick a relevant suggestion for this grievance
-            suggestions_pool = SUGGESTIONS.get(cluster_id, [])
-            suggestion = random.choice(suggestions_pool) if suggestions_pool else 'Conduct a detailed accessibility audit for this issue.'
+            # Deep classify: sub-problem, authority, priority, action
+            sub = classify_sub_problem(g['text'], cluster_id)
             
             stop_grievances.append({
                 **g,
                 'cluster_label': CLUSTER_DEFINITIONS[cluster_id]['label'],
                 'cluster_color': CLUSTER_DEFINITIONS[cluster_id]['color'],
-                'suggestion': suggestion
+                'sub_problem': sub['sub_problem'],
+                'primary_authority': sub['primary_authority'],
+                'secondary_authority': sub['secondary_authority'],
+                'priority': sub['priority'],
+                'suggestion': sub['action']
             })
             
         # Build categorical breakdown
@@ -230,10 +277,11 @@ def get_stop_details(stop_id):
 
 
 if __name__ == '__main__':
-    print("\n[*] Accessibility Auditor API Server Starting...")
-    print("[*] City: Tiruchirappalli (Trichy), Tamil Nadu")
-    print("[*] Frontend: http://localhost:5000")
-    print("[*] API: http://localhost:5000/api/stops")
-    print("[*] Grievances: http://localhost:5000/api/grievances")
-    print("[*] Report: http://localhost:5000/api/report\n")
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    port = int(os.environ.get('PORT', 5000))
+    debug = os.environ.get('FLASK_ENV') != 'production'
+    print(f"\n[*] Accessibility Auditor API Server Starting...")
+    print(f"[*] City: Tiruchirappalli (Trichy), Tamil Nadu")
+    print(f"[*] Port: {port} | Debug: {debug}")
+    print(f"[*] Frontend: http://localhost:{port}")
+    print(f"[*] API: http://localhost:{port}/api/stops\n")
+    app.run(debug=debug, host='0.0.0.0', port=port)

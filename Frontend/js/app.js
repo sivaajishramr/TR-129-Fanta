@@ -297,10 +297,10 @@ async function initApp() {
     
     try {
         // Fetch data in parallel
-        const [stopsData, grievanceData, trendsData] = await Promise.all([
+        const [stopsData, grievanceData, commonIssues] = await Promise.all([
             api.getStops(),
             api.getGrievances(),
-            api.getTrends()
+            api.getCommonIssues()
         ]);
         
         appData.stops = stopsData;
@@ -314,7 +314,7 @@ async function initApp() {
         // Charts
         createGapDistributionChart(stopsData.stops);
         createPriorityPieChart(stopsData.summary);
-        if (trendsData) createHistoricalTrendChart(trendsData);
+        if (commonIssues) renderCommonIssues(commonIssues);
         
         // Map
         initMap();
@@ -346,6 +346,52 @@ async function initApp() {
     }
 }
 
+// ===== COMMON ISSUES RENDERER =====
+function renderCommonIssues(issues) {
+    const container = document.getElementById('common-issues-container');
+    if (!container || !issues) return;
+
+    container.innerHTML = issues.map((issue, i) => {
+        const priorityColors = { 'High': '#d32f2f', 'Medium': '#f9a825', 'Low': '#2e7d32' };
+        const pColor = priorityColors[issue.priority] || '#555';
+        const stopsPreview = issue.affected_stops.slice(0, 4).join(', ');
+        const moreStops = issue.affected_stops.length > 4 ? ` +${issue.affected_stops.length - 4} more` : '';
+
+        return `
+        <div class="common-issue-card" style="border-left: 4px solid ${issue.category_color}">
+            <div class="issue-rank">#${i + 1}</div>
+            <div class="issue-body">
+                <div class="issue-top-row">
+                    <h4 class="issue-title">⚠️ ${issue.sub_problem}</h4>
+                    <span class="issue-priority" style="background:${pColor}15;color:${pColor};border:1px solid ${pColor}30;">${issue.priority}</span>
+                </div>
+                <span class="issue-category" style="color:${issue.category_color}">${issue.category}</span>
+                <span class="issue-count">${issue.count} grievances across ${issue.stops_affected_count} stops</span>
+                
+                <div class="issue-contractor">
+                    <div class="contractor-label">🏢 Responsible Contractor</div>
+                    <div class="contractor-name">${issue.contractor_name}</div>
+                    <div class="contractor-type">${issue.contractor_type} — ${issue.contractor_detail}</div>
+                </div>
+                
+                <div class="issue-authority">
+                    <span class="grievance-tag" style="background:#111;color:#fff;">🏛️ ${issue.primary_authority}</span>
+                </div>
+                
+                <div class="issue-stops">
+                    <span class="stops-label">📍 Affected Locations:</span>
+                    <span class="stops-list">${stopsPreview}${moreStops}</span>
+                </div>
+                
+                <div class="grievance-suggestion" style="margin-top:10px;">
+                    <span class="suggestion-icon">💡</span>
+                    <span class="suggestion-text">${issue.action}</span>
+                </div>
+            </div>
+        </div>`;
+    }).join('');
+}
+
 // Start the app when DOM is ready
 document.addEventListener('DOMContentLoaded', initApp);
 
@@ -375,17 +421,30 @@ async function openStopModal(stopId) {
         
         // Render Grievances
         if (details.grievances && details.grievances.length > 0) {
-            listEl.innerHTML = details.grievances.map(g => `
+            listEl.innerHTML = details.grievances.map(g => {
+                const priorityColors = { 'High': '#d32f2f', 'Medium': '#f9a825', 'Low': '#2e7d32' };
+                const pColor = priorityColors[g.priority] || '#555';
+                const secAuth = g.secondary_authority ? `<span class="grievance-tag" style="background:#f0f0f0;">📋 ${g.secondary_authority}</span>` : '';
+                
+                return `
                 <div class="grievance-item" style="border-left: 3px solid ${g.cluster_color || '#111'}">
                     <p>"${g.text}"</p>
-                    <span class="grievance-tag" style="color:${g.cluster_color || '#555'}">${g.cluster_label || 'Unclassified'}</span>
-                    <span class="grievance-tag" style="float: right; opacity: 0.6;">${g.date}</span>
+                    <div class="grievance-meta">
+                        <span class="grievance-tag" style="color:${g.cluster_color || '#555'}">${g.cluster_label || 'Unclassified'}</span>
+                        <span class="grievance-tag" style="background:${pColor}15; color:${pColor}; border:1px solid ${pColor}30; font-weight:800;">${g.priority}</span>
+                        <span class="grievance-tag" style="opacity: 0.6;">${g.date}</span>
+                    </div>
+                    <div class="grievance-subproblem">⚠️ ${g.sub_problem}</div>
+                    <div class="grievance-authorities">
+                        <span class="grievance-tag" style="background:#111;color:#fff;">🏛️ ${g.primary_authority}</span>
+                        ${secAuth}
+                    </div>
                     <div class="grievance-suggestion">
                         <span class="suggestion-icon">💡</span>
                         <span class="suggestion-text">${g.suggestion}</span>
                     </div>
                 </div>
-            `).join('');
+            `}).join('');
         } else {
             listEl.innerHTML = '<div class="loading-state">No recorded grievances found for this stop.</div>';
         }

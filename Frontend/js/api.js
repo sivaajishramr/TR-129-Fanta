@@ -1,7 +1,7 @@
 /**
  * API Module - Handles all backend API calls
  */
-const API_BASE = 'http://localhost:5000/api';
+const API_BASE = window.location.origin + '/api';
 
 const api = {
     async getStops() {
@@ -58,6 +58,18 @@ const api = {
             return data.data;
         } catch (error) {
             console.error('Error fetching stop details:', error);
+            return null;
+        }
+    },
+
+    async getCommonIssues() {
+        try {
+            const response = await fetch(`${API_BASE}/common-issues`);
+            const data = await response.json();
+            if (!data.success) throw new Error(data.error);
+            return data.data;
+        } catch (error) {
+            console.error('Error fetching common issues:', error);
             return null;
         }
     },

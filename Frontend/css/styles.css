@@ -1418,3 +1418,156 @@ body {
     color: #2e7d32;
     line-height: 1.5;
 }
+
+/* ===== GRIEVANCE CLASSIFICATION DETAILS ===== */
+.grievance-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.grievance-subproblem {
+    font-size: 12px;
+    font-weight: 700;
+    color: #d32f2f;
+    margin-bottom: 8px;
+    padding: 6px 10px;
+    background: rgba(211, 47, 47, 0.06);
+    border-radius: var(--radius-sm);
+}
+
+.grievance-authorities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+/* ===== COMMON ISSUES SECTION ===== */
+.common-issues-grid {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.common-issue-card {
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.2s;
+}
+
+.common-issue-card:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-1px);
+}
+
+.issue-rank {
+    font-size: 20px;
+    font-weight: 900;
+    color: #111111;
+    min-width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-secondary);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.issue-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.issue-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.issue-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #111111;
+}
+
+.issue-priority {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+.issue-category {
+    font-size: 11px;
+    font-weight: 700;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.issue-count {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.issue-contractor {
+    margin-top: 12px;
+    padding: 12px 14px;
+    background: #f7f7f7;
+    border: 1px solid #e0e0e0;
+    border-radius: var(--radius-sm);
+}
+
+.contractor-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+}
+
+.contractor-name {
+    font-size: 15px;
+    font-weight: 900;
+    color: #111111;
+    margin-bottom: 2px;
+}
+
+.contractor-type {
+    font-size: 11px;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.issue-authority {
+    margin-top: 10px;
+}
+
+.issue-stops {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.stops-label {
+    font-weight: 700;
+    color: #111111;
+    margin-right: 6px;
+}
+
+.stops-list {
+    color: var(--text-secondary);
+    font-weight: 500;
+}
