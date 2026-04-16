@@ -361,15 +361,16 @@ window.createStopTrendChart = function(breakdownData) {
 };
 
 // ===== 12-MONTH BUS STOP TREND CHART =====
-let historicalTrendChart = null;
-let historicalTrendData = null;
-let trendMonths = [];
+let perStopTrendChart = null;
+let perStopTrendData = null;
+
+let perStopTrendMonths = [];
 
 function initHistoricalTrendChart(trendsResponse) {
     if (!trendsResponse) return;
     
-    historicalTrendData = trendsResponse.stop_trends || {};
-    trendMonths = trendsResponse.months || [];
+    perStopTrendData = trendsResponse.stop_trends || {};
+    perStopTrendMonths = trendsResponse.months || [];
     const cityData = trendsResponse.data || [];
     
     // Populate dropdown
@@ -377,7 +378,7 @@ function initHistoricalTrendChart(trendsResponse) {
     if (!selector) return;
     
     // Sort stops by name
-    const sortedStops = Object.entries(historicalTrendData)
+    const sortedStops = Object.entries(perStopTrendData)
         .sort((a, b) => a[1].name.localeCompare(b[1].name));
     
     sortedStops.forEach(([id, data]) => {
@@ -388,7 +389,7 @@ function initHistoricalTrendChart(trendsResponse) {
     });
     
     // Store city-wide data for "All" option
-    historicalTrendData['all'] = {
+    perStopTrendData['all'] = {
         name: 'All Stops (City Average)',
         gap_scores: cityData.map(d => d.avg_gap_score),
         grievance_counts: cityData.map(d => Math.round(d.total_grievances / 10)),
@@ -404,15 +405,15 @@ function initHistoricalTrendChart(trendsResponse) {
 function updateHistoricalTrendChart() {
     const selector = document.getElementById('trend-stop-selector');
     const selectedId = selector ? selector.value : 'all';
-    const data = historicalTrendData ? historicalTrendData[selectedId] : null;
+    const data = perStopTrendData ? perStopTrendData[selectedId] : null;
     
     if (!data) return;
     
     const ctx = document.getElementById('chart-stop-trend');
     if (!ctx) return;
     
-    if (historicalTrendChart) {
-        historicalTrendChart.destroy();
+    if (perStopTrendChart) {
+        perStopTrendChart.destroy();
     }
     
     const gapScores = data.gap_scores;
@@ -423,10 +424,10 @@ function updateHistoricalTrendChart() {
     const lineColor = improvement > 0 ? '#2e7d32' : '#d32f2f';
     const lineBg = improvement > 0 ? 'rgba(46,125,50,0.08)' : 'rgba(211,47,47,0.08)';
     
-    historicalTrendChart = new Chart(ctx, {
+    perStopTrendChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: trendMonths,
+            labels: perStopTrendMonths,
             datasets: [
                 {
                     type: 'line',
