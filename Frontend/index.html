@@ -463,6 +463,37 @@
         </div>
     </div>
 
+    <!-- AI Chatbot Widget -->
+    <div id="chat-widget" class="chat-widget">
+        <div class="chat-header" onclick="toggleChat()">
+            <span class="chat-header-icon">🤖</span>
+            <span class="chat-header-title">AccessAudit AI Assistant</span>
+            <span class="chat-header-close" id="chat-close-btn">✕</span>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="chat-msg bot">
+                <div class="chat-avatar">🤖</div>
+                <div class="chat-bubble">
+                    <strong>👋 Hello! I'm AccessAudit AI Assistant</strong><br><br>
+                    I can help you with:<br>
+                    • 🔍 Check accessibility of any bus stop<br>
+                    • ♿ Find stops with specific features<br>
+                    • 🏆 Compare stops — best &amp; worst<br>
+                    • 📊 City-wide statistics<br><br>
+                    <em>Try: "Is Chatram Bus Stand wheelchair accessible?"</em>
+                </div>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" class="chat-input" placeholder="Ask about any bus stop..." onkeydown="if(event.key==='Enter')sendChatMessage()">
+            <button class="chat-send-btn" onclick="sendChatMessage()">➤</button>
+        </div>
+    </div>
+    <button class="chat-fab" id="chat-fab" onclick="toggleChat()">
+        <span class="chat-fab-icon">💬</span>
+        <span class="chat-fab-badge" id="chat-fab-badge" style="display:none;">1</span>
+    </button>
+
     <!-- Scripts -->
     <script src="js/api.js"></script>
     <script src="js/map.js"></script>

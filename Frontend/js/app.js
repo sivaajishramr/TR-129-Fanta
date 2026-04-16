@@ -657,3 +657,101 @@ function closeCompanyModal() {
     const modal = document.getElementById('company-profile-modal');
     if (modal) modal.classList.add('hidden');
 }
+
+// ===== AI CHATBOT =====
+let chatOpen = false;
+
+function toggleChat() {
+    const widget = document.getElementById('chat-widget');
+    const fab = document.getElementById('chat-fab');
+    chatOpen = !chatOpen;
+    
+    if (chatOpen) {
+        widget.classList.add('open');
+        fab.classList.add('hidden');
+        document.getElementById('chat-input').focus();
+    } else {
+        widget.classList.remove('open');
+        fab.classList.remove('hidden');
+    }
+}
+
+function renderMarkdown(text) {
+    // Simple markdown to HTML
+    return text
+        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*(.*?)\*/g, '<em>$1</em>')
+        .replace(/_(.*?)_/g, '<em>$1</em>')
+        .replace(/\n/g, '<br>');
+}
+
+function addChatMessage(text, isUser) {
+    const container = document.getElementById('chat-messages');
+    const msg = document.createElement('div');
+    msg.className = `chat-msg ${isUser ? 'user' : 'bot'}`;
+    
+    const avatar = document.createElement('div');
+    avatar.className = 'chat-avatar';
+    avatar.textContent = isUser ? '👤' : '🤖';
+    
+    const bubble = document.createElement('div');
+    bubble.className = 'chat-bubble';
+    bubble.innerHTML = isUser ? text : renderMarkdown(text);
+    
+    msg.appendChild(avatar);
+    msg.appendChild(bubble);
+    container.appendChild(msg);
+    container.scrollTop = container.scrollHeight;
+    
+    return msg;
+}
+
+function showTypingIndicator() {
+    const container = document.getElementById('chat-messages');
+    const msg = document.createElement('div');
+    msg.className = 'chat-msg bot';
+    msg.id = 'typing-indicator';
+    msg.innerHTML = `
+        <div class="chat-avatar">🤖</div>
+        <div class="chat-bubble typing">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+    `;
+    container.appendChild(msg);
+    container.scrollTop = container.scrollHeight;
+}
+
+function removeTypingIndicator() {
+    const el = document.getElementById('typing-indicator');
+    if (el) el.remove();
+}
+
+async function sendChatMessage() {
+    const input = document.getElementById('chat-input');
+    const message = input.value.trim();
+    if (!message) return;
+    
+    input.value = '';
+    addChatMessage(message, true);
+    showTypingIndicator();
+    
+    try {
+        const response = await fetch(`${API_BASE}/chat`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message })
+        });
+        const result = await response.json();
+        
+        removeTypingIndicator();
+        
+        if (result.success) {
+            addChatMessage(result.response, false);
+        } else {
+            addChatMessage('❌ Sorry, I encountered an error. Please try again.', false);
+        }
+    } catch (error) {
+        removeTypingIndicator();
+        addChatMessage('❌ Connection error. Make sure the server is running.', false);
+    }
+}

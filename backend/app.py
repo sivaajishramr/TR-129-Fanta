@@ -2,7 +2,7 @@
 Tensor'26 - Inclusive Public Transport Accessibility Auditor
 Backend API Server (Flask)
 """
-from flask import Flask, jsonify, send_from_directory
+from flask import Flask, jsonify, send_from_directory, request
 from flask_cors import CORS
 import os
 import time
@@ -169,6 +169,19 @@ def get_trends():
             'stop_trends': stop_trends,
             'months': months
         })
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/chat', methods=['POST'])
+def chat():
+    """AI Chat endpoint — answers accessibility questions using real data"""
+    try:
+        from services.chat_engine import process_chat
+        data = request.get_json()
+        user_message = data.get('message', '')
+        response = process_chat(user_message)
+        return jsonify({'success': True, 'response': response})
     except Exception as e:
         return jsonify({'success': False, 'error': str(e)}), 500
 
