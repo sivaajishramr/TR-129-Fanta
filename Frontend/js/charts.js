@@ -304,19 +304,19 @@ function createHistoricalTrendChart(trendData) {
     });
 }
 
-let stopTrendChart = null;
+let stopBreakdownChart = null;
 
 window.createStopTrendChart = function(breakdownData) {
-    const ctx = document.getElementById('chart-stop-trend');
+    const ctx = document.getElementById('chart-stop-breakdown');
     if (!ctx) return;
     
-    if (stopTrendChart) stopTrendChart.destroy();
+    if (stopBreakdownChart) stopBreakdownChart.destroy();
 
     const labels = breakdownData.map(d => d.label);
     const counts = breakdownData.map(d => d.count);
     const colors = breakdownData.map(d => d.color);
 
-    stopTrendChart = new Chart(ctx, {
+    stopBreakdownChart = new Chart(ctx, {
         type: 'bar',
         data: {
             labels: labels,
