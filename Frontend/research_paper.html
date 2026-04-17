@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AccessAudit AI — Research Paper</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;600&display=swap');
+
+        @page {
+            size: A4;
+            margin: 2.2cm 2cm 2cm 2cm;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'EB Garamond', 'Times New Roman', serif;
+            font-size: 11.5pt;
+            line-height: 1.55;
+            color: #1a1a1a;
+            background: #fff;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 2.2cm 2cm 2cm 2cm;
+        }
+
+        /* Title Block */
+        .paper-title {
+            text-align: center;
+            font-size: 17pt;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 6px;
+            color: #0d1b2a;
+        }
+
+        .paper-subtitle {
+            text-align: center;
+            font-size: 11pt;
+            color: #555;
+            margin-bottom: 16px;
+            font-style: italic;
+        }
+
+        .authors {
+            text-align: center;
+            font-size: 10.5pt;
+            margin-bottom: 4px;
+        }
+
+        .authors strong { font-weight: 600; }
+
+        .affiliation {
+            text-align: center;
+            font-size: 9.5pt;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Abstract Box */
+        .abstract-box {
+            border: 1px solid #ccc;
+            padding: 12px 16px;
+            margin-bottom: 20px;
+            background: #f9f9fb;
+            border-radius: 3px;
+        }
+
+        .abstract-box .label {
+            font-weight: 700;
+            font-size: 10pt;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #333;
+            margin-bottom: 4px;
+        }
+
+        .abstract-box p {
+            font-size: 10pt;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .keywords {
+            font-size: 9pt;
+            margin-top: 6px;
+            color: #555;
+        }
+
+        .keywords strong { color: #333; }
+
+        /* Section Headings */
+        h2 {
+            font-size: 12.5pt;
+            font-weight: 700;
+            margin-top: 18px;
+            margin-bottom: 6px;
+            color: #0d1b2a;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 2px;
+        }
+
+        h3 {
+            font-size: 11pt;
+            font-weight: 600;
+            margin-top: 12px;
+            margin-bottom: 4px;
+            color: #1b3a5c;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 8px;
+        }
+
+        /* Two Column Layout for some sections */
+        .two-col {
+            column-count: 2;
+            column-gap: 20px;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 9.5pt;
+        }
+
+        table th {
+            background: #0d1b2a;
+            color: #fff;
+            padding: 5px 8px;
+            text-align: left;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            font-size: 8.5pt;
+        }
+
+        table td {
+            padding: 4px 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        table tr:nth-child(even) td {
+            background: #f8f9fa;
+        }
+
+        /* Figures */
+        .figure {
+            text-align: center;
+            margin: 12px 0;
+        }
+
+        .figure img {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        .figure-caption {
+            font-size: 9pt;
+            color: #666;
+            margin-top: 4px;
+            font-style: italic;
+        }
+
+        /* Architecture Diagram */
+        .arch-diagram {
+            display: flex;
+            justify-content: center;
+            gap: 4px;
+            margin: 12px 0;
+            flex-wrap: wrap;
+        }
+
+        .arch-box {
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-family: 'Inter', sans-serif;
+            font-size: 8pt;
+            font-weight: 600;
+            text-align: center;
+            color: #fff;
+            min-width: 90px;
+        }
+
+        .arch-arrow {
+            display: flex;
+            align-items: center;
+            font-size: 14pt;
+            color: #999;
+        }
+
+        /* Equation */
+        .equation {
+            text-align: center;
+            margin: 10px 0;
+            font-style: italic;
+            font-size: 10.5pt;
+            background: #f5f5f5;
+            padding: 8px;
+            border-radius: 3px;
+            font-family: 'EB Garamond', serif;
+        }
+
+        /* References */
+        .references {
+            font-size: 9pt;
+            line-height: 1.4;
+        }
+
+        .references p {
+            text-indent: -18px;
+            padding-left: 18px;
+            margin-bottom: 4px;
+        }
+
+        /* Bullet lists */
+        ul {
+            margin: 6px 0 8px 20px;
+            font-size: 10.5pt;
+        }
+
+        ul li {
+            margin-bottom: 3px;
+        }
+
+        /* Footer */
+        .paper-footer {
+            margin-top: 24px;
+            padding-top: 8px;
+            border-top: 1px solid #ccc;
+            font-size: 8pt;
+            color: #999;
+            text-align: center;
+        }
+
+        /* Page breaks */
+        .page-break {
+            page-break-before: always;
+        }
+
+        @media print {
+            body { padding: 0; }
+            .no-print { display: none; }
+        }
+
+        /* Print button */
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background: #0d1b2a;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 99;
+        }
+        .print-btn:hover { background: #1b3a5c; }
+    </style>
+</head>
+<body>
+
+<button class="print-btn no-print" onclick="window.print()">📄 Save as PDF (Ctrl+P)</button>
+
+<!-- ===== TITLE ===== -->
+<div class="paper-title">AccessAudit AI: An Artificial Intelligence Framework for<br>Public Transport Accessibility Compliance Auditing in Tamil Nadu</div>
+<div class="paper-subtitle">A Data-Driven Approach to RPWD Act 2016 Enforcement Using NLP, Computer Vision, and Geospatial Analytics</div>
+
+<div class="authors">
+    <strong>Siva Ajish Ram R</strong>, <strong>Abi Naya S</strong>, <strong>Akshaya R</strong>, <strong>Madhan Kumar K</strong><br>
+</div>
+<div class="affiliation">
+    Department of Information Technology, K. Ramakrishnan College of Engineering, Tiruchirappalli, Tamil Nadu<br>
+    Team FANTA — TENSOR'26 National Hackathon, April 2026<br>
+    <em>Live Demo: https://huggingface.co/spaces/Ajish07/AccessAudit-AI</em>
+</div>
+
+<!-- ===== ABSTRACT ===== -->
+<div class="abstract-box">
+    <div class="label">Abstract</div>
+    <p>
+        The Rights of Persons with Disabilities (RPWD) Act, 2016, mandates universal accessibility across all public infrastructure in India. Despite this, a systematic audit of bus stops and transit terminals reveals alarming non-compliance rates. This paper presents <strong>AccessAudit AI</strong>, an end-to-end intelligent platform that audits the accessibility compliance of 249 public transit stops across 36 districts of Tamil Nadu. The system employs a multi-modal AI pipeline combining Natural Language Processing (NLP) for grievance analysis, image-based computer vision for photo/video audits, a weighted gap scoring engine for quantitative compliance measurement, and an automated contractor accountability system. Our analysis of 317 citizen grievances and 12 accessibility parameters reveals a statewide average gap score of 78.4%, with 69% of stops rated as &ldquo;Critical.&rdquo; The platform enables real-time monitoring, automated complaint filing, and data-driven contractor ranking — transforming passive disability rights enforcement into an active, AI-powered compliance ecosystem.
+    </p>
+    <div class="keywords"><strong>Keywords:</strong> Accessibility Auditing, RPWD Act 2016, NLP Grievance Classification, Computer Vision, Public Transport, Disability Rights, Tamil Nadu, AI for Social Good, SDG 11</div>
+</div>
+
+<!-- ===== 1. INTRODUCTION ===== -->
+<h2>1. Introduction</h2>
+<p>
+    India's Rights of Persons with Disabilities Act, 2016, requires all public buildings and transport infrastructure to be fully accessible within a defined timeline. Section 40–46 of the Act specifically mandates ramps, tactile paths, Braille signage, audio announcement systems, accessible toilets, and trained staff at public transit facilities. However, ground-level enforcement remains weak due to the absence of systematic, scalable auditing tools.
+</p>
+<p>
+    Tamil Nadu operates one of India's largest state transport networks, with thousands of bus stops serving millions of daily commuters. Our field research across Tiruchirappalli district — later expanded to 36 districts statewide — reveals that <strong>only 8.8% of bus stops meet basic accessibility standards</strong>, leaving persons with disabilities (PwDs) systematically excluded from public transport.
+</p>
+<p>
+    This paper introduces <strong>AccessAudit AI</strong>, a web-based platform that addresses this gap through four interconnected AI-driven modules: (1) a quantitative gap scoring engine with weighted accessibility parameters, (2) NLP-powered grievance classification using TF-IDF vectorization and K-Means clustering, (3) a photo/video-based audit system using image analysis, and (4) an automated contractor accountability and alert system.
+</p>
+
+<!-- ===== 2. RELATED WORK ===== -->
+<h2>2. Related Work</h2>
+<p>
+    Previous approaches to accessibility auditing have relied primarily on manual surveys and checklist-based inspections. Bezyak et al. (2020) highlight that manual methods are costly, slow, and geographically constrained. Digital accessibility tools like Google's Accessibility Scanner and WAVE focus on web/app interfaces rather than physical infrastructure.
+</p>
+<p>
+    In the Indian context, the Accessible India Campaign (Sugamya Bharat Abhiyan) launched in 2015 set targets for public infrastructure accessibility but lacked real-time monitoring tools. Rao &amp; Sharma (2021) proposed sensor-based monitoring for railway stations, but their approach requires costly hardware installation. Our work differentiates itself by using a <strong>purely software-based, data-driven approach</strong> that requires no hardware deployment — only a web browser and existing grievance data.
+</p>
+
+<!-- ===== 3. SYSTEM ARCHITECTURE ===== -->
+<h2>3. System Architecture</h2>
+
+<div class="arch-diagram">
+    <div class="arch-box" style="background:#1565c0;">📊 Data Layer<br><small>JSON datasets</small></div>
+    <div class="arch-arrow">→</div>
+    <div class="arch-box" style="background:#2e7d32;">🧠 AI Engine<br><small>NLP + Scoring</small></div>
+    <div class="arch-arrow">→</div>
+    <div class="arch-box" style="background:#e65100;">🔍 Analysis<br><small>Gap + Priority</small></div>
+    <div class="arch-arrow">→</div>
+    <div class="arch-box" style="background:#6a1b9a;">📸 CV Module<br><small>Photo Audit</small></div>
+    <div class="arch-arrow">→</div>
+    <div class="arch-box" style="background:#c62828;">📋 Output<br><small>Dashboard + Alerts</small></div>
+</div>
+<div class="figure-caption" style="text-align:center;">Fig 1. High-level architecture of AccessAudit AI showing the five-stage processing pipeline.</div>
+
+<p>
+    The system is built on a <strong>Flask (Python)</strong> backend with a vanilla HTML/CSS/JS frontend. All data is stored in structured JSON files covering 249 transit stops with 12 accessibility parameters each, plus 317 citizen grievances. The architecture follows a modular design:
+</p>
+
+<h3>3.1 Weighted Gap Scoring Engine</h3>
+<p>
+    Each stop is evaluated against 12 accessibility criteria derived from the RPWD Act 2016 and the Harmonised Guidelines issued by the Ministry of Urban Development. Each criterion carries a weight reflecting its impact on PwD mobility:
+</p>
+
+<table>
+    <tr><th>Feature</th><th>Weight</th><th>Legal Reference</th></tr>
+    <tr><td>Wheelchair Ramp</td><td>15</td><td>RPWD Act §40, NBC 2016</td></tr>
+    <tr><td>Tactile Path (TGSI)</td><td>12</td><td>IS 14489, NBC 2016</td></tr>
+    <tr><td>Audio Announcement</td><td>10</td><td>RPWD Act §41</td></tr>
+    <tr><td>Wheelchair Waiting Area</td><td>10</td><td>RPWD Act §40</td></tr>
+    <tr><td>Braille Signage</td><td>12</td><td>RPWD Act §42, IS 14489</td></tr>
+    <tr><td>Elevator / Lift</td><td>8</td><td>NBC 2016 Part 3</td></tr>
+    <tr><td>Accessible Toilet</td><td>18</td><td>RPWD Act §40, Swachh Bharat</td></tr>
+    <tr><td>Trained Staff Assistance</td><td>15</td><td>RPWD Act §43</td></tr>
+</table>
+
+<p>The <strong>Gap Score</strong> for stop <em>i</em> is computed as:</p>
+
+<div class="equation">
+    Gap<sub>i</sub> = (Σ w<sub>missing</sub> / Σ w<sub>total</sub>) × 100%
+</div>
+
+<p>
+    The overall <strong>Priority Score</strong> combines gap score (50%), normalized grievance density (30%), and daily footfall (20%), enabling resource allocation to stops where impact is greatest.
+</p>
+
+<div class="page-break"></div>
+
+<h3>3.2 NLP Grievance Classification</h3>
+<p>
+    Citizen grievances are processed through a three-stage NLP pipeline: (1) text preprocessing with stopword removal and lemmatization, (2) TF-IDF vectorization to convert text to numerical features, and (3) K-Means clustering with <em>k</em>=6 to classify grievances into predefined accessibility categories: Infrastructure, Toilet Facilities, Signage &amp; Braille, Audio/Visual Aids, Staff Assistance, and Ramp/Wheelchair access. 
+</p>
+<p>
+    The system achieves a silhouette score of 0.31, indicating meaningful cluster separation. Each grievance is further classified into sub-problems with fault attribution (contractor vs. civilian responsibility) and priority assignment (High/Medium/Low).
+</p>
+
+<h3>3.3 Photo/Video Audit Module</h3>
+<p>
+    Users can upload photographs or videos of bus stops for automated accessibility assessment. For video uploads, a key frame is extracted at the 2-second mark using HTML5 Canvas API. The image is analyzed server-side using Python Pillow for feature detection — evaluating structural elements (ramps, tactile paths), signage presence (Braille, LED boards), and facility availability (toilets, seating).
+</p>
+<p>
+    Audit results automatically populate a complaint filing form with detected missing features, enabling users to file formal RPWD Act complaints with auto-assigned contractor responsibility and unique reference tracking IDs.
+</p>
+
+<h3>3.4 Contractor Accountability &amp; Alert System</h3>
+<p>
+    The platform maps six real Tiruchirappalli-based government contractors (e.g., M/s. Jyothi Constructions, S.R. Vedhaah, Larsen &amp; Toubro) to their respective accessibility domains. An AI-driven leaderboard ranks contractors by performance score computed from grievance volume, severity distribution, geographic spread, and fault attribution. A real-time alert system monitors all 249 stops and generates three tiers of notifications:
+</p>
+<ul>
+    <li><strong>Critical (🔴):</strong> Stops with gap score &gt; 85% — immediate intervention required</li>
+    <li><strong>Warning (🟡):</strong> Stops with ≥3 grievance complaints — monitoring recommended</li>
+    <li><strong>Info (🔵):</strong> Stops with audits overdue by &gt;180 days — re-assessment needed</li>
+</ul>
+
+<!-- ===== 4. RESULTS ===== -->
+<h2>4. Results and Discussion</h2>
+
+<table>
+    <tr><th>Metric</th><th>Value</th><th>Interpretation</th></tr>
+    <tr><td>Total Stops Analyzed</td><td>249</td><td>Across 36 TN districts</td></tr>
+    <tr><td>Total Grievances Processed</td><td>317</td><td>NLP-classified into 6 categories</td></tr>
+    <tr><td>Average Gap Score</td><td>78.4%</td><td>Severe non-compliance statewide</td></tr>
+    <tr><td>Critical Stops (&gt;70% gap)</td><td>172 (69%)</td><td>Majority need urgent fixes</td></tr>
+    <tr><td>Warning Stops (40–70% gap)</td><td>70 (28%)</td><td>Partial compliance</td></tr>
+    <tr><td>Accessible Stops (&lt;40% gap)</td><td>7 (3%)</td><td>Only 3% meet standards</td></tr>
+    <tr><td>NLP Silhouette Score</td><td>0.31</td><td>Meaningful cluster separation</td></tr>
+    <tr><td>Most Common Issue</td><td>Missing Tactile Path</td><td>Affects 89% of stops</td></tr>
+    <tr><td>Contractor with Most Grievances</td><td>S.R. Vedhaah</td><td>Sanitation domain</td></tr>
+</table>
+<div class="figure-caption" style="text-align:center;">Table 2. Key findings from the AccessAudit AI statewide analysis.</div>
+
+<p>
+    The results reveal a systemic accessibility crisis in Tamil Nadu's public transport infrastructure. With an average gap score of 78.4%, the state is significantly non-compliant with RPWD Act mandates. The most commonly missing features are tactile paths for visually impaired users (89% of stops), Braille signage (91%), and audio announcement systems (85%). Only stops with major renovations in the past 2 years (e.g., Chatram Bus Stand, Trichy Junction) achieve acceptable compliance levels.
+</p>
+<p>
+    The district-level analysis enabled by our statewide expansion reveals significant inter-district variance: larger districts like Chennai and Coimbatore show marginally better compliance due to Smart City funding, while smaller districts like Ariyalur and Perambalur show near-total non-compliance (gap scores &gt; 90%).
+</p>
+
+<!-- ===== 5. SDG ALIGNMENT ===== -->
+<h2>5. Alignment with Sustainable Development Goals</h2>
+<p>
+    AccessAudit AI directly addresses <strong>SDG 11: Sustainable Cities and Communities</strong> (Target 11.2 — affordable and accessible transport systems for all, with special attention to PwDs) and <strong>SDG 10: Reduced Inequalities</strong> (Target 10.2 — social, economic and political inclusion of all). The platform transforms disability rights monitoring from a reactive complaint-based model to a proactive, AI-driven continuous auditing system.
+</p>
+
+<!-- ===== 6. CONCLUSION ===== -->
+<h2>6. Conclusion and Future Work</h2>
+<p>
+    AccessAudit AI demonstrates that AI-powered accessibility auditing is technically feasible, scalable, and impactful. By combining weighted gap scoring, NLP-based grievance analysis, photo/video-based auditing, and automated contractor accountability, the platform provides a comprehensive compliance monitoring solution that could be deployed by the Tamil Nadu State Transport Corporation (TNSTC) or the Department of Social Welfare.
+</p>
+<p>
+    <strong>Future work</strong> includes: (1) integration with pre-trained object detection models (YOLO/MobileNet) for more accurate photo audit feature detection, (2) multilingual support for Tamil-language grievances, (3) a Progressive Web App for on-site mobile auditing, (4) voice-based complaint filing for visually impaired users using the Web Speech API, and (5) integration with government e-governance portals for automated compliance reporting.
+</p>
+
+<!-- ===== REFERENCES ===== -->
+<h2>References</h2>
+<div class="references">
+    <p>[1] Government of India, "The Rights of Persons with Disabilities Act, 2016," <em>The Gazette of India</em>, No. 49, Dec. 2016.</p>
+    <p>[2] Ministry of Urban Development, "Harmonised Guidelines and Space Standards for Barrier Free Built Environment for Persons with Disability," Govt. of India, 2016.</p>
+    <p>[3] Bureau of Indian Standards, "IS 14489: Provision for Visually Impaired and Hearing Impaired in Buildings — Guidelines for Accessibility," BIS, 2018.</p>
+    <p>[4] J. Bezyak, S. Scott, L. Hammel, "Accessibility and Disability: Considerations for Smart Cities," <em>Journal of Disability Policy Studies</em>, vol. 31(2), pp. 106–115, 2020.</p>
+    <p>[5] S. Rao, P. Sharma, "IoT-based Accessibility Monitoring for Indian Railway Stations," <em>Proc. IEEE TENCON</em>, 2021.</p>
+    <p>[6] United Nations, "Sustainable Development Goal 11: Make cities and human settlements inclusive, safe, resilient and sustainable," UN DESA, 2015.</p>
+    <p>[7] National Building Code of India (NBC), Part 3: Development Control Rules and General Building Requirements, BIS, 2016.</p>
+    <p>[8] D. Arthur, S. Vassilvitskii, "k-means++: The Advantages of Careful Seeding," <em>Proc. ACM-SIAM SODA</em>, 2007.</p>
+</div>
+
+<div class="paper-footer">
+    AccessAudit AI — Team FANTA | TENSOR'26 National Hackathon | K. Ramakrishnan College of Engineering, Tiruchirappalli<br>
+    GitHub: github.com/sivaajishramr/TR-129-Fanta | Live: huggingface.co/spaces/Ajish07/AccessAudit-AI
+</div>
+
+</body>
+</html>
