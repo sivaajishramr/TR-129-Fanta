@@ -54,11 +54,14 @@
                 <div class="logo-icon">♿</div>
                 <div class="logo-text">
                     <h1>AccessAudit AI</h1>
-                    <span class="logo-subtitle">Trichy Public Transport • Accessibility Auditor</span>
+                    <span class="logo-subtitle">Tamil Nadu Public Transport • Accessibility Auditor</span>
                 </div>
             </div>
         </div>
         <div class="header-right">
+            <select id="district-filter" class="district-select" onchange="filterByDistrict(this.value)">
+                <option value="all">🗺️ All Tamil Nadu</option>
+            </select>
             <div class="header-stats">
                 <div class="header-stat" id="header-coverage">
                     <span class="stat-value">--</span>

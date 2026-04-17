@@ -16,7 +16,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2026-01-04"
+    "last_audit_date": "2026-01-04",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S002",
@@ -35,7 +36,8 @@
       "accessible_toilet": false,
       "staff_assistance": false
     },
-    "last_audit_date": "2025-07-17"
+    "last_audit_date": "2025-07-17",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S003",
@@ -54,7 +56,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-12-13"
+    "last_audit_date": "2025-12-13",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S004",
@@ -73,7 +76,8 @@
       "accessible_toilet": false,
       "staff_assistance": false
     },
-    "last_audit_date": "2025-04-24"
+    "last_audit_date": "2025-04-24",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S005",
@@ -92,7 +96,8 @@
       "accessible_toilet": false,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-11-19"
+    "last_audit_date": "2025-11-19",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S006",
@@ -111,7 +116,8 @@
       "accessible_toilet": false,
       "staff_assistance": false
     },
-    "last_audit_date": "2026-02-07"
+    "last_audit_date": "2026-02-07",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S007",
@@ -130,7 +136,8 @@
       "accessible_toilet": false,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-10-09"
+    "last_audit_date": "2025-10-09",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S008",
@@ -149,7 +156,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-06-28"
+    "last_audit_date": "2025-06-28",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S009",
@@ -168,7 +176,8 @@
       "accessible_toilet": false,
       "staff_assistance": false
     },
-    "last_audit_date": "2025-07-17"
+    "last_audit_date": "2025-07-17",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S010",
@@ -187,7 +196,8 @@
       "accessible_toilet": false,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-04-30"
+    "last_audit_date": "2025-04-30",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S011",
@@ -206,7 +216,8 @@
       "accessible_toilet": false,
       "staff_assistance": false
     },
-    "last_audit_date": "2026-02-28"
+    "last_audit_date": "2026-02-28",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S012",
@@ -225,7 +236,8 @@
       "accessible_toilet": false,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-07-10"
+    "last_audit_date": "2025-07-10",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S013",
@@ -244,7 +256,8 @@
       "accessible_toilet": false,
       "staff_assistance": false
     },
-    "last_audit_date": "2026-01-10"
+    "last_audit_date": "2026-01-10",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S014",
@@ -263,7 +276,8 @@
       "accessible_toilet": false,
       "staff_assistance": true
     },
-    "last_audit_date": "2026-01-16"
+    "last_audit_date": "2026-01-16",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S015",
@@ -282,7 +296,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-11-30"
+    "last_audit_date": "2025-11-30",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S016",
@@ -301,7 +316,8 @@
       "accessible_toilet": false,
       "staff_assistance": false
     },
-    "last_audit_date": "2025-08-18"
+    "last_audit_date": "2025-08-18",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S017",
@@ -320,7 +336,8 @@
       "accessible_toilet": false,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-11-18"
+    "last_audit_date": "2025-11-18",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S018",
@@ -339,7 +356,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-03-28"
+    "last_audit_date": "2025-03-28",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S019",
@@ -358,7 +376,8 @@
       "accessible_toilet": false,
       "staff_assistance": false
     },
-    "last_audit_date": "2026-02-17"
+    "last_audit_date": "2026-02-17",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S020",
@@ -377,7 +396,8 @@
       "accessible_toilet": false,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-06-20"
+    "last_audit_date": "2025-06-20",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S021",
@@ -396,7 +416,8 @@
       "accessible_toilet": false,
       "staff_assistance": false
     },
-    "last_audit_date": "2025-11-24"
+    "last_audit_date": "2025-11-24",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S022",
@@ -415,7 +436,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-08-29"
+    "last_audit_date": "2025-08-29",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S023",
@@ -434,7 +456,8 @@
       "accessible_toilet": false,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-08-12"
+    "last_audit_date": "2025-08-12",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S024",
@@ -453,7 +476,8 @@
       "accessible_toilet": false,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-12-09"
+    "last_audit_date": "2025-12-09",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S025",
@@ -472,7 +496,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-07-05"
+    "last_audit_date": "2025-07-05",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S026",
@@ -491,7 +516,8 @@
       "accessible_toilet": false,
       "staff_assistance": false
     },
-    "last_audit_date": "2025-04-07"
+    "last_audit_date": "2025-04-07",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S027",
@@ -510,7 +536,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-09-30"
+    "last_audit_date": "2025-09-30",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S028",
@@ -529,7 +556,8 @@
       "accessible_toilet": false,
       "staff_assistance": false
     },
-    "last_audit_date": "2025-04-28"
+    "last_audit_date": "2025-04-28",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S029",
@@ -548,7 +576,8 @@
       "accessible_toilet": false,
       "staff_assistance": false
     },
-    "last_audit_date": "2026-02-06"
+    "last_audit_date": "2026-02-06",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S030",
@@ -567,7 +596,8 @@
       "accessible_toilet": false,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-05-15"
+    "last_audit_date": "2025-05-15",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S031",
@@ -586,7 +616,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-05-31"
+    "last_audit_date": "2025-05-31",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S032",
@@ -605,7 +636,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2026-02-21"
+    "last_audit_date": "2026-02-21",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S033",
@@ -624,7 +656,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-03-09"
+    "last_audit_date": "2025-03-09",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S034",
@@ -643,7 +676,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2026-03-13"
+    "last_audit_date": "2026-03-13",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S035",
@@ -662,7 +696,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2026-03-17"
+    "last_audit_date": "2026-03-17",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S036",
@@ -681,7 +716,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2026-03-16"
+    "last_audit_date": "2026-03-16",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S037",
@@ -700,7 +736,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-07-07"
+    "last_audit_date": "2025-07-07",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S038",
@@ -719,7 +756,8 @@
       "accessible_toilet": false,
       "staff_assistance": false
     },
-    "last_audit_date": "2025-05-15"
+    "last_audit_date": "2025-05-15",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S039",
@@ -738,7 +776,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-10-30"
+    "last_audit_date": "2025-10-30",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S040",
@@ -757,7 +796,8 @@
       "accessible_toilet": false,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-03-11"
+    "last_audit_date": "2025-03-11",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S041",
@@ -776,7 +816,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-10-18"
+    "last_audit_date": "2025-10-18",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S042",
@@ -795,7 +836,8 @@
       "accessible_toilet": false,
       "staff_assistance": false
     },
-    "last_audit_date": "2025-10-07"
+    "last_audit_date": "2025-10-07",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S043",
@@ -814,7 +856,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2026-03-16"
+    "last_audit_date": "2026-03-16",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S044",
@@ -833,7 +876,8 @@
       "accessible_toilet": false,
       "staff_assistance": false
     },
-    "last_audit_date": "2025-03-23"
+    "last_audit_date": "2025-03-23",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S045",
@@ -852,7 +896,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-08-14"
+    "last_audit_date": "2025-08-14",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S046",
@@ -871,7 +916,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-11-20"
+    "last_audit_date": "2025-11-20",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S047",
@@ -890,7 +936,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-10-14"
+    "last_audit_date": "2025-10-14",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S048",
@@ -909,7 +956,8 @@
       "accessible_toilet": false,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-09-10"
+    "last_audit_date": "2025-09-10",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S049",
@@ -928,7 +976,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2026-02-03"
+    "last_audit_date": "2026-02-03",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S050",
@@ -947,7 +996,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-03-16"
+    "last_audit_date": "2025-03-16",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S051",
@@ -966,7 +1016,8 @@
       "accessible_toilet": false,
       "staff_assistance": true
     },
-    "last_audit_date": "2026-02-09"
+    "last_audit_date": "2026-02-09",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S052",
@@ -985,7 +1036,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-07-21"
+    "last_audit_date": "2025-07-21",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S053",
@@ -1004,7 +1056,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-11-20"
+    "last_audit_date": "2025-11-20",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S054",
@@ -1023,7 +1076,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-05-24"
+    "last_audit_date": "2025-05-24",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S055",
@@ -1042,7 +1096,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-07-26"
+    "last_audit_date": "2025-07-26",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S056",
@@ -1061,7 +1116,8 @@
       "accessible_toilet": true,
       "staff_assistance": false
     },
-    "last_audit_date": "2025-07-11"
+    "last_audit_date": "2025-07-11",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S057",
@@ -1080,7 +1136,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-12-01"
+    "last_audit_date": "2025-12-01",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S058",
@@ -1099,7 +1156,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-10-10"
+    "last_audit_date": "2025-10-10",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S059",
@@ -1118,7 +1176,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-05-01"
+    "last_audit_date": "2025-05-01",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S060",
@@ -1137,7 +1196,8 @@
       "accessible_toilet": false,
       "staff_assistance": false
     },
-    "last_audit_date": "2025-04-30"
+    "last_audit_date": "2025-04-30",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S061",
@@ -1156,7 +1216,8 @@
       "accessible_toilet": false,
       "staff_assistance": true
     },
-    "last_audit_date": "2026-03-17"
+    "last_audit_date": "2026-03-17",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S062",
@@ -1175,7 +1236,8 @@
       "accessible_toilet": false,
       "staff_assistance": true
     },
-    "last_audit_date": "2026-01-01"
+    "last_audit_date": "2026-01-01",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S063",
@@ -1194,7 +1256,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-04-07"
+    "last_audit_date": "2025-04-07",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S064",
@@ -1213,7 +1276,8 @@
       "accessible_toilet": false,
       "staff_assistance": false
     },
-    "last_audit_date": "2025-07-08"
+    "last_audit_date": "2025-07-08",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S065",
@@ -1232,7 +1296,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-05-07"
+    "last_audit_date": "2025-05-07",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S066",
@@ -1251,7 +1316,8 @@
       "accessible_toilet": false,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-09-26"
+    "last_audit_date": "2025-09-26",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S067",
@@ -1270,7 +1336,8 @@
       "accessible_toilet": true,
       "staff_assistance": true
     },
-    "last_audit_date": "2025-06-25"
+    "last_audit_date": "2025-06-25",
+    "district": "Tiruchirappalli"
   },
   {
     "id": "S068",
@@ -1289,6 +1356,3627 @@
       "accessible_toilet": false,
       "staff_assistance": false
     },
-    "last_audit_date": "2025-06-07"
+    "last_audit_date": "2025-06-07",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S069",
+    "name": "Chennai New Bus Stand",
+    "lat": 13.0763,
+    "lng": 80.2742,
+    "type": "bus_stand",
+    "daily_footfall": 9135,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": true,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-06-03",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S070",
+    "name": "Chennai Central Bus Stand",
+    "lat": 13.0854,
+    "lng": 80.2854,
+    "type": "bus_terminal",
+    "daily_footfall": 14286,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-01-29",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S071",
+    "name": "Chennai Town Bus Stop",
+    "lat": 13.082,
+    "lng": 80.2981,
+    "type": "bus_stop",
+    "daily_footfall": 2124,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-01-14",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S072",
+    "name": "Coimbatore Town Bus Stop",
+    "lat": 11.0014,
+    "lng": 76.9368,
+    "type": "bus_stop",
+    "daily_footfall": 2330,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-06-05",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S073",
+    "name": "Coimbatore New Bus Stand",
+    "lat": 11.0095,
+    "lng": 76.9558,
+    "type": "bus_stand",
+    "daily_footfall": 5713,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-05-06",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S074",
+    "name": "Coimbatore Central Bus Stand",
+    "lat": 11.0379,
+    "lng": 76.9748,
+    "type": "bus_terminal",
+    "daily_footfall": 10555,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": true,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-02-03",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S075",
+    "name": "Madurai Central Bus Stand",
+    "lat": 9.906,
+    "lng": 78.111,
+    "type": "bus_terminal",
+    "daily_footfall": 20803,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-07-24",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S076",
+    "name": "Madurai New Bus Stand",
+    "lat": 9.9042,
+    "lng": 78.098,
+    "type": "bus_stand",
+    "daily_footfall": 10706,
+    "features": {
+      "ramp": true,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-02-28",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S077",
+    "name": "Madurai Town Bus Stop",
+    "lat": 9.9356,
+    "lng": 78.1111,
+    "type": "bus_stop",
+    "daily_footfall": 2397,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-06-06",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S078",
+    "name": "Salem Central Bus Stand",
+    "lat": 11.6809,
+    "lng": 78.1311,
+    "type": "bus_terminal",
+    "daily_footfall": 18829,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-02-03",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S079",
+    "name": "Salem New Bus Stand",
+    "lat": 11.6455,
+    "lng": 78.1421,
+    "type": "bus_stand",
+    "daily_footfall": 8896,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-02-18",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S080",
+    "name": "Salem Town Bus Stop",
+    "lat": 11.6368,
+    "lng": 78.1287,
+    "type": "bus_stop",
+    "daily_footfall": 2497,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-01-21",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S081",
+    "name": "Tirunelveli Central Bus Stand",
+    "lat": 8.7391,
+    "lng": 77.7774,
+    "type": "bus_terminal",
+    "daily_footfall": 22421,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-03-14",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S082",
+    "name": "Tirunelveli Town Bus Stop",
+    "lat": 8.6901,
+    "lng": 77.7269,
+    "type": "bus_stop",
+    "daily_footfall": 2492,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2024-11-17",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S083",
+    "name": "Tirunelveli New Bus Stand",
+    "lat": 8.7327,
+    "lng": 77.7818,
+    "type": "bus_stand",
+    "daily_footfall": 10402,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-11-13",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S084",
+    "name": "Erode Town Bus Stop",
+    "lat": 11.3318,
+    "lng": 77.732,
+    "type": "bus_stop",
+    "daily_footfall": 4623,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-01-15",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S085",
+    "name": "Erode Central Bus Stand",
+    "lat": 11.3341,
+    "lng": 77.7137,
+    "type": "bus_terminal",
+    "daily_footfall": 16803,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-02-23",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S086",
+    "name": "Erode New Bus Stand",
+    "lat": 11.3277,
+    "lng": 77.7282,
+    "type": "bus_stand",
+    "daily_footfall": 8737,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-06-14",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S087",
+    "name": "Vellore New Bus Stand",
+    "lat": 12.9117,
+    "lng": 79.1046,
+    "type": "bus_stand",
+    "daily_footfall": 4778,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2024-11-13",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S088",
+    "name": "Vellore Town Bus Stop",
+    "lat": 12.9296,
+    "lng": 79.1449,
+    "type": "bus_stop",
+    "daily_footfall": 5231,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-09-03",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S089",
+    "name": "Thanjavur New Bus Stand",
+    "lat": 10.7755,
+    "lng": 79.1632,
+    "type": "bus_stand",
+    "daily_footfall": 5461,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-01-06",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S090",
+    "name": "Thanjavur Central Bus Stand",
+    "lat": 10.8147,
+    "lng": 79.1335,
+    "type": "bus_terminal",
+    "daily_footfall": 23116,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-10-31",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S091",
+    "name": "Dindigul Town Bus Stop",
+    "lat": 10.333,
+    "lng": 77.9466,
+    "type": "bus_stop",
+    "daily_footfall": 4306,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2024-10-30",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S092",
+    "name": "Dindigul Central Bus Stand",
+    "lat": 10.3777,
+    "lng": 77.96,
+    "type": "bus_terminal",
+    "daily_footfall": 9865,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-10-16",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S093",
+    "name": "Dindigul New Bus Stand",
+    "lat": 10.3423,
+    "lng": 77.967,
+    "type": "bus_stand",
+    "daily_footfall": 6829,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-11-24",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S094",
+    "name": "Kanchipuram Central Bus Stand",
+    "lat": 12.8639,
+    "lng": 79.7005,
+    "type": "bus_terminal",
+    "daily_footfall": 22798,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-07-21",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S095",
+    "name": "Kanchipuram Town Bus Stop",
+    "lat": 12.8104,
+    "lng": 79.6813,
+    "type": "bus_stop",
+    "daily_footfall": 2213,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-03-14",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S096",
+    "name": "Kanchipuram New Bus Stand",
+    "lat": 12.81,
+    "lng": 79.7074,
+    "type": "bus_stand",
+    "daily_footfall": 6014,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-06-30",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S097",
+    "name": "Cuddalore New Bus Stand",
+    "lat": 11.7684,
+    "lng": 79.7611,
+    "type": "bus_stand",
+    "daily_footfall": 9549,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-05-03",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S098",
+    "name": "Cuddalore Central Bus Stand",
+    "lat": 11.7602,
+    "lng": 79.7857,
+    "type": "bus_terminal",
+    "daily_footfall": 9317,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-01-10",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S099",
+    "name": "Cuddalore Town Bus Stop",
+    "lat": 11.7621,
+    "lng": 79.7878,
+    "type": "bus_stop",
+    "daily_footfall": 2794,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-01-06",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S100",
+    "name": "Villupuram New Bus Stand",
+    "lat": 11.9638,
+    "lng": 79.4586,
+    "type": "bus_stand",
+    "daily_footfall": 7221,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-04-07",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S101",
+    "name": "Villupuram Town Bus Stop",
+    "lat": 11.9225,
+    "lng": 79.4875,
+    "type": "bus_stop",
+    "daily_footfall": 2864,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2024-12-28",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S102",
+    "name": "Villupuram Central Bus Stand",
+    "lat": 11.965,
+    "lng": 79.4587,
+    "type": "bus_terminal",
+    "daily_footfall": 8176,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-11-03",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S103",
+    "name": "Tiruvannamalai Central Bus Stand",
+    "lat": 12.2518,
+    "lng": 79.0499,
+    "type": "bus_terminal",
+    "daily_footfall": 14696,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-11-25",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S104",
+    "name": "Tiruvannamalai New Bus Stand",
+    "lat": 12.2237,
+    "lng": 79.0963,
+    "type": "bus_stand",
+    "daily_footfall": 10532,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-12-07",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S105",
+    "name": "Nagapattinam Town Bus Stop",
+    "lat": 10.7506,
+    "lng": 79.8347,
+    "type": "bus_stop",
+    "daily_footfall": 5824,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2024-11-27",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S106",
+    "name": "Nagapattinam New Bus Stand",
+    "lat": 10.7623,
+    "lng": 79.8459,
+    "type": "bus_stand",
+    "daily_footfall": 5782,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-02-01",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S107",
+    "name": "Theni New Bus Stand",
+    "lat": 10.0322,
+    "lng": 77.5039,
+    "type": "bus_stand",
+    "daily_footfall": 9677,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-11-26",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S108",
+    "name": "Theni Central Bus Stand",
+    "lat": 10.039,
+    "lng": 77.4978,
+    "type": "bus_terminal",
+    "daily_footfall": 15221,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-05-17",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S109",
+    "name": "Virudhunagar Town Bus Stop",
+    "lat": 9.6141,
+    "lng": 77.9656,
+    "type": "bus_stop",
+    "daily_footfall": 4005,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2026-02-01",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S110",
+    "name": "Virudhunagar New Bus Stand",
+    "lat": 9.5566,
+    "lng": 77.967,
+    "type": "bus_stand",
+    "daily_footfall": 7230,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-02-23",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S111",
+    "name": "Virudhunagar Central Bus Stand",
+    "lat": 9.5998,
+    "lng": 77.9788,
+    "type": "bus_terminal",
+    "daily_footfall": 10217,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-12-18",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S112",
+    "name": "Namakkal Town Bus Stop",
+    "lat": 11.1931,
+    "lng": 78.1524,
+    "type": "bus_stop",
+    "daily_footfall": 5843,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-11-19",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S113",
+    "name": "Namakkal New Bus Stand",
+    "lat": 11.2296,
+    "lng": 78.1633,
+    "type": "bus_stand",
+    "daily_footfall": 7969,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-01-23",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S114",
+    "name": "Namakkal Central Bus Stand",
+    "lat": 11.2342,
+    "lng": 78.1959,
+    "type": "bus_terminal",
+    "daily_footfall": 13260,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-03-11",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S115",
+    "name": "Karur Central Bus Stand",
+    "lat": 10.9858,
+    "lng": 78.0603,
+    "type": "bus_terminal",
+    "daily_footfall": 12198,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-07-22",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S116",
+    "name": "Karur New Bus Stand",
+    "lat": 10.9671,
+    "lng": 78.0493,
+    "type": "bus_stand",
+    "daily_footfall": 10002,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2026-02-25",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S117",
+    "name": "Karur Town Bus Stop",
+    "lat": 10.955,
+    "lng": 78.0626,
+    "type": "bus_stop",
+    "daily_footfall": 4835,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-10-10",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S118",
+    "name": "Sivagangai Town Bus Stop",
+    "lat": 10.0387,
+    "lng": 78.8575,
+    "type": "bus_stop",
+    "daily_footfall": 2201,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-10-03",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S119",
+    "name": "Sivagangai New Bus Stand",
+    "lat": 10.0318,
+    "lng": 78.8649,
+    "type": "bus_stand",
+    "daily_footfall": 6742,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2026-03-12",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S120",
+    "name": "Sivagangai Central Bus Stand",
+    "lat": 10.0606,
+    "lng": 78.8759,
+    "type": "bus_terminal",
+    "daily_footfall": 8428,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-11-16",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S121",
+    "name": "Ramanathapuram Town Bus Stop",
+    "lat": 9.3785,
+    "lng": 78.8468,
+    "type": "bus_stop",
+    "daily_footfall": 4931,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-02-14",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S122",
+    "name": "Ramanathapuram New Bus Stand",
+    "lat": 9.3555,
+    "lng": 78.8416,
+    "type": "bus_stand",
+    "daily_footfall": 6474,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-05-17",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S123",
+    "name": "Ramanathapuram Central Bus Stand",
+    "lat": 9.3673,
+    "lng": 78.8267,
+    "type": "bus_terminal",
+    "daily_footfall": 20424,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-08-10",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S124",
+    "name": "Thoothukudi New Bus Stand",
+    "lat": 8.778,
+    "lng": 78.1279,
+    "type": "bus_stand",
+    "daily_footfall": 8902,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-03-26",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S125",
+    "name": "Thoothukudi Town Bus Stop",
+    "lat": 8.7393,
+    "lng": 78.1508,
+    "type": "bus_stop",
+    "daily_footfall": 4859,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-11-16",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S126",
+    "name": "Thoothukudi Central Bus Stand",
+    "lat": 8.7817,
+    "lng": 78.1595,
+    "type": "bus_terminal",
+    "daily_footfall": 9900,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-08-31",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S127",
+    "name": "Tiruppur Town Bus Stop",
+    "lat": 11.1299,
+    "lng": 77.3447,
+    "type": "bus_stop",
+    "daily_footfall": 5143,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-01-01",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S128",
+    "name": "Tiruppur New Bus Stand",
+    "lat": 11.1277,
+    "lng": 77.355,
+    "type": "bus_stand",
+    "daily_footfall": 5109,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-09-07",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S129",
+    "name": "Pudukkottai Town Bus Stop",
+    "lat": 10.4041,
+    "lng": 78.7748,
+    "type": "bus_stop",
+    "daily_footfall": 3975,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-08-27",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S130",
+    "name": "Pudukkottai New Bus Stand",
+    "lat": 10.3705,
+    "lng": 78.776,
+    "type": "bus_stand",
+    "daily_footfall": 5582,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-10-13",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S131",
+    "name": "Dharmapuri Town Bus Stop",
+    "lat": 12.1452,
+    "lng": 78.1767,
+    "type": "bus_stop",
+    "daily_footfall": 5420,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-02-22",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S132",
+    "name": "Dharmapuri New Bus Stand",
+    "lat": 12.1129,
+    "lng": 78.1587,
+    "type": "bus_stand",
+    "daily_footfall": 4024,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-04-10",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S133",
+    "name": "Dharmapuri Central Bus Stand",
+    "lat": 12.1361,
+    "lng": 78.1699,
+    "type": "bus_terminal",
+    "daily_footfall": 9326,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-10-17",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S134",
+    "name": "Krishnagiri Town Bus Stop",
+    "lat": 12.4968,
+    "lng": 78.19,
+    "type": "bus_stop",
+    "daily_footfall": 4000,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-01-21",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S135",
+    "name": "Krishnagiri Central Bus Stand",
+    "lat": 12.5109,
+    "lng": 78.2277,
+    "type": "bus_terminal",
+    "daily_footfall": 13319,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-12-02",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S136",
+    "name": "Perambalur Town Bus Stop",
+    "lat": 11.2214,
+    "lng": 78.8906,
+    "type": "bus_stop",
+    "daily_footfall": 2081,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-04-24",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S137",
+    "name": "Perambalur New Bus Stand",
+    "lat": 11.2534,
+    "lng": 78.875,
+    "type": "bus_stand",
+    "daily_footfall": 6074,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-02-24",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S138",
+    "name": "Ariyalur Town Bus Stop",
+    "lat": 11.1145,
+    "lng": 79.0551,
+    "type": "bus_stop",
+    "daily_footfall": 2048,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-09-04",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S139",
+    "name": "Ariyalur Central Bus Stand",
+    "lat": 11.143,
+    "lng": 79.0915,
+    "type": "bus_terminal",
+    "daily_footfall": 9487,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-10-20",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S140",
+    "name": "Ariyalur New Bus Stand",
+    "lat": 11.1653,
+    "lng": 79.0508,
+    "type": "bus_stand",
+    "daily_footfall": 7359,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2024-11-02",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S141",
+    "name": "Nilgiris Town Bus Stop",
+    "lat": 11.3811,
+    "lng": 76.684,
+    "type": "bus_stop",
+    "daily_footfall": 4948,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-02-23",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S142",
+    "name": "Nilgiris Central Bus Stand",
+    "lat": 11.3974,
+    "lng": 76.717,
+    "type": "bus_terminal",
+    "daily_footfall": 21701,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-11-04",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S143",
+    "name": "Nilgiris New Bus Stand",
+    "lat": 11.3888,
+    "lng": 76.6878,
+    "type": "bus_stand",
+    "daily_footfall": 9676,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-02-22",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S144",
+    "name": "Ranipet Central Bus Stand",
+    "lat": 12.9324,
+    "lng": 79.3195,
+    "type": "bus_terminal",
+    "daily_footfall": 20233,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-10-12",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S145",
+    "name": "Ranipet Town Bus Stop",
+    "lat": 12.8963,
+    "lng": 79.3557,
+    "type": "bus_stop",
+    "daily_footfall": 4613,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-12-04",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S146",
+    "name": "Ranipet New Bus Stand",
+    "lat": 12.9417,
+    "lng": 79.3555,
+    "type": "bus_stand",
+    "daily_footfall": 6015,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": true,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-03-03",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S147",
+    "name": "Tirupathur New Bus Stand",
+    "lat": 12.5144,
+    "lng": 78.5936,
+    "type": "bus_stand",
+    "daily_footfall": 4509,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-11-07",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S148",
+    "name": "Tirupathur Town Bus Stop",
+    "lat": 12.4751,
+    "lng": 78.5853,
+    "type": "bus_stop",
+    "daily_footfall": 4921,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-12-10",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S149",
+    "name": "Tirupathur Central Bus Stand",
+    "lat": 12.5078,
+    "lng": 78.5964,
+    "type": "bus_terminal",
+    "daily_footfall": 12729,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-01-17",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S150",
+    "name": "Chengalpattu Town Bus Stop",
+    "lat": 12.6637,
+    "lng": 79.9772,
+    "type": "bus_stop",
+    "daily_footfall": 2296,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-07-24",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S151",
+    "name": "Chengalpattu Central Bus Stand",
+    "lat": 12.6628,
+    "lng": 79.9592,
+    "type": "bus_terminal",
+    "daily_footfall": 9190,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-01-22",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S152",
+    "name": "Kallakurichi Town Bus Stop",
+    "lat": 11.7535,
+    "lng": 78.9514,
+    "type": "bus_stop",
+    "daily_footfall": 2973,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-11-08",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S153",
+    "name": "Kallakurichi Central Bus Stand",
+    "lat": 11.7304,
+    "lng": 78.9796,
+    "type": "bus_terminal",
+    "daily_footfall": 19386,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-06-16",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S154",
+    "name": "Tenkasi Central Bus Stand",
+    "lat": 8.9398,
+    "lng": 77.2869,
+    "type": "bus_terminal",
+    "daily_footfall": 17599,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-11-30",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S155",
+    "name": "Tenkasi Town Bus Stop",
+    "lat": 8.9643,
+    "lng": 77.3427,
+    "type": "bus_stop",
+    "daily_footfall": 5782,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-01-29",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S156",
+    "name": "Mayiladuthurai Town Bus Stop",
+    "lat": 11.1142,
+    "lng": 79.6675,
+    "type": "bus_stop",
+    "daily_footfall": 3221,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-05-15",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S157",
+    "name": "Mayiladuthurai Central Bus Stand",
+    "lat": 11.1273,
+    "lng": 79.6551,
+    "type": "bus_terminal",
+    "daily_footfall": 20766,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-11-27",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S158",
+    "name": "Mayiladuthurai New Bus Stand",
+    "lat": 11.0992,
+    "lng": 79.6354,
+    "type": "bus_stand",
+    "daily_footfall": 6925,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-03-02",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S159",
+    "name": "Kanyakumari Central Bus Stand",
+    "lat": 8.0981,
+    "lng": 77.5296,
+    "type": "bus_terminal",
+    "daily_footfall": 11462,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-12-18",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S160",
+    "name": "Kanyakumari New Bus Stand",
+    "lat": 8.1041,
+    "lng": 77.5104,
+    "type": "bus_stand",
+    "daily_footfall": 11533,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-11-10",
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "S161",
+    "name": "Chennai Central Bus Stand",
+    "lat": 13.1121,
+    "lng": 80.288,
+    "type": "bus_terminal",
+    "daily_footfall": 14865,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-12-23",
+    "district": "Chennai"
+  },
+  {
+    "id": "S162",
+    "name": "Chennai New Bus Stand",
+    "lat": 13.0527,
+    "lng": 80.2584,
+    "type": "bus_stand",
+    "daily_footfall": 7569,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-11-16",
+    "district": "Chennai"
+  },
+  {
+    "id": "S163",
+    "name": "Chennai Town Bus Stop",
+    "lat": 13.0955,
+    "lng": 80.2411,
+    "type": "bus_stop",
+    "daily_footfall": 5044,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2026-03-09",
+    "district": "Chennai"
+  },
+  {
+    "id": "S164",
+    "name": "Coimbatore Central Bus Stand",
+    "lat": 10.9916,
+    "lng": 76.9308,
+    "type": "bus_terminal",
+    "daily_footfall": 13016,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2026-01-08",
+    "district": "Coimbatore"
+  },
+  {
+    "id": "S165",
+    "name": "Coimbatore New Bus Stand",
+    "lat": 10.9911,
+    "lng": 76.9414,
+    "type": "bus_stand",
+    "daily_footfall": 5010,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-03-31",
+    "district": "Coimbatore"
+  },
+  {
+    "id": "S166",
+    "name": "Madurai Town Bus Stop",
+    "lat": 9.9155,
+    "lng": 78.1018,
+    "type": "bus_stop",
+    "daily_footfall": 2814,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-12-28",
+    "district": "Madurai"
+  },
+  {
+    "id": "S167",
+    "name": "Madurai New Bus Stand",
+    "lat": 9.95,
+    "lng": 78.1476,
+    "type": "bus_stand",
+    "daily_footfall": 10535,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-11-02",
+    "district": "Madurai"
+  },
+  {
+    "id": "S168",
+    "name": "Madurai Central Bus Stand",
+    "lat": 9.9429,
+    "lng": 78.1342,
+    "type": "bus_terminal",
+    "daily_footfall": 10428,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-06-17",
+    "district": "Madurai"
+  },
+  {
+    "id": "S169",
+    "name": "Salem Central Bus Stand",
+    "lat": 11.6743,
+    "lng": 78.1741,
+    "type": "bus_terminal",
+    "daily_footfall": 15542,
+    "features": {
+      "ramp": true,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-05-17",
+    "district": "Salem"
+  },
+  {
+    "id": "S170",
+    "name": "Salem Town Bus Stop",
+    "lat": 11.6492,
+    "lng": 78.1225,
+    "type": "bus_stop",
+    "daily_footfall": 4511,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-12-27",
+    "district": "Salem"
+  },
+  {
+    "id": "S171",
+    "name": "Salem New Bus Stand",
+    "lat": 11.6706,
+    "lng": 78.175,
+    "type": "bus_stand",
+    "daily_footfall": 11366,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-11-11",
+    "district": "Salem"
+  },
+  {
+    "id": "S172",
+    "name": "Tirunelveli New Bus Stand",
+    "lat": 8.6988,
+    "lng": 77.7454,
+    "type": "bus_stand",
+    "daily_footfall": 8920,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-09-23",
+    "district": "Tirunelveli"
+  },
+  {
+    "id": "S173",
+    "name": "Tirunelveli Town Bus Stop",
+    "lat": 8.7288,
+    "lng": 77.7794,
+    "type": "bus_stop",
+    "daily_footfall": 2869,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-07-22",
+    "district": "Tirunelveli"
+  },
+  {
+    "id": "S174",
+    "name": "Tirunelveli Central Bus Stand",
+    "lat": 8.7414,
+    "lng": 77.7787,
+    "type": "bus_terminal",
+    "daily_footfall": 9826,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-03-02",
+    "district": "Tirunelveli"
+  },
+  {
+    "id": "S175",
+    "name": "Erode New Bus Stand",
+    "lat": 11.3602,
+    "lng": 77.7272,
+    "type": "bus_stand",
+    "daily_footfall": 11043,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-11-20",
+    "district": "Erode"
+  },
+  {
+    "id": "S176",
+    "name": "Erode Central Bus Stand",
+    "lat": 11.3641,
+    "lng": 77.7088,
+    "type": "bus_terminal",
+    "daily_footfall": 18504,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-05-31",
+    "district": "Erode"
+  },
+  {
+    "id": "S177",
+    "name": "Vellore New Bus Stand",
+    "lat": 12.9204,
+    "lng": 79.136,
+    "type": "bus_stand",
+    "daily_footfall": 6040,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-02-16",
+    "district": "Vellore"
+  },
+  {
+    "id": "S178",
+    "name": "Vellore Town Bus Stop",
+    "lat": 12.8892,
+    "lng": 79.1043,
+    "type": "bus_stop",
+    "daily_footfall": 4846,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-01-27",
+    "district": "Vellore"
+  },
+  {
+    "id": "S179",
+    "name": "Thanjavur New Bus Stand",
+    "lat": 10.8017,
+    "lng": 79.1253,
+    "type": "bus_stand",
+    "daily_footfall": 9626,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-01-25",
+    "district": "Thanjavur"
+  },
+  {
+    "id": "S180",
+    "name": "Thanjavur Town Bus Stop",
+    "lat": 10.8101,
+    "lng": 79.1269,
+    "type": "bus_stop",
+    "daily_footfall": 4513,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-11-25",
+    "district": "Thanjavur"
+  },
+  {
+    "id": "S181",
+    "name": "Dindigul Central Bus Stand",
+    "lat": 10.3738,
+    "lng": 77.9495,
+    "type": "bus_terminal",
+    "daily_footfall": 18054,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-10-27",
+    "district": "Dindigul"
+  },
+  {
+    "id": "S182",
+    "name": "Dindigul Town Bus Stop",
+    "lat": 10.3394,
+    "lng": 77.9837,
+    "type": "bus_stop",
+    "daily_footfall": 3434,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-12-04",
+    "district": "Dindigul"
+  },
+  {
+    "id": "S183",
+    "name": "Kanchipuram Town Bus Stop",
+    "lat": 12.8586,
+    "lng": 79.7273,
+    "type": "bus_stop",
+    "daily_footfall": 5686,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-12-14",
+    "district": "Kanchipuram"
+  },
+  {
+    "id": "S184",
+    "name": "Kanchipuram Central Bus Stand",
+    "lat": 12.8395,
+    "lng": 79.7259,
+    "type": "bus_terminal",
+    "daily_footfall": 8428,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-07-11",
+    "district": "Kanchipuram"
+  },
+  {
+    "id": "S185",
+    "name": "Cuddalore Town Bus Stop",
+    "lat": 11.7433,
+    "lng": 79.7557,
+    "type": "bus_stop",
+    "daily_footfall": 5021,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-12-30",
+    "district": "Cuddalore"
+  },
+  {
+    "id": "S186",
+    "name": "Cuddalore Central Bus Stand",
+    "lat": 11.7469,
+    "lng": 79.7831,
+    "type": "bus_terminal",
+    "daily_footfall": 22431,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2026-02-19",
+    "district": "Cuddalore"
+  },
+  {
+    "id": "S187",
+    "name": "Cuddalore New Bus Stand",
+    "lat": 11.7605,
+    "lng": 79.78,
+    "type": "bus_stand",
+    "daily_footfall": 5597,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-10-26",
+    "district": "Cuddalore"
+  },
+  {
+    "id": "S188",
+    "name": "Villupuram New Bus Stand",
+    "lat": 11.9482,
+    "lng": 79.4831,
+    "type": "bus_stand",
+    "daily_footfall": 10694,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-07-18",
+    "district": "Villupuram"
+  },
+  {
+    "id": "S189",
+    "name": "Villupuram Town Bus Stop",
+    "lat": 11.967,
+    "lng": 79.4955,
+    "type": "bus_stop",
+    "daily_footfall": 5621,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-03-04",
+    "district": "Villupuram"
+  },
+  {
+    "id": "S190",
+    "name": "Villupuram Central Bus Stand",
+    "lat": 11.9479,
+    "lng": 79.4913,
+    "type": "bus_terminal",
+    "daily_footfall": 15902,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-11-05",
+    "district": "Villupuram"
+  },
+  {
+    "id": "S191",
+    "name": "Tiruvannamalai Town Bus Stop",
+    "lat": 12.2132,
+    "lng": 79.0989,
+    "type": "bus_stop",
+    "daily_footfall": 5528,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-02-26",
+    "district": "Tiruvannamalai"
+  },
+  {
+    "id": "S192",
+    "name": "Tiruvannamalai New Bus Stand",
+    "lat": 12.2406,
+    "lng": 79.0892,
+    "type": "bus_stand",
+    "daily_footfall": 5102,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-09-01",
+    "district": "Tiruvannamalai"
+  },
+  {
+    "id": "S193",
+    "name": "Nagapattinam Central Bus Stand",
+    "lat": 10.738,
+    "lng": 79.8265,
+    "type": "bus_terminal",
+    "daily_footfall": 11120,
+    "features": {
+      "ramp": true,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-10-26",
+    "district": "Nagapattinam"
+  },
+  {
+    "id": "S194",
+    "name": "Nagapattinam Town Bus Stop",
+    "lat": 10.7818,
+    "lng": 79.8274,
+    "type": "bus_stop",
+    "daily_footfall": 3983,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-11-10",
+    "district": "Nagapattinam"
+  },
+  {
+    "id": "S195",
+    "name": "Nagapattinam New Bus Stand",
+    "lat": 10.75,
+    "lng": 79.8629,
+    "type": "bus_stand",
+    "daily_footfall": 7474,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-02-11",
+    "district": "Nagapattinam"
+  },
+  {
+    "id": "S196",
+    "name": "Theni Central Bus Stand",
+    "lat": 9.9837,
+    "lng": 77.4698,
+    "type": "bus_terminal",
+    "daily_footfall": 14466,
+    "features": {
+      "ramp": true,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-11-04",
+    "district": "Theni"
+  },
+  {
+    "id": "S197",
+    "name": "Theni New Bus Stand",
+    "lat": 10.0226,
+    "lng": 77.4777,
+    "type": "bus_stand",
+    "daily_footfall": 8712,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-11-06",
+    "district": "Theni"
+  },
+  {
+    "id": "S198",
+    "name": "Theni Town Bus Stop",
+    "lat": 10.0355,
+    "lng": 77.4562,
+    "type": "bus_stop",
+    "daily_footfall": 5356,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-12-28",
+    "district": "Theni"
+  },
+  {
+    "id": "S199",
+    "name": "Virudhunagar Central Bus Stand",
+    "lat": 9.577,
+    "lng": 77.9428,
+    "type": "bus_terminal",
+    "daily_footfall": 9621,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-02-24",
+    "district": "Virudhunagar"
+  },
+  {
+    "id": "S200",
+    "name": "Virudhunagar Town Bus Stop",
+    "lat": 9.5973,
+    "lng": 77.9608,
+    "type": "bus_stop",
+    "daily_footfall": 5387,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-10-28",
+    "district": "Virudhunagar"
+  },
+  {
+    "id": "S201",
+    "name": "Virudhunagar New Bus Stand",
+    "lat": 9.6002,
+    "lng": 77.9249,
+    "type": "bus_stand",
+    "daily_footfall": 6772,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-01-29",
+    "district": "Virudhunagar"
+  },
+  {
+    "id": "S202",
+    "name": "Namakkal New Bus Stand",
+    "lat": 11.2224,
+    "lng": 78.1537,
+    "type": "bus_stand",
+    "daily_footfall": 6984,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-02-01",
+    "district": "Namakkal"
+  },
+  {
+    "id": "S203",
+    "name": "Namakkal Town Bus Stop",
+    "lat": 11.1891,
+    "lng": 78.1494,
+    "type": "bus_stop",
+    "daily_footfall": 2229,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-11-25",
+    "district": "Namakkal"
+  },
+  {
+    "id": "S204",
+    "name": "Karur Town Bus Stop",
+    "lat": 10.9478,
+    "lng": 78.1059,
+    "type": "bus_stop",
+    "daily_footfall": 2020,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-11-13",
+    "district": "Karur"
+  },
+  {
+    "id": "S205",
+    "name": "Karur New Bus Stand",
+    "lat": 10.9606,
+    "lng": 78.0623,
+    "type": "bus_stand",
+    "daily_footfall": 11905,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-11-24",
+    "district": "Karur"
+  },
+  {
+    "id": "S206",
+    "name": "Karur Central Bus Stand",
+    "lat": 10.94,
+    "lng": 78.1007,
+    "type": "bus_terminal",
+    "daily_footfall": 13557,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-08-20",
+    "district": "Karur"
+  },
+  {
+    "id": "S207",
+    "name": "Sivagangai Town Bus Stop",
+    "lat": 10.0441,
+    "lng": 78.886,
+    "type": "bus_stop",
+    "daily_footfall": 3703,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-05-20",
+    "district": "Sivagangai"
+  },
+  {
+    "id": "S208",
+    "name": "Sivagangai New Bus Stand",
+    "lat": 10.0268,
+    "lng": 78.8705,
+    "type": "bus_stand",
+    "daily_footfall": 10455,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-11-09",
+    "district": "Sivagangai"
+  },
+  {
+    "id": "S209",
+    "name": "Ramanathapuram Central Bus Stand",
+    "lat": 9.3946,
+    "lng": 78.806,
+    "type": "bus_terminal",
+    "daily_footfall": 14002,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-06-28",
+    "district": "Ramanathapuram"
+  },
+  {
+    "id": "S210",
+    "name": "Ramanathapuram New Bus Stand",
+    "lat": 9.3586,
+    "lng": 78.8393,
+    "type": "bus_stand",
+    "daily_footfall": 4728,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-03-03",
+    "district": "Ramanathapuram"
+  },
+  {
+    "id": "S211",
+    "name": "Ramanathapuram Town Bus Stop",
+    "lat": 9.3608,
+    "lng": 78.8346,
+    "type": "bus_stop",
+    "daily_footfall": 3045,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-06-06",
+    "district": "Ramanathapuram"
+  },
+  {
+    "id": "S212",
+    "name": "Thoothukudi Town Bus Stop",
+    "lat": 8.7629,
+    "lng": 78.136,
+    "type": "bus_stop",
+    "daily_footfall": 3385,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-11-22",
+    "district": "Thoothukudi"
+  },
+  {
+    "id": "S213",
+    "name": "Thoothukudi Central Bus Stand",
+    "lat": 8.7446,
+    "lng": 78.1605,
+    "type": "bus_terminal",
+    "daily_footfall": 13962,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-02-05",
+    "district": "Thoothukudi"
+  },
+  {
+    "id": "S214",
+    "name": "Tiruppur Town Bus Stop",
+    "lat": 11.1067,
+    "lng": 77.3549,
+    "type": "bus_stop",
+    "daily_footfall": 3832,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-06-05",
+    "district": "Tiruppur"
+  },
+  {
+    "id": "S215",
+    "name": "Tiruppur Central Bus Stand",
+    "lat": 11.0923,
+    "lng": 77.3128,
+    "type": "bus_terminal",
+    "daily_footfall": 18867,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-07-03",
+    "district": "Tiruppur"
+  },
+  {
+    "id": "S216",
+    "name": "Pudukkottai Central Bus Stand",
+    "lat": 10.3975,
+    "lng": 78.8174,
+    "type": "bus_terminal",
+    "daily_footfall": 10628,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2026-01-06",
+    "district": "Pudukkottai"
+  },
+  {
+    "id": "S217",
+    "name": "Pudukkottai Town Bus Stop",
+    "lat": 10.3659,
+    "lng": 78.8094,
+    "type": "bus_stop",
+    "daily_footfall": 5479,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-07-14",
+    "district": "Pudukkottai"
+  },
+  {
+    "id": "S218",
+    "name": "Pudukkottai New Bus Stand",
+    "lat": 10.4009,
+    "lng": 78.7868,
+    "type": "bus_stand",
+    "daily_footfall": 11881,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-11-18",
+    "district": "Pudukkottai"
+  },
+  {
+    "id": "S219",
+    "name": "Dharmapuri Central Bus Stand",
+    "lat": 12.1109,
+    "lng": 78.1878,
+    "type": "bus_terminal",
+    "daily_footfall": 15360,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-11-26",
+    "district": "Dharmapuri"
+  },
+  {
+    "id": "S220",
+    "name": "Dharmapuri Town Bus Stop",
+    "lat": 12.0935,
+    "lng": 78.1878,
+    "type": "bus_stop",
+    "daily_footfall": 4870,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-10-15",
+    "district": "Dharmapuri"
+  },
+  {
+    "id": "S221",
+    "name": "Krishnagiri New Bus Stand",
+    "lat": 12.5306,
+    "lng": 78.2199,
+    "type": "bus_stand",
+    "daily_footfall": 7809,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-03-04",
+    "district": "Krishnagiri"
+  },
+  {
+    "id": "S222",
+    "name": "Krishnagiri Town Bus Stop",
+    "lat": 12.5044,
+    "lng": 78.2196,
+    "type": "bus_stop",
+    "daily_footfall": 2307,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": true,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-09-21",
+    "district": "Krishnagiri"
+  },
+  {
+    "id": "S223",
+    "name": "Krishnagiri Central Bus Stand",
+    "lat": 12.5208,
+    "lng": 78.1891,
+    "type": "bus_terminal",
+    "daily_footfall": 15505,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-11-04",
+    "district": "Krishnagiri"
+  },
+  {
+    "id": "S224",
+    "name": "Perambalur Town Bus Stop",
+    "lat": 11.2229,
+    "lng": 78.8985,
+    "type": "bus_stop",
+    "daily_footfall": 4242,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": true,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-01-21",
+    "district": "Perambalur"
+  },
+  {
+    "id": "S225",
+    "name": "Perambalur Central Bus Stand",
+    "lat": 11.224,
+    "lng": 78.9056,
+    "type": "bus_terminal",
+    "daily_footfall": 14517,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-01-28",
+    "district": "Perambalur"
+  },
+  {
+    "id": "S226",
+    "name": "Perambalur New Bus Stand",
+    "lat": 11.2144,
+    "lng": 78.8589,
+    "type": "bus_stand",
+    "daily_footfall": 4889,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-12-02",
+    "district": "Perambalur"
+  },
+  {
+    "id": "S227",
+    "name": "Ariyalur Central Bus Stand",
+    "lat": 11.1532,
+    "lng": 79.0505,
+    "type": "bus_terminal",
+    "daily_footfall": 13663,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-09-21",
+    "district": "Ariyalur"
+  },
+  {
+    "id": "S228",
+    "name": "Ariyalur New Bus Stand",
+    "lat": 11.1383,
+    "lng": 79.071,
+    "type": "bus_stand",
+    "daily_footfall": 9214,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-08-19",
+    "district": "Ariyalur"
+  },
+  {
+    "id": "S229",
+    "name": "Ariyalur Town Bus Stop",
+    "lat": 11.163,
+    "lng": 79.1006,
+    "type": "bus_stop",
+    "daily_footfall": 4280,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-12-22",
+    "district": "Ariyalur"
+  },
+  {
+    "id": "S230",
+    "name": "Nilgiris New Bus Stand",
+    "lat": 11.3909,
+    "lng": 76.676,
+    "type": "bus_stand",
+    "daily_footfall": 6635,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-09-28",
+    "district": "Nilgiris"
+  },
+  {
+    "id": "S231",
+    "name": "Nilgiris Central Bus Stand",
+    "lat": 11.4048,
+    "lng": 76.6703,
+    "type": "bus_terminal",
+    "daily_footfall": 22771,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-12-24",
+    "district": "Nilgiris"
+  },
+  {
+    "id": "S232",
+    "name": "Nilgiris Town Bus Stop",
+    "lat": 11.401,
+    "lng": 76.6801,
+    "type": "bus_stop",
+    "daily_footfall": 3901,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-02-27",
+    "district": "Nilgiris"
+  },
+  {
+    "id": "S233",
+    "name": "Ranipet New Bus Stand",
+    "lat": 12.9227,
+    "lng": 79.3208,
+    "type": "bus_stand",
+    "daily_footfall": 10584,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2026-01-17",
+    "district": "Ranipet"
+  },
+  {
+    "id": "S234",
+    "name": "Ranipet Central Bus Stand",
+    "lat": 12.9294,
+    "lng": 79.3052,
+    "type": "bus_terminal",
+    "daily_footfall": 21027,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-12-18",
+    "district": "Ranipet"
+  },
+  {
+    "id": "S235",
+    "name": "Tirupathur Town Bus Stop",
+    "lat": 12.5006,
+    "lng": 78.589,
+    "type": "bus_stop",
+    "daily_footfall": 2772,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-05-16",
+    "district": "Tirupathur"
+  },
+  {
+    "id": "S236",
+    "name": "Tirupathur New Bus Stand",
+    "lat": 12.5194,
+    "lng": 78.5795,
+    "type": "bus_stand",
+    "daily_footfall": 9839,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-10-27",
+    "district": "Tirupathur"
+  },
+  {
+    "id": "S237",
+    "name": "Chengalpattu Town Bus Stop",
+    "lat": 12.6966,
+    "lng": 80.0175,
+    "type": "bus_stop",
+    "daily_footfall": 4637,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-06-13",
+    "district": "Chengalpattu"
+  },
+  {
+    "id": "S238",
+    "name": "Chengalpattu New Bus Stand",
+    "lat": 12.7028,
+    "lng": 80.0101,
+    "type": "bus_stand",
+    "daily_footfall": 9124,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-07-12",
+    "district": "Chengalpattu"
+  },
+  {
+    "id": "S239",
+    "name": "Chengalpattu Central Bus Stand",
+    "lat": 12.6522,
+    "lng": 79.9611,
+    "type": "bus_terminal",
+    "daily_footfall": 20988,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": true,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-06-10",
+    "district": "Chengalpattu"
+  },
+  {
+    "id": "S240",
+    "name": "Kallakurichi Central Bus Stand",
+    "lat": 11.7555,
+    "lng": 78.9655,
+    "type": "bus_terminal",
+    "daily_footfall": 22926,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-12-02",
+    "district": "Kallakurichi"
+  },
+  {
+    "id": "S241",
+    "name": "Kallakurichi Town Bus Stop",
+    "lat": 11.7662,
+    "lng": 78.964,
+    "type": "bus_stop",
+    "daily_footfall": 5880,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-02-09",
+    "district": "Kallakurichi"
+  },
+  {
+    "id": "S242",
+    "name": "Tenkasi Central Bus Stand",
+    "lat": 8.9551,
+    "lng": 77.323,
+    "type": "bus_terminal",
+    "daily_footfall": 20596,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": true,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-04-26",
+    "district": "Tenkasi"
+  },
+  {
+    "id": "S243",
+    "name": "Tenkasi New Bus Stand",
+    "lat": 8.9539,
+    "lng": 77.3231,
+    "type": "bus_stand",
+    "daily_footfall": 6113,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-05-08",
+    "district": "Tenkasi"
+  },
+  {
+    "id": "S244",
+    "name": "Tenkasi Town Bus Stop",
+    "lat": 8.9795,
+    "lng": 77.3269,
+    "type": "bus_stop",
+    "daily_footfall": 5018,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2024-12-06",
+    "district": "Tenkasi"
+  },
+  {
+    "id": "S245",
+    "name": "Mayiladuthurai Central Bus Stand",
+    "lat": 11.0872,
+    "lng": 79.6729,
+    "type": "bus_terminal",
+    "daily_footfall": 15453,
+    "features": {
+      "ramp": true,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-01-10",
+    "district": "Mayiladuthurai"
+  },
+  {
+    "id": "S246",
+    "name": "Mayiladuthurai New Bus Stand",
+    "lat": 11.1101,
+    "lng": 79.6753,
+    "type": "bus_stand",
+    "daily_footfall": 5365,
+    "features": {
+      "ramp": false,
+      "tactile_path": true,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-02-24",
+    "district": "Mayiladuthurai"
+  },
+  {
+    "id": "S247",
+    "name": "Kanyakumari Central Bus Stand",
+    "lat": 8.1094,
+    "lng": 77.5418,
+    "type": "bus_terminal",
+    "daily_footfall": 23091,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": false,
+      "braille_signage": true,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-01-03",
+    "district": "Kanyakumari"
+  },
+  {
+    "id": "S248",
+    "name": "Kanyakumari Town Bus Stop",
+    "lat": 8.0591,
+    "lng": 77.5259,
+    "type": "bus_stop",
+    "daily_footfall": 2766,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": false,
+      "accessible_toilet": false,
+      "staff_assistance": false
+    },
+    "last_audit_date": "2025-03-11",
+    "district": "Kanyakumari"
+  },
+  {
+    "id": "S249",
+    "name": "Kanyakumari New Bus Stand",
+    "lat": 8.0857,
+    "lng": 77.5105,
+    "type": "bus_stand",
+    "daily_footfall": 9683,
+    "features": {
+      "ramp": false,
+      "tactile_path": false,
+      "audio_signal": false,
+      "wheelchair_space": true,
+      "braille_signage": false,
+      "elevator": true,
+      "accessible_toilet": true,
+      "staff_assistance": true
+    },
+    "last_audit_date": "2025-04-02",
+    "district": "Kanyakumari"
   }
 ]

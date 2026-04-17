@@ -1,6 +1,6 @@
 /**
  * App Module - Main application controller
- * AccessAudit AI — Trichy Public Transport Accessibility Auditor
+ * AccessAudit AI — Tamil Nadu Public Transport Accessibility Auditor
  */
 
 // Global data store
@@ -8,7 +8,8 @@ let appData = {
     stops: null,
     grievances: null,
     report: null,
-    summary: null
+    summary: null,
+    currentDistrict: 'all'
 };
 
 // ===== TAB SWITCHING =====
@@ -332,9 +333,10 @@ async function initApp() {
         // Stops table
         buildStopsTable(stopsData.stops);
         
-        // Load leaderboard & alerts (non-blocking)
+        // Load leaderboard, alerts & districts (non-blocking)
         loadLeaderboard();
         loadAlerts();
+        loadDistricts();
         
         // Hide loading screen
         setTimeout(() => {
@@ -1165,4 +1167,60 @@ function toggleAlertPanel() {
     alertPanelOpen = !alertPanelOpen;
     panel.style.display = alertPanelOpen ? 'block' : 'none';
     btn.textContent = alertPanelOpen ? '▲' : '▼';
+}
+
+// ===== DISTRICT FILTER =====
+async function loadDistricts() {
+    try {
+        const res = await fetch(`${API_BASE}/districts`);
+        const result = await res.json();
+        if (!result.success) return;
+        
+        const select = document.getElementById('district-filter');
+        if (!select) return;
+        
+        result.data.forEach(d => {
+            const opt = document.createElement('option');
+            opt.value = d.name;
+            opt.textContent = `${d.name} (${d.stop_count})`;
+            select.appendChild(opt);
+        });
+    } catch (e) {
+        console.error('Failed to load districts:', e);
+    }
+}
+
+async function filterByDistrict(district) {
+    appData.currentDistrict = district;
+    
+    try {
+        // Re-fetch stops for this district
+        const param = district === 'all' ? '' : `?district=${encodeURIComponent(district)}`;
+        const stopsRes = await fetch(`${API_BASE}/stops${param}`);
+        const stopsResult = await stopsRes.json();
+        
+        if (!stopsResult.success) return;
+        
+        const stopsData = stopsResult.data;
+        appData.stops = stopsData;
+        appData.summary = stopsData.summary;
+        
+        // Update dashboard
+        updateSummaryCards(stopsData.summary);
+        buildPriorityTable(stopsData.stops);
+        
+        // Rebuild charts
+        createGapDistributionChart(stopsData.stops);
+        createPriorityPieChart(stopsData.summary);
+        
+        // Update stops table
+        buildStopsTable(stopsData.stops);
+        
+        // Update map
+        populateMap(stopsData.stops);
+        
+        console.log(`Filtered to: ${district} (${stopsData.summary.total_stops} stops)`);
+    } catch (e) {
+        console.error('Failed to filter by district:', e);
+    }
 }

@@ -1,57 +1,2538 @@
 [
-  {"id": "G001", "stop_id": "S001", "text": "No ramp at Chatram Bus Stand platform 3. I use a wheelchair and had to be lifted by strangers to board the bus. This is humiliating and unsafe.", "date": "2025-11-15", "category": null},
-  {"id": "G002", "stop_id": "S002", "text": "Srirangam Bus Stand has absolutely no accessibility features. No ramp, no tactile path, nothing. Disabled people are completely ignored here.", "date": "2025-12-01", "category": null},
-  {"id": "G003", "stop_id": "S001", "text": "There is no audio announcement system at Chatram Bus Stand. As a visually impaired person, I cannot identify which bus has arrived.", "date": "2025-10-20", "category": null},
-  {"id": "G004", "stop_id": "S004", "text": "Thillai Nagar bus stop has no ramp, no shelter, and no seating for elderly or disabled passengers. We stand in the sun for 30 minutes.", "date": "2025-09-18", "category": null},
-  {"id": "G005", "stop_id": "S005", "text": "The bus stop near Cantonment area has steps but no ramp. My father uses a walking stick and almost fell trying to climb the steps.", "date": "2025-08-25", "category": null},
-  {"id": "G006", "stop_id": "S006", "text": "KK Nagar bus stop is completely inaccessible. No ramp, no tactile guidance, no audio. How are blind people supposed to use public transport?", "date": "2025-11-30", "category": null},
-  {"id": "G007", "stop_id": "S002", "text": "I am deaf and there is no LED display board at Srirangam bus stand showing bus numbers and routes. Only verbal announcements which I cannot hear.", "date": "2025-07-12", "category": null},
-  {"id": "G008", "stop_id": "S009", "text": "Mannarpuram bus stop has broken pavement. My wheelchair gets stuck in the gaps. The entire area around the stop is not wheelchair friendly.", "date": "2025-10-05", "category": null},
-  {"id": "G009", "stop_id": "S011", "text": "Teppakulam bus stop has no braille signage at all. I am visually impaired and cannot read the route information board.", "date": "2025-06-20", "category": null},
-  {"id": "G010", "stop_id": "S001", "text": "The accessible toilet at Chatram Bus Stand is always locked. Staff says they don't have the key. This has been the case for over 6 months.", "date": "2025-12-10", "category": null},
-  {"id": "G011", "stop_id": "S004", "text": "No wheelchair space on buses departing from Thillai Nagar. The buses are old models with narrow doors. Impossible for wheelchair users.", "date": "2025-11-08", "category": null},
-  {"id": "G012", "stop_id": "S013", "text": "Ariyamangalam bus stop is dangerous for disabled people. No ramp, uneven ground, no lighting at night, no staff to help.", "date": "2025-09-30", "category": null},
-  {"id": "G013", "stop_id": "S007", "text": "Woraiyur bus stop has a ramp but it is too steep. My wheelchair tips backward when I try to go up. The ramp does not follow the 1:12 slope standard.", "date": "2025-08-14", "category": null},
-  {"id": "G014", "stop_id": "S014", "text": "There are no audio signals at Karumandapam bus stop intersection. Blind people cannot safely cross the road to reach the bus stop.", "date": "2025-10-22", "category": null},
-  {"id": "G015", "stop_id": "S008", "text": "Thiruverumbur bus stand has a ramp at the entrance but no tactile path inside. Visually impaired passengers get lost inside the terminal.", "date": "2025-07-05", "category": null},
-  {"id": "G016", "stop_id": "S016", "text": "Bikshandarkoil bus stop is just a pole with a signboard. No shelter, no seating, no ramp, nothing for disabled passengers. Worst stop in Trichy.", "date": "2025-11-25", "category": null},
-  {"id": "G017", "stop_id": "S001", "text": "Staff at Chatram Bus Stand refused to help me board the bus with my wheelchair. They said it's not their job. Very rude and unhelpful.", "date": "2025-05-18", "category": null},
-  {"id": "G018", "stop_id": "S019", "text": "Thuvakudi bus stop near NIT campus has no accessibility at all. Many disabled students struggle daily to catch the bus.", "date": "2025-12-05", "category": null},
-  {"id": "G019", "stop_id": "S012", "text": "Palakkarai bus stop ramp is broken — the concrete has crumbled on one side. It's been like this for a year with no repairs.", "date": "2025-09-10", "category": null},
-  {"id": "G020", "stop_id": "S020", "text": "Crawford bus stop has no audio announcements. Bus drivers don't announce their route number. Blind passengers miss their buses regularly.", "date": "2025-08-02", "category": null},
-  {"id": "G021", "stop_id": "S003", "text": "Trichy Junction has elevators but they are frequently out of order. Last week both lifts on platform 1 were broken for 3 days.", "date": "2025-11-18", "category": null},
-  {"id": "G022", "stop_id": "S002", "text": "No wheelchair ramp at Srirangam bus stand. I visited the famous temple but couldn't take the bus back. Had to pay for an auto.", "date": "2025-10-30", "category": null},
-  {"id": "G023", "stop_id": "S011", "text": "Teppakulam bus stop has no shelter or seating. My grandmother who uses a walker has to stand in the rain waiting for the bus.", "date": "2025-07-28", "category": null},
-  {"id": "G024", "stop_id": "S021", "text": "Khajamalai bus stop has no accessible features whatsoever. There are two steps to climb and no ramp. Wheelchair users cannot use this stop.", "date": "2025-06-15", "category": null},
-  {"id": "G025", "stop_id": "S006", "text": "My son is autistic and gets overwhelmed by the chaos at KK Nagar bus stop. There is no quiet waiting area or any sensory-friendly features.", "date": "2025-12-08", "category": null},
-  {"id": "G026", "stop_id": "S015", "text": "Ponmalai Golden Rock station has a ramp but no braille signage on platforms. Visually impaired passengers cannot navigate independently.", "date": "2025-09-22", "category": null},
-  {"id": "G027", "stop_id": "S010", "text": "Puthur bus stop has no audio signal at the nearby pedestrian crossing. I am blind and crossing the road here is very dangerous.", "date": "2025-08-18", "category": null},
-  {"id": "G028", "stop_id": "S018", "text": "Lalgudi bus stand toilet has no grab bars or wheelchair access. Disabled passengers have to use the regular toilet which is very difficult.", "date": "2025-11-02", "category": null},
-  {"id": "G029", "stop_id": "S026", "text": "TV Kovil bus stop has no bus shelter. Disabled passengers are exposed to extreme heat in summer. No seating available at all.", "date": "2025-10-14", "category": null},
-  {"id": "G030", "stop_id": "S027", "text": "MGR Bus Stand has a ramp but it is blocked by parked two-wheelers. Staff doesn't clear the area. Ramp is useless if blocked.", "date": "2025-07-20", "category": null},
-  {"id": "G031", "stop_id": "S004", "text": "No braille signage at Thillai Nagar bus stop. The route map is only in Tamil text which visually impaired people cannot read.", "date": "2025-12-12", "category": null},
-  {"id": "G032", "stop_id": "S009", "text": "The footpath leading to Mannarpuram bus stop has open drainage. My wheelchair almost fell into it. This is life-threatening.", "date": "2025-06-08", "category": null},
-  {"id": "G033", "stop_id": "S005", "text": "Cantonment bus stop near the army area has no tactile path. Blind passengers have no guidance to find the boarding point.", "date": "2025-09-05", "category": null},
-  {"id": "G034", "stop_id": "S028", "text": "Anna Nagar bus stop is on a very narrow road. No wheelchair-accessible path from the main road to the stop. Completely inaccessible.", "date": "2025-11-20", "category": null},
-  {"id": "G035", "stop_id": "S029", "text": "Senthaneerpuram bus stop has no staff, no shelter, no ramp, no audio. It's like the city planners forgot disabled people exist.", "date": "2025-08-30", "category": null},
-  {"id": "G036", "stop_id": "S030", "text": "Fort Station bus stop ramp is there but too narrow for electric wheelchairs. Standard wheelchair barely fits. Need wider ramp urgently.", "date": "2025-10-08", "category": null},
-  {"id": "G037", "stop_id": "S001", "text": "The elevator at Chatram Bus Stand ground floor doesn't work. It hasn't worked since March. Wheelchair users cannot go to the first floor.", "date": "2025-12-15", "category": null},
-  {"id": "G038", "stop_id": "S017", "text": "Samayapuram bus stop is near the famous temple but has no braille signage. Many visually impaired devotees visit and struggle with directions.", "date": "2025-07-15", "category": null},
-  {"id": "G039", "stop_id": "S023", "text": "Chinthamani bus stop has no audio warning when buses arrive. I am partially blind and was almost hit by a bus pulling into the stop.", "date": "2025-11-10", "category": null},
-  {"id": "G040", "stop_id": "S014", "text": "Karumandapam bus stop has no accessible toilet nearby. The nearest public toilet is 500 meters away and also not wheelchair accessible.", "date": "2025-06-28", "category": null},
-  {"id": "G041", "stop_id": "S002", "text": "Driver of bus 1A from Srirangam refused to lower the bus for my elderly mother. Said the hydraulic system doesn't work. No low-floor buses on this route.", "date": "2025-09-15", "category": null},
-  {"id": "G042", "stop_id": "S008", "text": "Thiruverumbur bus stand accessible toilet is extremely dirty. Staff says cleaning happens only once a day. Not hygienic for disabled users.", "date": "2025-12-02", "category": null},
-  {"id": "G043", "stop_id": "S024", "text": "Manapparai bus stand has a ramp but no handrails. For people with mobility issues, climbing the ramp without handrails is very difficult.", "date": "2025-08-10", "category": null},
-  {"id": "G044", "stop_id": "S013", "text": "No staff assistance available at Ariyamangalam bus stop. When I asked a conductor for help boarding, he ignored me completely.", "date": "2025-10-25", "category": null},
-  {"id": "G045", "stop_id": "S025", "text": "Musiri bus stand has no elevator or ramp to the upper level waiting area. Disabled and elderly passengers are stuck on the ground floor.", "date": "2025-07-01", "category": null},
-  {"id": "G046", "stop_id": "S006", "text": "KK Nagar bus stop pedestrian crossing has no audio signal. The traffic is very heavy and blind people cannot cross safely.", "date": "2025-11-28", "category": null},
-  {"id": "G047", "stop_id": "S020", "text": "Crawford bus stop has broken pavement tiles creating trip hazards. My mother with a walking frame stumbled and fell here last week.", "date": "2025-09-20", "category": null},
-  {"id": "G048", "stop_id": "S003", "text": "Trichy Junction railway station braille signs on platforms are worn out and unreadable. They need immediate replacement.", "date": "2025-12-18", "category": null},
-  {"id": "G049", "stop_id": "S019", "text": "Thuvakudi bus stop has no bus shelter. During monsoon season, disabled passengers have no protection from heavy rain.", "date": "2025-10-02", "category": null},
-  {"id": "G050", "stop_id": "S016", "text": "Bikshandarkoil bus stop road surface is completely broken. Wheelchair users cannot navigate the potholes to reach the bus stop.", "date": "2025-08-22", "category": null},
-  {"id": "G051", "stop_id": "S027", "text": "MGR Bus Stand toilet for disabled is locked most of the time. Staff says they keep it locked to prevent misuse. This is discrimination.", "date": "2025-11-05", "category": null},
-  {"id": "G052", "stop_id": "S012", "text": "Palakkarai bus stop has no audio system. Buses come and go silently. Blind passengers cannot tell which bus has stopped.", "date": "2025-07-08", "category": null},
-  {"id": "G053", "stop_id": "S004", "text": "Thillai Nagar bus stop at night has zero lighting. Disabled passengers are at risk of accidents. No reflective markers either.", "date": "2025-12-20", "category": null},
-  {"id": "G054", "stop_id": "S011", "text": "The Teppakulam bus stop has high kerb with no drop kerb for wheelchairs. I have to go 200 meters to find a place to get on the road.", "date": "2025-06-30", "category": null},
-  {"id": "G055", "stop_id": "S021", "text": "Khajamalai bus stop staff are not trained in disability awareness. When I asked for help, they looked confused and didn't know what to do.", "date": "2025-09-28", "category": null}
+  {
+    "id": "G001",
+    "stop_id": "S001",
+    "text": "No ramp at Chatram Bus Stand platform 3. I use a wheelchair and had to be lifted by strangers to board the bus. This is humiliating and unsafe.",
+    "date": "2025-11-15",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G002",
+    "stop_id": "S002",
+    "text": "Srirangam Bus Stand has absolutely no accessibility features. No ramp, no tactile path, nothing. Disabled people are completely ignored here.",
+    "date": "2025-12-01",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G003",
+    "stop_id": "S001",
+    "text": "There is no audio announcement system at Chatram Bus Stand. As a visually impaired person, I cannot identify which bus has arrived.",
+    "date": "2025-10-20",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G004",
+    "stop_id": "S004",
+    "text": "Thillai Nagar bus stop has no ramp, no shelter, and no seating for elderly or disabled passengers. We stand in the sun for 30 minutes.",
+    "date": "2025-09-18",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G005",
+    "stop_id": "S005",
+    "text": "The bus stop near Cantonment area has steps but no ramp. My father uses a walking stick and almost fell trying to climb the steps.",
+    "date": "2025-08-25",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G006",
+    "stop_id": "S006",
+    "text": "KK Nagar bus stop is completely inaccessible. No ramp, no tactile guidance, no audio. How are blind people supposed to use public transport?",
+    "date": "2025-11-30",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G007",
+    "stop_id": "S002",
+    "text": "I am deaf and there is no LED display board at Srirangam bus stand showing bus numbers and routes. Only verbal announcements which I cannot hear.",
+    "date": "2025-07-12",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G008",
+    "stop_id": "S009",
+    "text": "Mannarpuram bus stop has broken pavement. My wheelchair gets stuck in the gaps. The entire area around the stop is not wheelchair friendly.",
+    "date": "2025-10-05",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G009",
+    "stop_id": "S011",
+    "text": "Teppakulam bus stop has no braille signage at all. I am visually impaired and cannot read the route information board.",
+    "date": "2025-06-20",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G010",
+    "stop_id": "S001",
+    "text": "The accessible toilet at Chatram Bus Stand is always locked. Staff says they don't have the key. This has been the case for over 6 months.",
+    "date": "2025-12-10",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G011",
+    "stop_id": "S004",
+    "text": "No wheelchair space on buses departing from Thillai Nagar. The buses are old models with narrow doors. Impossible for wheelchair users.",
+    "date": "2025-11-08",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G012",
+    "stop_id": "S013",
+    "text": "Ariyamangalam bus stop is dangerous for disabled people. No ramp, uneven ground, no lighting at night, no staff to help.",
+    "date": "2025-09-30",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G013",
+    "stop_id": "S007",
+    "text": "Woraiyur bus stop has a ramp but it is too steep. My wheelchair tips backward when I try to go up. The ramp does not follow the 1:12 slope standard.",
+    "date": "2025-08-14",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G014",
+    "stop_id": "S014",
+    "text": "There are no audio signals at Karumandapam bus stop intersection. Blind people cannot safely cross the road to reach the bus stop.",
+    "date": "2025-10-22",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G015",
+    "stop_id": "S008",
+    "text": "Thiruverumbur bus stand has a ramp at the entrance but no tactile path inside. Visually impaired passengers get lost inside the terminal.",
+    "date": "2025-07-05",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G016",
+    "stop_id": "S016",
+    "text": "Bikshandarkoil bus stop is just a pole with a signboard. No shelter, no seating, no ramp, nothing for disabled passengers. Worst stop in Trichy.",
+    "date": "2025-11-25",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G017",
+    "stop_id": "S001",
+    "text": "Staff at Chatram Bus Stand refused to help me board the bus with my wheelchair. They said it's not their job. Very rude and unhelpful.",
+    "date": "2025-05-18",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G018",
+    "stop_id": "S019",
+    "text": "Thuvakudi bus stop near NIT campus has no accessibility at all. Many disabled students struggle daily to catch the bus.",
+    "date": "2025-12-05",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G019",
+    "stop_id": "S012",
+    "text": "Palakkarai bus stop ramp is broken \u00e2\u20ac\u201d the concrete has crumbled on one side. It's been like this for a year with no repairs.",
+    "date": "2025-09-10",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G020",
+    "stop_id": "S020",
+    "text": "Crawford bus stop has no audio announcements. Bus drivers don't announce their route number. Blind passengers miss their buses regularly.",
+    "date": "2025-08-02",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G021",
+    "stop_id": "S003",
+    "text": "Trichy Junction has elevators but they are frequently out of order. Last week both lifts on platform 1 were broken for 3 days.",
+    "date": "2025-11-18",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G022",
+    "stop_id": "S002",
+    "text": "No wheelchair ramp at Srirangam bus stand. I visited the famous temple but couldn't take the bus back. Had to pay for an auto.",
+    "date": "2025-10-30",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G023",
+    "stop_id": "S011",
+    "text": "Teppakulam bus stop has no shelter or seating. My grandmother who uses a walker has to stand in the rain waiting for the bus.",
+    "date": "2025-07-28",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G024",
+    "stop_id": "S021",
+    "text": "Khajamalai bus stop has no accessible features whatsoever. There are two steps to climb and no ramp. Wheelchair users cannot use this stop.",
+    "date": "2025-06-15",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G025",
+    "stop_id": "S006",
+    "text": "My son is autistic and gets overwhelmed by the chaos at KK Nagar bus stop. There is no quiet waiting area or any sensory-friendly features.",
+    "date": "2025-12-08",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G026",
+    "stop_id": "S015",
+    "text": "Ponmalai Golden Rock station has a ramp but no braille signage on platforms. Visually impaired passengers cannot navigate independently.",
+    "date": "2025-09-22",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G027",
+    "stop_id": "S010",
+    "text": "Puthur bus stop has no audio signal at the nearby pedestrian crossing. I am blind and crossing the road here is very dangerous.",
+    "date": "2025-08-18",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G028",
+    "stop_id": "S018",
+    "text": "Lalgudi bus stand toilet has no grab bars or wheelchair access. Disabled passengers have to use the regular toilet which is very difficult.",
+    "date": "2025-11-02",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G029",
+    "stop_id": "S026",
+    "text": "TV Kovil bus stop has no bus shelter. Disabled passengers are exposed to extreme heat in summer. No seating available at all.",
+    "date": "2025-10-14",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G030",
+    "stop_id": "S027",
+    "text": "MGR Bus Stand has a ramp but it is blocked by parked two-wheelers. Staff doesn't clear the area. Ramp is useless if blocked.",
+    "date": "2025-07-20",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G031",
+    "stop_id": "S004",
+    "text": "No braille signage at Thillai Nagar bus stop. The route map is only in Tamil text which visually impaired people cannot read.",
+    "date": "2025-12-12",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G032",
+    "stop_id": "S009",
+    "text": "The footpath leading to Mannarpuram bus stop has open drainage. My wheelchair almost fell into it. This is life-threatening.",
+    "date": "2025-06-08",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G033",
+    "stop_id": "S005",
+    "text": "Cantonment bus stop near the army area has no tactile path. Blind passengers have no guidance to find the boarding point.",
+    "date": "2025-09-05",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G034",
+    "stop_id": "S028",
+    "text": "Anna Nagar bus stop is on a very narrow road. No wheelchair-accessible path from the main road to the stop. Completely inaccessible.",
+    "date": "2025-11-20",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G035",
+    "stop_id": "S029",
+    "text": "Senthaneerpuram bus stop has no staff, no shelter, no ramp, no audio. It's like the city planners forgot disabled people exist.",
+    "date": "2025-08-30",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G036",
+    "stop_id": "S030",
+    "text": "Fort Station bus stop ramp is there but too narrow for electric wheelchairs. Standard wheelchair barely fits. Need wider ramp urgently.",
+    "date": "2025-10-08",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G037",
+    "stop_id": "S001",
+    "text": "The elevator at Chatram Bus Stand ground floor doesn't work. It hasn't worked since March. Wheelchair users cannot go to the first floor.",
+    "date": "2025-12-15",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G038",
+    "stop_id": "S017",
+    "text": "Samayapuram bus stop is near the famous temple but has no braille signage. Many visually impaired devotees visit and struggle with directions.",
+    "date": "2025-07-15",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G039",
+    "stop_id": "S023",
+    "text": "Chinthamani bus stop has no audio warning when buses arrive. I am partially blind and was almost hit by a bus pulling into the stop.",
+    "date": "2025-11-10",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G040",
+    "stop_id": "S014",
+    "text": "Karumandapam bus stop has no accessible toilet nearby. The nearest public toilet is 500 meters away and also not wheelchair accessible.",
+    "date": "2025-06-28",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G041",
+    "stop_id": "S002",
+    "text": "Driver of bus 1A from Srirangam refused to lower the bus for my elderly mother. Said the hydraulic system doesn't work. No low-floor buses on this route.",
+    "date": "2025-09-15",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G042",
+    "stop_id": "S008",
+    "text": "Thiruverumbur bus stand accessible toilet is extremely dirty. Staff says cleaning happens only once a day. Not hygienic for disabled users.",
+    "date": "2025-12-02",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G043",
+    "stop_id": "S024",
+    "text": "Manapparai bus stand has a ramp but no handrails. For people with mobility issues, climbing the ramp without handrails is very difficult.",
+    "date": "2025-08-10",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G044",
+    "stop_id": "S013",
+    "text": "No staff assistance available at Ariyamangalam bus stop. When I asked a conductor for help boarding, he ignored me completely.",
+    "date": "2025-10-25",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G045",
+    "stop_id": "S025",
+    "text": "Musiri bus stand has no elevator or ramp to the upper level waiting area. Disabled and elderly passengers are stuck on the ground floor.",
+    "date": "2025-07-01",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G046",
+    "stop_id": "S006",
+    "text": "KK Nagar bus stop pedestrian crossing has no audio signal. The traffic is very heavy and blind people cannot cross safely.",
+    "date": "2025-11-28",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G047",
+    "stop_id": "S020",
+    "text": "Crawford bus stop has broken pavement tiles creating trip hazards. My mother with a walking frame stumbled and fell here last week.",
+    "date": "2025-09-20",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G048",
+    "stop_id": "S003",
+    "text": "Trichy Junction railway station braille signs on platforms are worn out and unreadable. They need immediate replacement.",
+    "date": "2025-12-18",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G049",
+    "stop_id": "S019",
+    "text": "Thuvakudi bus stop has no bus shelter. During monsoon season, disabled passengers have no protection from heavy rain.",
+    "date": "2025-10-02",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G050",
+    "stop_id": "S016",
+    "text": "Bikshandarkoil bus stop road surface is completely broken. Wheelchair users cannot navigate the potholes to reach the bus stop.",
+    "date": "2025-08-22",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G051",
+    "stop_id": "S027",
+    "text": "MGR Bus Stand toilet for disabled is locked most of the time. Staff says they keep it locked to prevent misuse. This is discrimination.",
+    "date": "2025-11-05",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G052",
+    "stop_id": "S012",
+    "text": "Palakkarai bus stop has no audio system. Buses come and go silently. Blind passengers cannot tell which bus has stopped.",
+    "date": "2025-07-08",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G053",
+    "stop_id": "S004",
+    "text": "Thillai Nagar bus stop at night has zero lighting. Disabled passengers are at risk of accidents. No reflective markers either.",
+    "date": "2025-12-20",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G054",
+    "stop_id": "S011",
+    "text": "The Teppakulam bus stop has high kerb with no drop kerb for wheelchairs. I have to go 200 meters to find a place to get on the road.",
+    "date": "2025-06-30",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G055",
+    "stop_id": "S021",
+    "text": "Khajamalai bus stop staff are not trained in disability awareness. When I asked for help, they looked confused and didn't know what to do.",
+    "date": "2025-09-28",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G056",
+    "stop_id": "S069",
+    "text": "Chennai New Bus Stand has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2026-02-04",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G057",
+    "stop_id": "S070",
+    "text": "Staff at Chennai Central Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-06-03",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G058",
+    "stop_id": "S070",
+    "text": "No tactile path or braille signage at Chennai Central Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-12-13",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G059",
+    "stop_id": "S071",
+    "text": "The bus shelter at Chennai Town Bus Stop has no seating for elderly or disabled passengers.",
+    "date": "2025-12-28",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G060",
+    "stop_id": "S072",
+    "text": "No wheelchair ramp at Coimbatore Town Bus Stop. Disabled passengers cannot board buses safely.",
+    "date": "2025-09-15",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G061",
+    "stop_id": "S073",
+    "text": "No audio announcement system at Coimbatore New Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-05-02",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G062",
+    "stop_id": "S073",
+    "text": "Broken pavement near Coimbatore New Bus Stand makes wheelchair access impossible.",
+    "date": "2026-02-20",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G063",
+    "stop_id": "S074",
+    "text": "No tactile path or braille signage at Coimbatore Central Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-07-06",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G064",
+    "stop_id": "S075",
+    "text": "No wheelchair ramp at Madurai Central Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2025-06-15",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G065",
+    "stop_id": "S076",
+    "text": "No wheelchair ramp at Madurai New Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2026-02-20",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G066",
+    "stop_id": "S076",
+    "text": "Staff at Madurai New Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-08-09",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G067",
+    "stop_id": "S077",
+    "text": "Broken pavement near Madurai Town Bus Stop makes wheelchair access impossible.",
+    "date": "2025-07-01",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G068",
+    "stop_id": "S078",
+    "text": "The bus shelter at Salem Central Bus Stand has no seating for elderly or disabled passengers.",
+    "date": "2026-01-06",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G069",
+    "stop_id": "S078",
+    "text": "No wheelchair ramp at Salem Central Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2025-06-09",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G070",
+    "stop_id": "S079",
+    "text": "No LED display board at Salem New Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2026-02-21",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G071",
+    "stop_id": "S079",
+    "text": "Staff at Salem New Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-08-18",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G072",
+    "stop_id": "S080",
+    "text": "Broken pavement near Salem Town Bus Stop makes wheelchair access impossible.",
+    "date": "2026-01-16",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G073",
+    "stop_id": "S080",
+    "text": "No audio announcement system at Salem Town Bus Stop. Blind passengers miss their buses regularly.",
+    "date": "2025-11-10",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G074",
+    "stop_id": "S081",
+    "text": "No tactile path or braille signage at Tirunelveli Central Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-05-21",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G075",
+    "stop_id": "S082",
+    "text": "Tirunelveli Town Bus Stop has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-11-07",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G076",
+    "stop_id": "S082",
+    "text": "Broken pavement near Tirunelveli Town Bus Stop makes wheelchair access impossible.",
+    "date": "2025-06-08",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G077",
+    "stop_id": "S083",
+    "text": "No wheelchair ramp at Tirunelveli New Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2025-08-08",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G078",
+    "stop_id": "S084",
+    "text": "Broken pavement near Erode Town Bus Stop makes wheelchair access impossible.",
+    "date": "2025-07-14",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G079",
+    "stop_id": "S085",
+    "text": "No tactile path or braille signage at Erode Central Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-10-11",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G080",
+    "stop_id": "S086",
+    "text": "The bus shelter at Erode New Bus Stand has no seating for elderly or disabled passengers.",
+    "date": "2025-06-19",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G081",
+    "stop_id": "S087",
+    "text": "No audio announcement system at Vellore New Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2026-02-15",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G082",
+    "stop_id": "S088",
+    "text": "No tactile path or braille signage at Vellore Town Bus Stop. Visually impaired people are completely ignored.",
+    "date": "2025-07-25",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G083",
+    "stop_id": "S089",
+    "text": "Staff at Thanjavur New Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-12-03",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G084",
+    "stop_id": "S089",
+    "text": "No audio announcement system at Thanjavur New Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-11-04",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G085",
+    "stop_id": "S090",
+    "text": "Staff at Thanjavur Central Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-12-28",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G086",
+    "stop_id": "S090",
+    "text": "No tactile path or braille signage at Thanjavur Central Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2026-03-08",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G087",
+    "stop_id": "S091",
+    "text": "Staff at Dindigul Town Bus Stop are not trained to assist disabled passengers. No help available.",
+    "date": "2025-11-27",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G088",
+    "stop_id": "S092",
+    "text": "Broken pavement near Dindigul Central Bus Stand makes wheelchair access impossible.",
+    "date": "2025-07-16",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G089",
+    "stop_id": "S093",
+    "text": "No LED display board at Dindigul New Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2025-07-07",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G090",
+    "stop_id": "S093",
+    "text": "Broken pavement near Dindigul New Bus Stand makes wheelchair access impossible.",
+    "date": "2025-07-18",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G091",
+    "stop_id": "S094",
+    "text": "Kanchipuram Central Bus Stand has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-08-23",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G092",
+    "stop_id": "S094",
+    "text": "No LED display board at Kanchipuram Central Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2026-02-16",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G093",
+    "stop_id": "S095",
+    "text": "No LED display board at Kanchipuram Town Bus Stop. Deaf passengers cannot get route information.",
+    "date": "2025-09-05",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G094",
+    "stop_id": "S095",
+    "text": "The bus shelter at Kanchipuram Town Bus Stop has no seating for elderly or disabled passengers.",
+    "date": "2025-09-07",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G095",
+    "stop_id": "S096",
+    "text": "No LED display board at Kanchipuram New Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2025-11-04",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G096",
+    "stop_id": "S097",
+    "text": "Broken pavement near Cuddalore New Bus Stand makes wheelchair access impossible.",
+    "date": "2026-01-12",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G097",
+    "stop_id": "S098",
+    "text": "Broken pavement near Cuddalore Central Bus Stand makes wheelchair access impossible.",
+    "date": "2026-03-12",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G098",
+    "stop_id": "S099",
+    "text": "No LED display board at Cuddalore Town Bus Stop. Deaf passengers cannot get route information.",
+    "date": "2025-08-09",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G099",
+    "stop_id": "S100",
+    "text": "No LED display board at Villupuram New Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2025-07-14",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G100",
+    "stop_id": "S101",
+    "text": "Staff at Villupuram Town Bus Stop are not trained to assist disabled passengers. No help available.",
+    "date": "2025-06-10",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G101",
+    "stop_id": "S101",
+    "text": "Villupuram Town Bus Stop has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-08-29",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G102",
+    "stop_id": "S102",
+    "text": "Broken pavement near Villupuram Central Bus Stand makes wheelchair access impossible.",
+    "date": "2025-06-05",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G103",
+    "stop_id": "S102",
+    "text": "No wheelchair ramp at Villupuram Central Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2025-08-08",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G104",
+    "stop_id": "S103",
+    "text": "Staff at Tiruvannamalai Central Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-06-11",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G105",
+    "stop_id": "S104",
+    "text": "Broken pavement near Tiruvannamalai New Bus Stand makes wheelchair access impossible.",
+    "date": "2025-07-14",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G106",
+    "stop_id": "S105",
+    "text": "No LED display board at Nagapattinam Town Bus Stop. Deaf passengers cannot get route information.",
+    "date": "2025-07-24",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G107",
+    "stop_id": "S106",
+    "text": "The bus shelter at Nagapattinam New Bus Stand has no seating for elderly or disabled passengers.",
+    "date": "2026-01-05",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G108",
+    "stop_id": "S106",
+    "text": "Nagapattinam New Bus Stand has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-07-11",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G109",
+    "stop_id": "S107",
+    "text": "No wheelchair ramp at Theni New Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2025-04-17",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G110",
+    "stop_id": "S108",
+    "text": "Staff at Theni Central Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2026-03-08",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G111",
+    "stop_id": "S108",
+    "text": "No LED display board at Theni Central Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2025-08-02",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G112",
+    "stop_id": "S109",
+    "text": "Virudhunagar Town Bus Stop has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-09-16",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G113",
+    "stop_id": "S109",
+    "text": "The bus shelter at Virudhunagar Town Bus Stop has no seating for elderly or disabled passengers.",
+    "date": "2025-08-09",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G114",
+    "stop_id": "S110",
+    "text": "No tactile path or braille signage at Virudhunagar New Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-08-19",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G115",
+    "stop_id": "S110",
+    "text": "Virudhunagar New Bus Stand has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2026-03-15",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G116",
+    "stop_id": "S111",
+    "text": "Staff at Virudhunagar Central Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-09-27",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G117",
+    "stop_id": "S111",
+    "text": "The bus shelter at Virudhunagar Central Bus Stand has no seating for elderly or disabled passengers.",
+    "date": "2025-11-03",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G118",
+    "stop_id": "S112",
+    "text": "Broken pavement near Namakkal Town Bus Stop makes wheelchair access impossible.",
+    "date": "2026-02-21",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G119",
+    "stop_id": "S113",
+    "text": "No audio announcement system at Namakkal New Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-07-07",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G120",
+    "stop_id": "S114",
+    "text": "The bus shelter at Namakkal Central Bus Stand has no seating for elderly or disabled passengers.",
+    "date": "2025-06-29",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G121",
+    "stop_id": "S115",
+    "text": "Karur Central Bus Stand has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-08-21",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G122",
+    "stop_id": "S116",
+    "text": "No tactile path or braille signage at Karur New Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-09-25",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G123",
+    "stop_id": "S117",
+    "text": "No tactile path or braille signage at Karur Town Bus Stop. Visually impaired people are completely ignored.",
+    "date": "2026-03-18",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G124",
+    "stop_id": "S118",
+    "text": "No LED display board at Sivagangai Town Bus Stop. Deaf passengers cannot get route information.",
+    "date": "2025-05-20",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G125",
+    "stop_id": "S118",
+    "text": "Broken pavement near Sivagangai Town Bus Stop makes wheelchair access impossible.",
+    "date": "2025-05-09",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G126",
+    "stop_id": "S119",
+    "text": "No LED display board at Sivagangai New Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2026-01-26",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G127",
+    "stop_id": "S119",
+    "text": "Broken pavement near Sivagangai New Bus Stand makes wheelchair access impossible.",
+    "date": "2025-11-03",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G128",
+    "stop_id": "S120",
+    "text": "Broken pavement near Sivagangai Central Bus Stand makes wheelchair access impossible.",
+    "date": "2025-08-17",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G129",
+    "stop_id": "S120",
+    "text": "No wheelchair ramp at Sivagangai Central Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2025-05-17",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G130",
+    "stop_id": "S121",
+    "text": "No LED display board at Ramanathapuram Town Bus Stop. Deaf passengers cannot get route information.",
+    "date": "2025-07-08",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G131",
+    "stop_id": "S122",
+    "text": "Broken pavement near Ramanathapuram New Bus Stand makes wheelchair access impossible.",
+    "date": "2025-12-18",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G132",
+    "stop_id": "S122",
+    "text": "No wheelchair ramp at Ramanathapuram New Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2026-03-05",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G133",
+    "stop_id": "S123",
+    "text": "No audio announcement system at Ramanathapuram Central Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-12-08",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G134",
+    "stop_id": "S123",
+    "text": "No wheelchair ramp at Ramanathapuram Central Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2025-10-06",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G135",
+    "stop_id": "S124",
+    "text": "No LED display board at Thoothukudi New Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2025-08-03",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G136",
+    "stop_id": "S124",
+    "text": "No audio announcement system at Thoothukudi New Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2026-03-15",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G137",
+    "stop_id": "S125",
+    "text": "Thoothukudi Town Bus Stop has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2026-02-24",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G138",
+    "stop_id": "S126",
+    "text": "Staff at Thoothukudi Central Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-08-23",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G139",
+    "stop_id": "S126",
+    "text": "No audio announcement system at Thoothukudi Central Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-05-11",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G140",
+    "stop_id": "S127",
+    "text": "Tiruppur Town Bus Stop has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-10-06",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G141",
+    "stop_id": "S127",
+    "text": "Broken pavement near Tiruppur Town Bus Stop makes wheelchair access impossible.",
+    "date": "2025-09-27",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G142",
+    "stop_id": "S128",
+    "text": "Broken pavement near Tiruppur New Bus Stand makes wheelchair access impossible.",
+    "date": "2025-05-27",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G143",
+    "stop_id": "S128",
+    "text": "No audio announcement system at Tiruppur New Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-12-03",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G144",
+    "stop_id": "S129",
+    "text": "No wheelchair ramp at Pudukkottai Town Bus Stop. Disabled passengers cannot board buses safely.",
+    "date": "2025-07-25",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G145",
+    "stop_id": "S130",
+    "text": "No audio announcement system at Pudukkottai New Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-11-15",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G146",
+    "stop_id": "S130",
+    "text": "Broken pavement near Pudukkottai New Bus Stand makes wheelchair access impossible.",
+    "date": "2026-02-05",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G147",
+    "stop_id": "S131",
+    "text": "No wheelchair ramp at Dharmapuri Town Bus Stop. Disabled passengers cannot board buses safely.",
+    "date": "2025-09-01",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G148",
+    "stop_id": "S132",
+    "text": "Dharmapuri New Bus Stand has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2026-02-28",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G149",
+    "stop_id": "S132",
+    "text": "Staff at Dharmapuri New Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-06-21",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G150",
+    "stop_id": "S133",
+    "text": "No wheelchair ramp at Dharmapuri Central Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2025-11-23",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G151",
+    "stop_id": "S133",
+    "text": "Staff at Dharmapuri Central Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-05-22",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G152",
+    "stop_id": "S134",
+    "text": "No LED display board at Krishnagiri Town Bus Stop. Deaf passengers cannot get route information.",
+    "date": "2025-11-13",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G153",
+    "stop_id": "S134",
+    "text": "No wheelchair ramp at Krishnagiri Town Bus Stop. Disabled passengers cannot board buses safely.",
+    "date": "2025-08-22",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G154",
+    "stop_id": "S135",
+    "text": "No LED display board at Krishnagiri Central Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2026-02-19",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G155",
+    "stop_id": "S135",
+    "text": "No tactile path or braille signage at Krishnagiri Central Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2026-01-18",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G156",
+    "stop_id": "S136",
+    "text": "Broken pavement near Perambalur Town Bus Stop makes wheelchair access impossible.",
+    "date": "2025-05-24",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G157",
+    "stop_id": "S137",
+    "text": "No audio announcement system at Perambalur New Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-12-31",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G158",
+    "stop_id": "S138",
+    "text": "No LED display board at Ariyalur Town Bus Stop. Deaf passengers cannot get route information.",
+    "date": "2025-09-19",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G159",
+    "stop_id": "S138",
+    "text": "No tactile path or braille signage at Ariyalur Town Bus Stop. Visually impaired people are completely ignored.",
+    "date": "2025-12-03",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G160",
+    "stop_id": "S139",
+    "text": "No wheelchair ramp at Ariyalur Central Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2026-03-03",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G161",
+    "stop_id": "S140",
+    "text": "Ariyalur New Bus Stand has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-08-29",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G162",
+    "stop_id": "S141",
+    "text": "Broken pavement near Nilgiris Town Bus Stop makes wheelchair access impossible.",
+    "date": "2025-10-22",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G163",
+    "stop_id": "S142",
+    "text": "No tactile path or braille signage at Nilgiris Central Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-06-04",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G164",
+    "stop_id": "S142",
+    "text": "The bus shelter at Nilgiris Central Bus Stand has no seating for elderly or disabled passengers.",
+    "date": "2025-06-25",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G165",
+    "stop_id": "S143",
+    "text": "Broken pavement near Nilgiris New Bus Stand makes wheelchair access impossible.",
+    "date": "2026-02-05",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G166",
+    "stop_id": "S144",
+    "text": "No tactile path or braille signage at Ranipet Central Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-04-21",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G167",
+    "stop_id": "S145",
+    "text": "Broken pavement near Ranipet Town Bus Stop makes wheelchair access impossible.",
+    "date": "2025-06-07",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G168",
+    "stop_id": "S145",
+    "text": "Staff at Ranipet Town Bus Stop are not trained to assist disabled passengers. No help available.",
+    "date": "2026-02-16",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G169",
+    "stop_id": "S146",
+    "text": "No wheelchair ramp at Ranipet New Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2026-02-18",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G170",
+    "stop_id": "S146",
+    "text": "Staff at Ranipet New Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-06-05",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G171",
+    "stop_id": "S147",
+    "text": "No tactile path or braille signage at Tirupathur New Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-09-13",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G172",
+    "stop_id": "S147",
+    "text": "The bus shelter at Tirupathur New Bus Stand has no seating for elderly or disabled passengers.",
+    "date": "2025-11-05",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G173",
+    "stop_id": "S148",
+    "text": "Tirupathur Town Bus Stop has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-12-20",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G174",
+    "stop_id": "S148",
+    "text": "Broken pavement near Tirupathur Town Bus Stop makes wheelchair access impossible.",
+    "date": "2025-12-11",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G175",
+    "stop_id": "S149",
+    "text": "No audio announcement system at Tirupathur Central Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-12-20",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G176",
+    "stop_id": "S149",
+    "text": "No tactile path or braille signage at Tirupathur Central Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-08-05",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G177",
+    "stop_id": "S150",
+    "text": "No audio announcement system at Chengalpattu Town Bus Stop. Blind passengers miss their buses regularly.",
+    "date": "2025-04-26",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G178",
+    "stop_id": "S150",
+    "text": "Chengalpattu Town Bus Stop has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-08-10",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G179",
+    "stop_id": "S151",
+    "text": "No LED display board at Chengalpattu Central Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2025-11-15",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G180",
+    "stop_id": "S152",
+    "text": "Kallakurichi Town Bus Stop has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-12-08",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G181",
+    "stop_id": "S153",
+    "text": "No wheelchair ramp at Kallakurichi Central Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2025-12-01",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G182",
+    "stop_id": "S153",
+    "text": "No audio announcement system at Kallakurichi Central Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-07-30",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G183",
+    "stop_id": "S154",
+    "text": "No tactile path or braille signage at Tenkasi Central Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-06-19",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G184",
+    "stop_id": "S154",
+    "text": "The bus shelter at Tenkasi Central Bus Stand has no seating for elderly or disabled passengers.",
+    "date": "2026-01-14",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G185",
+    "stop_id": "S155",
+    "text": "No LED display board at Tenkasi Town Bus Stop. Deaf passengers cannot get route information.",
+    "date": "2025-07-09",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G186",
+    "stop_id": "S155",
+    "text": "No wheelchair ramp at Tenkasi Town Bus Stop. Disabled passengers cannot board buses safely.",
+    "date": "2025-09-19",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G187",
+    "stop_id": "S156",
+    "text": "No LED display board at Mayiladuthurai Town Bus Stop. Deaf passengers cannot get route information.",
+    "date": "2025-06-06",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G188",
+    "stop_id": "S157",
+    "text": "Mayiladuthurai Central Bus Stand has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-08-18",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G189",
+    "stop_id": "S158",
+    "text": "Mayiladuthurai New Bus Stand has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2026-02-10",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G190",
+    "stop_id": "S158",
+    "text": "The bus shelter at Mayiladuthurai New Bus Stand has no seating for elderly or disabled passengers.",
+    "date": "2025-12-08",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G191",
+    "stop_id": "S159",
+    "text": "No LED display board at Kanyakumari Central Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2025-11-01",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G192",
+    "stop_id": "S159",
+    "text": "Kanyakumari Central Bus Stand has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-05-22",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G193",
+    "stop_id": "S160",
+    "text": "No tactile path or braille signage at Kanyakumari New Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-09-13",
+    "category": null,
+    "district": "Tiruchirappalli"
+  },
+  {
+    "id": "G194",
+    "stop_id": "S161",
+    "text": "Broken pavement near Chennai Central Bus Stand makes wheelchair access impossible.",
+    "date": "2025-06-13",
+    "category": null,
+    "district": "Chennai"
+  },
+  {
+    "id": "G195",
+    "stop_id": "S162",
+    "text": "No tactile path or braille signage at Chennai New Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-07-27",
+    "category": null,
+    "district": "Chennai"
+  },
+  {
+    "id": "G196",
+    "stop_id": "S162",
+    "text": "The bus shelter at Chennai New Bus Stand has no seating for elderly or disabled passengers.",
+    "date": "2025-08-17",
+    "category": null,
+    "district": "Chennai"
+  },
+  {
+    "id": "G197",
+    "stop_id": "S163",
+    "text": "No wheelchair ramp at Chennai Town Bus Stop. Disabled passengers cannot board buses safely.",
+    "date": "2025-07-22",
+    "category": null,
+    "district": "Chennai"
+  },
+  {
+    "id": "G198",
+    "stop_id": "S164",
+    "text": "Staff at Coimbatore Central Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-10-11",
+    "category": null,
+    "district": "Coimbatore"
+  },
+  {
+    "id": "G199",
+    "stop_id": "S165",
+    "text": "No tactile path or braille signage at Coimbatore New Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-10-22",
+    "category": null,
+    "district": "Coimbatore"
+  },
+  {
+    "id": "G200",
+    "stop_id": "S166",
+    "text": "Staff at Madurai Town Bus Stop are not trained to assist disabled passengers. No help available.",
+    "date": "2025-12-09",
+    "category": null,
+    "district": "Madurai"
+  },
+  {
+    "id": "G201",
+    "stop_id": "S167",
+    "text": "No audio announcement system at Madurai New Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-12-31",
+    "category": null,
+    "district": "Madurai"
+  },
+  {
+    "id": "G202",
+    "stop_id": "S168",
+    "text": "No tactile path or braille signage at Madurai Central Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-10-07",
+    "category": null,
+    "district": "Madurai"
+  },
+  {
+    "id": "G203",
+    "stop_id": "S169",
+    "text": "Broken pavement near Salem Central Bus Stand makes wheelchair access impossible.",
+    "date": "2025-06-24",
+    "category": null,
+    "district": "Salem"
+  },
+  {
+    "id": "G204",
+    "stop_id": "S170",
+    "text": "No wheelchair ramp at Salem Town Bus Stop. Disabled passengers cannot board buses safely.",
+    "date": "2025-10-18",
+    "category": null,
+    "district": "Salem"
+  },
+  {
+    "id": "G205",
+    "stop_id": "S171",
+    "text": "Salem New Bus Stand has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-10-24",
+    "category": null,
+    "district": "Salem"
+  },
+  {
+    "id": "G206",
+    "stop_id": "S172",
+    "text": "Staff at Tirunelveli New Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-09-12",
+    "category": null,
+    "district": "Tirunelveli"
+  },
+  {
+    "id": "G207",
+    "stop_id": "S173",
+    "text": "No audio announcement system at Tirunelveli Town Bus Stop. Blind passengers miss their buses regularly.",
+    "date": "2025-07-27",
+    "category": null,
+    "district": "Tirunelveli"
+  },
+  {
+    "id": "G208",
+    "stop_id": "S174",
+    "text": "No wheelchair ramp at Tirunelveli Central Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2025-11-27",
+    "category": null,
+    "district": "Tirunelveli"
+  },
+  {
+    "id": "G209",
+    "stop_id": "S174",
+    "text": "Staff at Tirunelveli Central Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-04-18",
+    "category": null,
+    "district": "Tirunelveli"
+  },
+  {
+    "id": "G210",
+    "stop_id": "S175",
+    "text": "No LED display board at Erode New Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2025-07-21",
+    "category": null,
+    "district": "Erode"
+  },
+  {
+    "id": "G211",
+    "stop_id": "S176",
+    "text": "No LED display board at Erode Central Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2025-06-28",
+    "category": null,
+    "district": "Erode"
+  },
+  {
+    "id": "G212",
+    "stop_id": "S177",
+    "text": "No audio announcement system at Vellore New Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-10-15",
+    "category": null,
+    "district": "Vellore"
+  },
+  {
+    "id": "G213",
+    "stop_id": "S177",
+    "text": "No tactile path or braille signage at Vellore New Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2026-01-31",
+    "category": null,
+    "district": "Vellore"
+  },
+  {
+    "id": "G214",
+    "stop_id": "S178",
+    "text": "No LED display board at Vellore Town Bus Stop. Deaf passengers cannot get route information.",
+    "date": "2026-02-05",
+    "category": null,
+    "district": "Vellore"
+  },
+  {
+    "id": "G215",
+    "stop_id": "S178",
+    "text": "Broken pavement near Vellore Town Bus Stop makes wheelchair access impossible.",
+    "date": "2025-12-15",
+    "category": null,
+    "district": "Vellore"
+  },
+  {
+    "id": "G216",
+    "stop_id": "S179",
+    "text": "No LED display board at Thanjavur New Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2025-05-18",
+    "category": null,
+    "district": "Thanjavur"
+  },
+  {
+    "id": "G217",
+    "stop_id": "S180",
+    "text": "No LED display board at Thanjavur Town Bus Stop. Deaf passengers cannot get route information.",
+    "date": "2025-06-15",
+    "category": null,
+    "district": "Thanjavur"
+  },
+  {
+    "id": "G218",
+    "stop_id": "S181",
+    "text": "Dindigul Central Bus Stand has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-08-05",
+    "category": null,
+    "district": "Dindigul"
+  },
+  {
+    "id": "G219",
+    "stop_id": "S182",
+    "text": "No audio announcement system at Dindigul Town Bus Stop. Blind passengers miss their buses regularly.",
+    "date": "2025-07-24",
+    "category": null,
+    "district": "Dindigul"
+  },
+  {
+    "id": "G220",
+    "stop_id": "S183",
+    "text": "Broken pavement near Kanchipuram Town Bus Stop makes wheelchair access impossible.",
+    "date": "2026-01-23",
+    "category": null,
+    "district": "Kanchipuram"
+  },
+  {
+    "id": "G221",
+    "stop_id": "S183",
+    "text": "Staff at Kanchipuram Town Bus Stop are not trained to assist disabled passengers. No help available.",
+    "date": "2025-10-08",
+    "category": null,
+    "district": "Kanchipuram"
+  },
+  {
+    "id": "G222",
+    "stop_id": "S184",
+    "text": "No audio announcement system at Kanchipuram Central Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-09-15",
+    "category": null,
+    "district": "Kanchipuram"
+  },
+  {
+    "id": "G223",
+    "stop_id": "S184",
+    "text": "No wheelchair ramp at Kanchipuram Central Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2025-05-04",
+    "category": null,
+    "district": "Kanchipuram"
+  },
+  {
+    "id": "G224",
+    "stop_id": "S185",
+    "text": "Broken pavement near Cuddalore Town Bus Stop makes wheelchair access impossible.",
+    "date": "2025-05-20",
+    "category": null,
+    "district": "Cuddalore"
+  },
+  {
+    "id": "G225",
+    "stop_id": "S186",
+    "text": "Staff at Cuddalore Central Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2026-03-15",
+    "category": null,
+    "district": "Cuddalore"
+  },
+  {
+    "id": "G226",
+    "stop_id": "S187",
+    "text": "No tactile path or braille signage at Cuddalore New Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-06-10",
+    "category": null,
+    "district": "Cuddalore"
+  },
+  {
+    "id": "G227",
+    "stop_id": "S187",
+    "text": "No wheelchair ramp at Cuddalore New Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2025-05-25",
+    "category": null,
+    "district": "Cuddalore"
+  },
+  {
+    "id": "G228",
+    "stop_id": "S188",
+    "text": "No LED display board at Villupuram New Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2025-05-16",
+    "category": null,
+    "district": "Villupuram"
+  },
+  {
+    "id": "G229",
+    "stop_id": "S188",
+    "text": "Staff at Villupuram New Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2026-02-19",
+    "category": null,
+    "district": "Villupuram"
+  },
+  {
+    "id": "G230",
+    "stop_id": "S189",
+    "text": "Staff at Villupuram Town Bus Stop are not trained to assist disabled passengers. No help available.",
+    "date": "2026-02-15",
+    "category": null,
+    "district": "Villupuram"
+  },
+  {
+    "id": "G231",
+    "stop_id": "S189",
+    "text": "No tactile path or braille signage at Villupuram Town Bus Stop. Visually impaired people are completely ignored.",
+    "date": "2026-01-22",
+    "category": null,
+    "district": "Villupuram"
+  },
+  {
+    "id": "G232",
+    "stop_id": "S190",
+    "text": "No tactile path or braille signage at Villupuram Central Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-08-17",
+    "category": null,
+    "district": "Villupuram"
+  },
+  {
+    "id": "G233",
+    "stop_id": "S191",
+    "text": "No audio announcement system at Tiruvannamalai Town Bus Stop. Blind passengers miss their buses regularly.",
+    "date": "2025-12-18",
+    "category": null,
+    "district": "Tiruvannamalai"
+  },
+  {
+    "id": "G234",
+    "stop_id": "S191",
+    "text": "No wheelchair ramp at Tiruvannamalai Town Bus Stop. Disabled passengers cannot board buses safely.",
+    "date": "2026-02-08",
+    "category": null,
+    "district": "Tiruvannamalai"
+  },
+  {
+    "id": "G235",
+    "stop_id": "S192",
+    "text": "No audio announcement system at Tiruvannamalai New Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-07-14",
+    "category": null,
+    "district": "Tiruvannamalai"
+  },
+  {
+    "id": "G236",
+    "stop_id": "S193",
+    "text": "Staff at Nagapattinam Central Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-10-18",
+    "category": null,
+    "district": "Nagapattinam"
+  },
+  {
+    "id": "G237",
+    "stop_id": "S194",
+    "text": "No audio announcement system at Nagapattinam Town Bus Stop. Blind passengers miss their buses regularly.",
+    "date": "2025-12-25",
+    "category": null,
+    "district": "Nagapattinam"
+  },
+  {
+    "id": "G238",
+    "stop_id": "S195",
+    "text": "No tactile path or braille signage at Nagapattinam New Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-12-03",
+    "category": null,
+    "district": "Nagapattinam"
+  },
+  {
+    "id": "G239",
+    "stop_id": "S196",
+    "text": "No wheelchair ramp at Theni Central Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2025-10-19",
+    "category": null,
+    "district": "Theni"
+  },
+  {
+    "id": "G240",
+    "stop_id": "S196",
+    "text": "No LED display board at Theni Central Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2026-02-11",
+    "category": null,
+    "district": "Theni"
+  },
+  {
+    "id": "G241",
+    "stop_id": "S197",
+    "text": "No tactile path or braille signage at Theni New Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-04-22",
+    "category": null,
+    "district": "Theni"
+  },
+  {
+    "id": "G242",
+    "stop_id": "S197",
+    "text": "No LED display board at Theni New Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2025-12-19",
+    "category": null,
+    "district": "Theni"
+  },
+  {
+    "id": "G243",
+    "stop_id": "S198",
+    "text": "No LED display board at Theni Town Bus Stop. Deaf passengers cannot get route information.",
+    "date": "2025-06-10",
+    "category": null,
+    "district": "Theni"
+  },
+  {
+    "id": "G244",
+    "stop_id": "S198",
+    "text": "Staff at Theni Town Bus Stop are not trained to assist disabled passengers. No help available.",
+    "date": "2026-01-11",
+    "category": null,
+    "district": "Theni"
+  },
+  {
+    "id": "G245",
+    "stop_id": "S199",
+    "text": "No wheelchair ramp at Virudhunagar Central Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2025-12-01",
+    "category": null,
+    "district": "Virudhunagar"
+  },
+  {
+    "id": "G246",
+    "stop_id": "S200",
+    "text": "The bus shelter at Virudhunagar Town Bus Stop has no seating for elderly or disabled passengers.",
+    "date": "2025-05-27",
+    "category": null,
+    "district": "Virudhunagar"
+  },
+  {
+    "id": "G247",
+    "stop_id": "S200",
+    "text": "No tactile path or braille signage at Virudhunagar Town Bus Stop. Visually impaired people are completely ignored.",
+    "date": "2026-01-26",
+    "category": null,
+    "district": "Virudhunagar"
+  },
+  {
+    "id": "G248",
+    "stop_id": "S201",
+    "text": "Staff at Virudhunagar New Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-11-03",
+    "category": null,
+    "district": "Virudhunagar"
+  },
+  {
+    "id": "G249",
+    "stop_id": "S201",
+    "text": "No tactile path or braille signage at Virudhunagar New Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-10-27",
+    "category": null,
+    "district": "Virudhunagar"
+  },
+  {
+    "id": "G250",
+    "stop_id": "S202",
+    "text": "No LED display board at Namakkal New Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2026-01-04",
+    "category": null,
+    "district": "Namakkal"
+  },
+  {
+    "id": "G251",
+    "stop_id": "S203",
+    "text": "No audio announcement system at Namakkal Town Bus Stop. Blind passengers miss their buses regularly.",
+    "date": "2025-11-29",
+    "category": null,
+    "district": "Namakkal"
+  },
+  {
+    "id": "G252",
+    "stop_id": "S204",
+    "text": "No audio announcement system at Karur Town Bus Stop. Blind passengers miss their buses regularly.",
+    "date": "2025-08-07",
+    "category": null,
+    "district": "Karur"
+  },
+  {
+    "id": "G253",
+    "stop_id": "S204",
+    "text": "No LED display board at Karur Town Bus Stop. Deaf passengers cannot get route information.",
+    "date": "2026-02-05",
+    "category": null,
+    "district": "Karur"
+  },
+  {
+    "id": "G254",
+    "stop_id": "S205",
+    "text": "Karur New Bus Stand has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-12-24",
+    "category": null,
+    "district": "Karur"
+  },
+  {
+    "id": "G255",
+    "stop_id": "S206",
+    "text": "No LED display board at Karur Central Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2025-08-03",
+    "category": null,
+    "district": "Karur"
+  },
+  {
+    "id": "G256",
+    "stop_id": "S206",
+    "text": "Karur Central Bus Stand has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-10-10",
+    "category": null,
+    "district": "Karur"
+  },
+  {
+    "id": "G257",
+    "stop_id": "S207",
+    "text": "Broken pavement near Sivagangai Town Bus Stop makes wheelchair access impossible.",
+    "date": "2025-09-17",
+    "category": null,
+    "district": "Sivagangai"
+  },
+  {
+    "id": "G258",
+    "stop_id": "S208",
+    "text": "Sivagangai New Bus Stand has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-04-29",
+    "category": null,
+    "district": "Sivagangai"
+  },
+  {
+    "id": "G259",
+    "stop_id": "S209",
+    "text": "No wheelchair ramp at Ramanathapuram Central Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2026-02-26",
+    "category": null,
+    "district": "Ramanathapuram"
+  },
+  {
+    "id": "G260",
+    "stop_id": "S210",
+    "text": "No tactile path or braille signage at Ramanathapuram New Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-07-05",
+    "category": null,
+    "district": "Ramanathapuram"
+  },
+  {
+    "id": "G261",
+    "stop_id": "S210",
+    "text": "No audio announcement system at Ramanathapuram New Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2026-01-03",
+    "category": null,
+    "district": "Ramanathapuram"
+  },
+  {
+    "id": "G262",
+    "stop_id": "S211",
+    "text": "Ramanathapuram Town Bus Stop has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-06-12",
+    "category": null,
+    "district": "Ramanathapuram"
+  },
+  {
+    "id": "G263",
+    "stop_id": "S211",
+    "text": "No wheelchair ramp at Ramanathapuram Town Bus Stop. Disabled passengers cannot board buses safely.",
+    "date": "2025-08-05",
+    "category": null,
+    "district": "Ramanathapuram"
+  },
+  {
+    "id": "G264",
+    "stop_id": "S212",
+    "text": "The bus shelter at Thoothukudi Town Bus Stop has no seating for elderly or disabled passengers.",
+    "date": "2025-08-06",
+    "category": null,
+    "district": "Thoothukudi"
+  },
+  {
+    "id": "G265",
+    "stop_id": "S213",
+    "text": "No audio announcement system at Thoothukudi Central Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-06-24",
+    "category": null,
+    "district": "Thoothukudi"
+  },
+  {
+    "id": "G266",
+    "stop_id": "S214",
+    "text": "Staff at Tiruppur Town Bus Stop are not trained to assist disabled passengers. No help available.",
+    "date": "2025-09-26",
+    "category": null,
+    "district": "Tiruppur"
+  },
+  {
+    "id": "G267",
+    "stop_id": "S215",
+    "text": "Staff at Tiruppur Central Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-11-10",
+    "category": null,
+    "district": "Tiruppur"
+  },
+  {
+    "id": "G268",
+    "stop_id": "S216",
+    "text": "No wheelchair ramp at Pudukkottai Central Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2025-11-23",
+    "category": null,
+    "district": "Pudukkottai"
+  },
+  {
+    "id": "G269",
+    "stop_id": "S217",
+    "text": "No wheelchair ramp at Pudukkottai Town Bus Stop. Disabled passengers cannot board buses safely.",
+    "date": "2025-09-26",
+    "category": null,
+    "district": "Pudukkottai"
+  },
+  {
+    "id": "G270",
+    "stop_id": "S217",
+    "text": "The bus shelter at Pudukkottai Town Bus Stop has no seating for elderly or disabled passengers.",
+    "date": "2025-06-18",
+    "category": null,
+    "district": "Pudukkottai"
+  },
+  {
+    "id": "G271",
+    "stop_id": "S218",
+    "text": "No wheelchair ramp at Pudukkottai New Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2026-01-19",
+    "category": null,
+    "district": "Pudukkottai"
+  },
+  {
+    "id": "G272",
+    "stop_id": "S218",
+    "text": "The bus shelter at Pudukkottai New Bus Stand has no seating for elderly or disabled passengers.",
+    "date": "2025-12-17",
+    "category": null,
+    "district": "Pudukkottai"
+  },
+  {
+    "id": "G273",
+    "stop_id": "S219",
+    "text": "No tactile path or braille signage at Dharmapuri Central Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-11-16",
+    "category": null,
+    "district": "Dharmapuri"
+  },
+  {
+    "id": "G274",
+    "stop_id": "S219",
+    "text": "The bus shelter at Dharmapuri Central Bus Stand has no seating for elderly or disabled passengers.",
+    "date": "2025-10-05",
+    "category": null,
+    "district": "Dharmapuri"
+  },
+  {
+    "id": "G275",
+    "stop_id": "S220",
+    "text": "No wheelchair ramp at Dharmapuri Town Bus Stop. Disabled passengers cannot board buses safely.",
+    "date": "2025-07-04",
+    "category": null,
+    "district": "Dharmapuri"
+  },
+  {
+    "id": "G276",
+    "stop_id": "S220",
+    "text": "No audio announcement system at Dharmapuri Town Bus Stop. Blind passengers miss their buses regularly.",
+    "date": "2025-05-21",
+    "category": null,
+    "district": "Dharmapuri"
+  },
+  {
+    "id": "G277",
+    "stop_id": "S221",
+    "text": "The bus shelter at Krishnagiri New Bus Stand has no seating for elderly or disabled passengers.",
+    "date": "2025-08-25",
+    "category": null,
+    "district": "Krishnagiri"
+  },
+  {
+    "id": "G278",
+    "stop_id": "S221",
+    "text": "No LED display board at Krishnagiri New Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2026-02-25",
+    "category": null,
+    "district": "Krishnagiri"
+  },
+  {
+    "id": "G279",
+    "stop_id": "S222",
+    "text": "No LED display board at Krishnagiri Town Bus Stop. Deaf passengers cannot get route information.",
+    "date": "2025-11-20",
+    "category": null,
+    "district": "Krishnagiri"
+  },
+  {
+    "id": "G280",
+    "stop_id": "S222",
+    "text": "Broken pavement near Krishnagiri Town Bus Stop makes wheelchair access impossible.",
+    "date": "2025-06-24",
+    "category": null,
+    "district": "Krishnagiri"
+  },
+  {
+    "id": "G281",
+    "stop_id": "S223",
+    "text": "No LED display board at Krishnagiri Central Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2025-04-22",
+    "category": null,
+    "district": "Krishnagiri"
+  },
+  {
+    "id": "G282",
+    "stop_id": "S224",
+    "text": "Staff at Perambalur Town Bus Stop are not trained to assist disabled passengers. No help available.",
+    "date": "2025-06-15",
+    "category": null,
+    "district": "Perambalur"
+  },
+  {
+    "id": "G283",
+    "stop_id": "S225",
+    "text": "The bus shelter at Perambalur Central Bus Stand has no seating for elderly or disabled passengers.",
+    "date": "2025-11-05",
+    "category": null,
+    "district": "Perambalur"
+  },
+  {
+    "id": "G284",
+    "stop_id": "S226",
+    "text": "Staff at Perambalur New Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-10-06",
+    "category": null,
+    "district": "Perambalur"
+  },
+  {
+    "id": "G285",
+    "stop_id": "S227",
+    "text": "Ariyalur Central Bus Stand has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2026-01-29",
+    "category": null,
+    "district": "Ariyalur"
+  },
+  {
+    "id": "G286",
+    "stop_id": "S228",
+    "text": "No audio announcement system at Ariyalur New Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-10-08",
+    "category": null,
+    "district": "Ariyalur"
+  },
+  {
+    "id": "G287",
+    "stop_id": "S228",
+    "text": "Staff at Ariyalur New Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-07-06",
+    "category": null,
+    "district": "Ariyalur"
+  },
+  {
+    "id": "G288",
+    "stop_id": "S229",
+    "text": "Broken pavement near Ariyalur Town Bus Stop makes wheelchair access impossible.",
+    "date": "2025-10-05",
+    "category": null,
+    "district": "Ariyalur"
+  },
+  {
+    "id": "G289",
+    "stop_id": "S229",
+    "text": "No LED display board at Ariyalur Town Bus Stop. Deaf passengers cannot get route information.",
+    "date": "2025-05-09",
+    "category": null,
+    "district": "Ariyalur"
+  },
+  {
+    "id": "G290",
+    "stop_id": "S230",
+    "text": "No wheelchair ramp at Nilgiris New Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2025-11-07",
+    "category": null,
+    "district": "Nilgiris"
+  },
+  {
+    "id": "G291",
+    "stop_id": "S230",
+    "text": "No audio announcement system at Nilgiris New Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-05-30",
+    "category": null,
+    "district": "Nilgiris"
+  },
+  {
+    "id": "G292",
+    "stop_id": "S231",
+    "text": "No audio announcement system at Nilgiris Central Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-08-30",
+    "category": null,
+    "district": "Nilgiris"
+  },
+  {
+    "id": "G293",
+    "stop_id": "S232",
+    "text": "No tactile path or braille signage at Nilgiris Town Bus Stop. Visually impaired people are completely ignored.",
+    "date": "2025-07-19",
+    "category": null,
+    "district": "Nilgiris"
+  },
+  {
+    "id": "G294",
+    "stop_id": "S233",
+    "text": "No LED display board at Ranipet New Bus Stand. Deaf passengers cannot get route information.",
+    "date": "2025-06-15",
+    "category": null,
+    "district": "Ranipet"
+  },
+  {
+    "id": "G295",
+    "stop_id": "S234",
+    "text": "No tactile path or braille signage at Ranipet Central Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-09-20",
+    "category": null,
+    "district": "Ranipet"
+  },
+  {
+    "id": "G296",
+    "stop_id": "S234",
+    "text": "Broken pavement near Ranipet Central Bus Stand makes wheelchair access impossible.",
+    "date": "2025-08-28",
+    "category": null,
+    "district": "Ranipet"
+  },
+  {
+    "id": "G297",
+    "stop_id": "S235",
+    "text": "No tactile path or braille signage at Tirupathur Town Bus Stop. Visually impaired people are completely ignored.",
+    "date": "2025-06-05",
+    "category": null,
+    "district": "Tirupathur"
+  },
+  {
+    "id": "G298",
+    "stop_id": "S236",
+    "text": "No tactile path or braille signage at Tirupathur New Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-06-07",
+    "category": null,
+    "district": "Tirupathur"
+  },
+  {
+    "id": "G299",
+    "stop_id": "S236",
+    "text": "The bus shelter at Tirupathur New Bus Stand has no seating for elderly or disabled passengers.",
+    "date": "2025-05-26",
+    "category": null,
+    "district": "Tirupathur"
+  },
+  {
+    "id": "G300",
+    "stop_id": "S237",
+    "text": "The bus shelter at Chengalpattu Town Bus Stop has no seating for elderly or disabled passengers.",
+    "date": "2025-05-04",
+    "category": null,
+    "district": "Chengalpattu"
+  },
+  {
+    "id": "G301",
+    "stop_id": "S238",
+    "text": "No audio announcement system at Chengalpattu New Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-05-17",
+    "category": null,
+    "district": "Chengalpattu"
+  },
+  {
+    "id": "G302",
+    "stop_id": "S238",
+    "text": "No wheelchair ramp at Chengalpattu New Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2026-02-13",
+    "category": null,
+    "district": "Chengalpattu"
+  },
+  {
+    "id": "G303",
+    "stop_id": "S239",
+    "text": "No wheelchair ramp at Chengalpattu Central Bus Stand. Disabled passengers cannot board buses safely.",
+    "date": "2025-12-17",
+    "category": null,
+    "district": "Chengalpattu"
+  },
+  {
+    "id": "G304",
+    "stop_id": "S240",
+    "text": "No tactile path or braille signage at Kallakurichi Central Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-10-06",
+    "category": null,
+    "district": "Kallakurichi"
+  },
+  {
+    "id": "G305",
+    "stop_id": "S240",
+    "text": "Broken pavement near Kallakurichi Central Bus Stand makes wheelchair access impossible.",
+    "date": "2025-05-03",
+    "category": null,
+    "district": "Kallakurichi"
+  },
+  {
+    "id": "G306",
+    "stop_id": "S241",
+    "text": "Staff at Kallakurichi Town Bus Stop are not trained to assist disabled passengers. No help available.",
+    "date": "2026-01-26",
+    "category": null,
+    "district": "Kallakurichi"
+  },
+  {
+    "id": "G307",
+    "stop_id": "S242",
+    "text": "No tactile path or braille signage at Tenkasi Central Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-10-21",
+    "category": null,
+    "district": "Tenkasi"
+  },
+  {
+    "id": "G308",
+    "stop_id": "S242",
+    "text": "Broken pavement near Tenkasi Central Bus Stand makes wheelchair access impossible.",
+    "date": "2026-01-29",
+    "category": null,
+    "district": "Tenkasi"
+  },
+  {
+    "id": "G309",
+    "stop_id": "S243",
+    "text": "The bus shelter at Tenkasi New Bus Stand has no seating for elderly or disabled passengers.",
+    "date": "2025-11-18",
+    "category": null,
+    "district": "Tenkasi"
+  },
+  {
+    "id": "G310",
+    "stop_id": "S244",
+    "text": "Staff at Tenkasi Town Bus Stop are not trained to assist disabled passengers. No help available.",
+    "date": "2026-02-08",
+    "category": null,
+    "district": "Tenkasi"
+  },
+  {
+    "id": "G311",
+    "stop_id": "S245",
+    "text": "Staff at Mayiladuthurai Central Bus Stand are not trained to assist disabled passengers. No help available.",
+    "date": "2025-05-29",
+    "category": null,
+    "district": "Mayiladuthurai"
+  },
+  {
+    "id": "G312",
+    "stop_id": "S246",
+    "text": "No audio announcement system at Mayiladuthurai New Bus Stand. Blind passengers miss their buses regularly.",
+    "date": "2025-12-27",
+    "category": null,
+    "district": "Mayiladuthurai"
+  },
+  {
+    "id": "G313",
+    "stop_id": "S247",
+    "text": "Kanyakumari Central Bus Stand has no accessible toilet. Disabled passengers have no facilities available.",
+    "date": "2025-07-26",
+    "category": null,
+    "district": "Kanyakumari"
+  },
+  {
+    "id": "G314",
+    "stop_id": "S247",
+    "text": "No tactile path or braille signage at Kanyakumari Central Bus Stand. Visually impaired people are completely ignored.",
+    "date": "2025-11-19",
+    "category": null,
+    "district": "Kanyakumari"
+  },
+  {
+    "id": "G315",
+    "stop_id": "S248",
+    "text": "Broken pavement near Kanyakumari Town Bus Stop makes wheelchair access impossible.",
+    "date": "2025-06-09",
+    "category": null,
+    "district": "Kanyakumari"
+  },
+  {
+    "id": "G316",
+    "stop_id": "S248",
+    "text": "No audio announcement system at Kanyakumari Town Bus Stop. Blind passengers miss their buses regularly.",
+    "date": "2025-08-12",
+    "category": null,
+    "district": "Kanyakumari"
+  },
+  {
+    "id": "G317",
+    "stop_id": "S249",
+    "text": "The bus shelter at Kanyakumari New Bus Stand has no seating for elderly or disabled passengers.",
+    "date": "2025-11-11",
+    "category": null,
+    "district": "Kanyakumari"
+  }
 ]

@@ -32,13 +32,50 @@ def health():
 
 @app.route('/api/stops')
 def get_stops():
-    """Get all transit stops with accessibility gap scores"""
+    """Get all transit stops with accessibility gap scores, optionally filtered by district"""
     try:
+        district = request.args.get('district', 'all')
         data = get_all_scores()
-        return jsonify({
-            'success': True,
-            'data': data
-        })
+        
+        if district and district != 'all':
+            data['stops'] = [s for s in data['stops'] if s.get('district', 'Tiruchirappalli') == district]
+            # Recalculate summary for filtered stops
+            stops = data['stops']
+            total = len(stops)
+            critical = sum(1 for s in stops if s.get('priority') == 'Critical')
+            warning = sum(1 for s in stops if s.get('priority') == 'Warning')
+            good = total - critical - warning
+            avg_gap = round(sum(s.get('gap_score', 0) for s in stops) / max(total, 1), 1)
+            data['summary'] = {
+                'total_stops': total,
+                'critical_count': critical,
+                'warning_count': warning,
+                'good_count': good,
+                'avg_gap_score': avg_gap,
+                'coverage_percent': 100,
+                'district': district
+            }
+        
+        return jsonify({'success': True, 'data': data})
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/districts')
+def get_districts():
+    """Get list of all available districts"""
+    try:
+        from services.scoring_engine import load_stops
+        stops = load_stops()
+        districts = sorted(set(s.get('district', 'Tiruchirappalli') for s in stops))
+        district_stats = []
+        for d in districts:
+            d_stops = [s for s in stops if s.get('district', 'Tiruchirappalli') == d]
+            district_stats.append({
+                'name': d,
+                'stop_count': len(d_stops)
+            })
+        return jsonify({'success': True, 'data': district_stats})
     except Exception as e:
         return jsonify({'success': False, 'error': str(e)}), 500
 
