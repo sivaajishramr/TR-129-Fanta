@@ -90,6 +90,15 @@
         <button class="nav-tab" data-tab="map" onclick="switchTab('map')">
             <span>🗺️</span> Priority Map
         </button>
+        <button class="nav-tab" data-tab="trends" onclick="switchTab('trends')">
+            <span>📈</span> Performance Trend
+        </button>
+        <button class="nav-tab" data-tab="contractors" onclick="switchTab('contractors')">
+            <span>🏅</span> Contractor Board
+        </button>
+        <button class="nav-tab" data-tab="issues" onclick="switchTab('issues')">
+            <span>🏗️</span> Issues & Contractors
+        </button>
         <button class="nav-tab" data-tab="grievances" onclick="switchTab('grievances')">
             <span>💬</span> Grievance Analysis
         </button>
@@ -181,50 +190,8 @@
                 </div>
             </div>
 
-            <!-- 12-Month Bus Stop Trend Chart -->
-            <div class="card" style="margin-top: 1.5rem;">
-                <div class="card-header">
-                    <h3>📈 12-Month Bus Stop Performance Trend</h3>
-                    <div style="display:flex;gap:10px;align-items:center;">
-                        <select id="trend-stop-selector" class="trend-selector" onchange="updateHistoricalTrendChart()">
-                            <option value="all">🏙️ All Stops (City Average)</option>
-                        </select>
-                        <span class="badge" style="background:#111;color:#fff;">Apr 2025 – Mar 2026</span>
-                    </div>
-                </div>
-                <div class="chart-container" style="height:320px;">
-                    <canvas id="chart-stop-trend"></canvas>
-                </div>
-                <div class="trend-summary" id="trend-summary">
-                    <!-- Filled by JS -->
-                </div>
-            </div>
-
-            <!-- Contractor Leaderboard -->
-            <div class="card" style="margin-top: 1.5rem;">
-                <div class="card-header">
-                    <h3>🏅 Contractor Accountability Leaderboard</h3>
-                    <span class="badge" style="background:linear-gradient(135deg,#1a237e,#3949ab);color:#fff;">AI Ranked</span>
-                </div>
-                <div class="leaderboard-container" id="leaderboard-container">
-                    <div class="loading-state">Loading leaderboard...</div>
-                </div>
-            </div>
-
-            <!-- Common Issues & Responsible Contractors -->
-            <div class="card" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
-                <div class="card-header">
-                    <h3>🏗️ Common Issues & Responsible Contractors</h3>
-                    <span class="badge" style="background:#111;color:#fff;">Trichy District</span>
-                </div>
-                <div id="common-issues-container" class="common-issues-grid">
-                    <!-- Filled by JS -->
-                    <div class="loading-state">Analyzing grievance patterns...</div>
-                </div>
-            </div>
-
             <!-- Top Priority Stops -->
-            <div class="card">
+            <div class="card" style="margin-top: 1.5rem;">
                 <div class="card-header">
                     <h3>🚨 Top 10 Priority Stops — Fix First</h3>
                     <span class="badge badge-red">Urgent</span>
@@ -247,6 +214,54 @@
                             <!-- Filled by JS -->
                         </tbody>
                     </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== PERFORMANCE TREND TAB ====== -->
+        <section id="tab-trends" class="tab-content">
+            <div class="card">
+                <div class="card-header">
+                    <h3>📈 12-Month Bus Stop Performance Trend</h3>
+                    <div style="display:flex;gap:10px;align-items:center;">
+                        <select id="trend-stop-selector" class="trend-selector" onchange="updateHistoricalTrendChart()">
+                            <option value="all">🏙️ All Stops (City Average)</option>
+                        </select>
+                        <span class="badge" style="background:#111;color:#fff;">Apr 2025 – Mar 2026</span>
+                    </div>
+                </div>
+                <div class="chart-container" style="height:400px;">
+                    <canvas id="chart-stop-trend"></canvas>
+                </div>
+                <div class="trend-summary" id="trend-summary">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== CONTRACTOR LEADERBOARD TAB ====== -->
+        <section id="tab-contractors" class="tab-content">
+            <div class="card">
+                <div class="card-header">
+                    <h3>🏅 Contractor Accountability Leaderboard</h3>
+                    <span class="badge" style="background:linear-gradient(135deg,#1a237e,#3949ab);color:#fff;">AI Ranked</span>
+                </div>
+                <div class="leaderboard-container" id="leaderboard-container">
+                    <div class="loading-state">Loading leaderboard...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== ISSUES & CONTRACTORS TAB ====== -->
+        <section id="tab-issues" class="tab-content">
+            <div class="card">
+                <div class="card-header">
+                    <h3>🏗️ Common Issues & Responsible Contractors</h3>
+                    <span class="badge" style="background:#111;color:#fff;">All Districts</span>
+                </div>
+                <div id="common-issues-container" class="common-issues-grid">
+                    <!-- Filled by JS -->
+                    <div class="loading-state">Analyzing grievance patterns...</div>
                 </div>
             </div>
         </section>
