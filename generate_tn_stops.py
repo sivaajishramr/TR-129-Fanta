@@ -136,13 +136,25 @@ def main():
             }
             stops.append(stop)
             
-            # Generate 1-2 grievances per new stop
-            num_grv = random.randint(1, 2)
-            selected_templates = random.sample(GRIEVANCE_TEMPLATES, num_grv)
+            # Generate grievances proportional to missing features
+            missing_count = sum(1 for v in stop['features'].values() if not v)
+            if missing_count >= 7:
+                num_grv = random.randint(5, 8)
+            elif missing_count >= 5:
+                num_grv = random.randint(3, 5)
+            elif missing_count >= 3:
+                num_grv = random.randint(2, 4)
+            else:
+                num_grv = random.randint(1, 2)
+            
+            # Pick grievance templates (cycle if more grievances than templates)
+            selected_templates = []
+            for j in range(num_grv):
+                selected_templates.append(GRIEVANCE_TEMPLATES[j % len(GRIEVANCE_TEMPLATES)])
             
             for grv_tmpl in selected_templates:
                 grv_id = f"G{next_grv_id:03d}"
-                days_ago = random.randint(30, 365)
+                days_ago = random.randint(7, 365)
                 grv_date = (datetime.now() - timedelta(days=days_ago)).strftime('%Y-%m-%d')
                 
                 grievances.append({
