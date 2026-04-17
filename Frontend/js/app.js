@@ -1057,7 +1057,8 @@ async function submitComplaint() {
 // ===== CONTRACTOR LEADERBOARD =====
 async function loadLeaderboard() {
     try {
-        const res = await fetch(`${API_BASE}/leaderboard`);
+        const districtParam = appData.currentDistrict && appData.currentDistrict !== 'all' ? `?district=${encodeURIComponent(appData.currentDistrict)}` : '';
+        const res = await fetch(`${API_BASE}/leaderboard${districtParam}`);
         const result = await res.json();
         if (result.success) renderLeaderboard(result.data);
     } catch (e) {
@@ -1067,7 +1068,11 @@ async function loadLeaderboard() {
 
 function renderLeaderboard(data) {
     const container = document.getElementById('leaderboard-container');
-    if (!container || !data.length) return;
+    if (!container) return;
+    if (!data.length) {
+        container.innerHTML = '<div class="loading-state">No contractor data available for this district.</div>';
+        return;
+    }
     
     container.innerHTML = `
         <div class="lb-table">
@@ -1088,7 +1093,7 @@ function renderLeaderboard(data) {
                     </span>
                     <span class="lb-col-name">
                         <strong>${entry.name}</strong>
-                        <small>${entry.type}</small>
+                        <small>${entry.district || ''} · ${entry.type}</small>
                     </span>
                     <span class="lb-col-score">
                         <div class="lb-score-bar">
@@ -1218,6 +1223,9 @@ async function filterByDistrict(district) {
         
         // Update map
         populateMap(stopsData.stops);
+        
+        // Reload leaderboard for this district
+        loadLeaderboard();
         
         console.log(`Filtered to: ${district} (${stopsData.summary.total_stops} stops)`);
     } catch (e) {

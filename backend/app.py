@@ -763,23 +763,50 @@ def get_leaderboard():
         from services.nlp_engine import classify_grievance, classify_sub_problem
         import random
 
+        district = request.args.get('district', 'all')
         stops = load_stops()
         grievances = load_grievances()
+
+        # Load district contractor mapping
+        dc_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'district_contractors.json')
+        with open(dc_path, 'r') as f:
+            district_contractors = json.load(f)
+
+        # Category -> contractor role mapping
+        CATEGORY_ROLE_MAP = {
+            'toilet_facilities': 'sanitation',
+            'infrastructure': 'civil',
+            'audio_visual': 'staffing',
+            'signage_braille': 'signage',
+            'staff_assistance': 'staffing',
+            'ramp_wheelchair': 'building'
+        }
+
+        # Filter by district if needed
+        if district and district != 'all':
+            grievances = [g for g in grievances if g.get('district', 'Tiruchirappalli') == district]
+            stops = [s for s in stops if s.get('district', 'Tiruchirappalli') == district]
+
         total_grievances = len(grievances)
         total_stops = len(stops)
 
-        # Build contractor stats (reuse common-issues logic)
+        # Build contractor stats using district-specific names
         contractor_stats = {}
         for g in grievances:
             cluster_id, _, _ = classify_grievance(g['text'])
             sub = classify_sub_problem(g['text'], cluster_id)
-            contractor = CATEGORY_CONTRACTOR_MAP.get(cluster_id, TRICHY_CONTRACTORS['civil'])
-            cname = contractor['name']
+            
+            # Get district-specific contractor
+            g_district = g.get('district', 'Tiruchirappalli')
+            role = CATEGORY_ROLE_MAP.get(cluster_id, 'civil')
+            dc = district_contractors.get(g_district, district_contractors.get('Tiruchirappalli', {}))
+            cname = dc.get(role, dc.get('civil', 'Unknown Contractor'))
 
             if cname not in contractor_stats:
                 contractor_stats[cname] = {
                     'name': cname,
-                    'type': contractor['type'],
+                    'type': role.replace('_', ' ').title(),
+                    'district': g_district,
                     'total_grievances': 0,
                     'high_count': 0,
                     'medium_count': 0,
@@ -806,7 +833,7 @@ def get_leaderboard():
             g_count = stats['total_grievances']
             stops_affected = len(stats['affected_stops'])
 
-            # AI Score (same formula as common-issues)
+            # AI Score
             score = 100.0
             score -= (g_count / max(total_grievances, 1)) * 25
             severity_penalty = (stats['high_count'] * 3 + stats['medium_count'] * 1.5 + stats['low_count'] * 0.5)
@@ -823,7 +850,7 @@ def get_leaderboard():
             elif score >= 35: grade, grade_color = 'D', '#ef6c00'
             else: grade, grade_color = 'F', '#d32f2f'
 
-            # Simulated trend (improvement/decline over last quarter)
+            # Simulated trend
             random.seed(hash(cname))
             trend = round(random.uniform(-8, 12), 1)
             resolved_pct = round(random.uniform(40, 85), 0)
@@ -831,6 +858,7 @@ def get_leaderboard():
             leaderboard.append({
                 'name': cname,
                 'type': stats['type'],
+                'district': stats['district'],
                 'ai_score': score,
                 'grade': grade,
                 'grade_color': grade_color,
@@ -847,7 +875,7 @@ def get_leaderboard():
         leaderboard.sort(key=lambda x: x['ai_score'], reverse=True)
 
         # Add ranks and medals
-        medals = ['🥇', '🥈', '🥉']
+        medals = ['\U0001f947', '\U0001f948', '\U0001f949']
         for i, entry in enumerate(leaderboard):
             entry['rank'] = i + 1
             entry['medal'] = medals[i] if i < 3 else ''

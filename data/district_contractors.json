@@ -1,0 +1,290 @@
+{
+  "Tiruchirappalli": {
+    "civil": "M/s. Jyothi Constructions",
+    "sanitation": "S.R. Vedhaah",
+    "infrastructure": "Larsen & Toubro (L&T)",
+    "signage": "Tamil Builders",
+    "staffing": "SPM HR Solutions",
+    "building": "Sri Venket Lakshmi Associates"
+  },
+  "Chennai": {
+    "civil": "M/s. KMV Projects Ltd",
+    "sanitation": "Ramky Enviro Engineers",
+    "infrastructure": "Afcons Infrastructure Ltd",
+    "signage": "JMC Projects (India) Ltd",
+    "staffing": "Quess Corp Ltd",
+    "building": "Nagarjuna Construction Co."
+  },
+  "Coimbatore": {
+    "civil": "M/s. PSK Constructions",
+    "sanitation": "AG Enviro Infra Projects",
+    "infrastructure": "NCC Ltd (Coimbatore Div)",
+    "signage": "Kongu Builders",
+    "staffing": "TeamLease Services",
+    "building": "Sree Balaji Constructions"
+  },
+  "Madurai": {
+    "civil": "M/s. Pandian Constructions",
+    "sanitation": "Clean Madurai Foundation",
+    "infrastructure": "ECI Engineering & Construction",
+    "signage": "Meenakshi Builders",
+    "staffing": "Adecco India (Madurai)",
+    "building": "TVS Infrastructure Ltd"
+  },
+  "Salem": {
+    "civil": "M/s. Sakthi Constructions",
+    "sanitation": "Salem City Sanitation Corp",
+    "infrastructure": "Gayathri Projects Ltd",
+    "signage": "Kongu Engineering Works",
+    "staffing": "Manpower Group (Salem)",
+    "building": "M/s. Rajan & Associates"
+  },
+  "Tirunelveli": {
+    "civil": "M/s. Nellai Constructions",
+    "sanitation": "Southern Sanitation Services",
+    "infrastructure": "IVRCL Infrastructure",
+    "signage": "Agasthiya Builders",
+    "staffing": "ABC Consultants (Nellai)",
+    "building": "Pearl Infrastructure Pvt Ltd"
+  },
+  "Erode": {
+    "civil": "M/s. Erode Civil Works",
+    "sanitation": "Green Erode Sanitation",
+    "infrastructure": "BL Kashyap & Sons",
+    "signage": "Kongu Sign Systems",
+    "staffing": "Randstad India (Erode)",
+    "building": "M/s. Bhoomi Constructions"
+  },
+  "Vellore": {
+    "civil": "M/s. Arcot Constructions",
+    "sanitation": "Vellore Clean City Mission",
+    "infrastructure": "Shapoorji Pallonji (Vellore)",
+    "signage": "Vaniyambadi Builders",
+    "staffing": "Kelly Services (Vellore)",
+    "building": "M/s. Amman Constructions"
+  },
+  "Thanjavur": {
+    "civil": "M/s. Chola Constructions",
+    "sanitation": "Delta Sanitation Services",
+    "infrastructure": "HCC Infrastructure",
+    "signage": "Brihadeeswarar Builders",
+    "staffing": "KPMG Staffing (Thanjavur)",
+    "building": "M/s. Periya Kovil Associates"
+  },
+  "Dindigul": {
+    "civil": "M/s. Kodaikanal Constructions",
+    "sanitation": "Dindigul Urban Sanitation",
+    "infrastructure": "Ashoka Buildcon Ltd",
+    "signage": "Lock City Builders",
+    "staffing": "Genius Consultants (Dindigul)",
+    "building": "M/s. Palani Infrastructure"
+  },
+  "Kanchipuram": {
+    "civil": "M/s. Pallava Constructions",
+    "sanitation": "Kanchipuram Clean Mission",
+    "infrastructure": "Gammon India Ltd",
+    "signage": "Silk City Builders",
+    "staffing": "CIEL HR Services",
+    "building": "M/s. Ekambareswarar Associates"
+  },
+  "Cuddalore": {
+    "civil": "M/s. Cuddalore Civil Corp",
+    "sanitation": "Coastal Sanitation Pvt Ltd",
+    "infrastructure": "Simplex Infrastructures",
+    "signage": "Chidambaram Builders",
+    "staffing": "Adecco India (Cuddalore)",
+    "building": "M/s. Silver Beach Infrastructure"
+  },
+  "Villupuram": {
+    "civil": "M/s. Gingee Constructions",
+    "sanitation": "Villupuram Urban Services",
+    "infrastructure": "MBL Infrastructures",
+    "signage": "Tindivanam Builders",
+    "staffing": "Teamlease (Villupuram)",
+    "building": "M/s. French Town Associates"
+  },
+  "Tiruvannamalai": {
+    "civil": "M/s. Annamalai Constructions",
+    "sanitation": "Girivalam Clean Services",
+    "infrastructure": "PNC Infratech Ltd",
+    "signage": "Arunachala Builders",
+    "staffing": "Mafoi Randstad (T'malai)",
+    "building": "M/s. Deepam Infrastructure"
+  },
+  "Nagapattinam": {
+    "civil": "M/s. Tsunami Recovery Corp",
+    "sanitation": "Coastal Clean Mission",
+    "infrastructure": "NBCC India Ltd",
+    "signage": "Nagore Builders",
+    "staffing": "Express Staffing (Nagapattinam)",
+    "building": "M/s. Velankanni Associates"
+  },
+  "Theni": {
+    "civil": "M/s. Megamalai Constructions",
+    "sanitation": "Theni Municipal Sanitation",
+    "infrastructure": "KEC International Ltd",
+    "signage": "Periyakulam Builders",
+    "staffing": "PeopleStrong (Theni)",
+    "building": "M/s. Suruli Infrastructure"
+  },
+  "Virudhunagar": {
+    "civil": "M/s. Sivakasi Constructions",
+    "sanitation": "V'nagar Urban Sanitation",
+    "infrastructure": "Sadbhav Engineering",
+    "signage": "Fireworks City Builders",
+    "staffing": "HR Solutions (V'nagar)",
+    "building": "M/s. Aruppukkottai Associates"
+  },
+  "Namakkal": {
+    "civil": "M/s. Tiruchengode Constructions",
+    "sanitation": "Namakkal Clean City Services",
+    "infrastructure": "Dilip Buildcon Ltd",
+    "signage": "Lorry Town Builders",
+    "staffing": "Quess Corp (Namakkal)",
+    "building": "M/s. Kolli Hills Infrastructure"
+  },
+  "Karur": {
+    "civil": "M/s. Karur Civil Works",
+    "sanitation": "Karur Urban Sanitation",
+    "infrastructure": "Nagarjuna Construction (Karur)",
+    "signage": "Textile City Builders",
+    "staffing": "ABC Manpower (Karur)",
+    "building": "M/s. Ayyar Malai Associates"
+  },
+  "Sivagangai": {
+    "civil": "M/s. Sivagangai Constructions",
+    "sanitation": "Sivagangai Clean Mission",
+    "infrastructure": "Era Infra Engineering",
+    "signage": "Chettinad Builders",
+    "staffing": "Express HR (Sivagangai)",
+    "building": "M/s. Palace Associates"
+  },
+  "Ramanathapuram": {
+    "civil": "M/s. Ramnad Constructions",
+    "sanitation": "Coastal Sanitation (Ramnad)",
+    "infrastructure": "Oriental Structural Eng.",
+    "signage": "Pamban Builders",
+    "staffing": "Blue Dart Staffing (Ramnad)",
+    "building": "M/s. Dhanushkodi Associates"
+  },
+  "Thoothukudi": {
+    "civil": "M/s. Tuticorin Constructions",
+    "sanitation": "Port City Sanitation",
+    "infrastructure": "Sterling & Wilson",
+    "signage": "Pearl City Builders",
+    "staffing": "ManpowerGroup (Thoothukudi)",
+    "building": "M/s. Hare Island Associates"
+  },
+  "Tiruppur": {
+    "civil": "M/s. Tiruppur Civil Corp",
+    "sanitation": "Knit City Clean Services",
+    "infrastructure": "GVR Infra Projects",
+    "signage": "Dollar City Builders",
+    "staffing": "TeamLease (Tiruppur)",
+    "building": "M/s. Avinashi Associates"
+  },
+  "Pudukkottai": {
+    "civil": "M/s. Ponnamaravathi Constructions",
+    "sanitation": "Pudukkottai Urban Services",
+    "infrastructure": "Bridge & Roof Co.",
+    "signage": "Rock Fort Builders",
+    "staffing": "Genius Staffing (Pudukkottai)",
+    "building": "M/s. Thirumayam Associates"
+  },
+  "Dharmapuri": {
+    "civil": "M/s. Hosur Constructions",
+    "sanitation": "Dharmapuri Sanitation Corp",
+    "infrastructure": "IRB Infrastructure",
+    "signage": "Pennagaram Builders",
+    "staffing": "Mafoi (Dharmapuri)",
+    "building": "M/s. Hogenakkal Associates"
+  },
+  "Krishnagiri": {
+    "civil": "M/s. Mango City Constructions",
+    "sanitation": "Krishnagiri Clean Mission",
+    "infrastructure": "Welspun Enterprises",
+    "signage": "Granite City Builders",
+    "staffing": "Randstad (Krishnagiri)",
+    "building": "M/s. KGF Associates"
+  },
+  "Perambalur": {
+    "civil": "M/s. Perambalur Civil Works",
+    "sanitation": "Perambalur Urban Sanitation",
+    "infrastructure": "BSCPL Infrastructure",
+    "signage": "Chettikulam Builders",
+    "staffing": "ABC HR (Perambalur)",
+    "building": "M/s. Veppur Associates"
+  },
+  "Ariyalur": {
+    "civil": "M/s. Ariyalur Constructions",
+    "sanitation": "Ariyalur Clean Services",
+    "infrastructure": "Patel Engineering Ltd",
+    "signage": "Cement City Builders",
+    "staffing": "Adecco (Ariyalur)",
+    "building": "M/s. Jayankondam Associates"
+  },
+  "Nilgiris": {
+    "civil": "M/s. Ooty Constructions",
+    "sanitation": "Hill Station Clean Services",
+    "infrastructure": "Tata Projects Ltd",
+    "signage": "Blue Mountain Builders",
+    "staffing": "Quess Corp (Nilgiris)",
+    "building": "M/s. Coonoor Associates"
+  },
+  "Ranipet": {
+    "civil": "M/s. Ranipet Civil Corp",
+    "sanitation": "Ranipet Urban Sanitation",
+    "infrastructure": "JMC Projects (Ranipet)",
+    "signage": "Walajah Builders",
+    "staffing": "ManpowerGroup (Ranipet)",
+    "building": "M/s. Arcot Associates"
+  },
+  "Tirupathur": {
+    "civil": "M/s. Tirupathur Constructions",
+    "sanitation": "Tirupathur Clean Mission",
+    "infrastructure": "Capacite Infraprojects",
+    "signage": "Ambur Builders",
+    "staffing": "Kelly Services (Tirupathur)",
+    "building": "M/s. Vaniyambadi Associates"
+  },
+  "Chengalpattu": {
+    "civil": "M/s. Mahabalipuram Constructions",
+    "sanitation": "Chengalpattu Urban Services",
+    "infrastructure": "HCC Ltd (Chengalpattu)",
+    "signage": "Shore Temple Builders",
+    "staffing": "Adecco (Chengalpattu)",
+    "building": "M/s. Kancheepuram Associates"
+  },
+  "Kallakurichi": {
+    "civil": "M/s. Kallakurichi Constructions",
+    "sanitation": "Kallakurichi Clean Corp",
+    "infrastructure": "GR Infraprojects",
+    "signage": "Ulundurpettai Builders",
+    "staffing": "TeamLease (Kallakurichi)",
+    "building": "M/s. Sankarapuram Associates"
+  },
+  "Tenkasi": {
+    "civil": "M/s. Courtallam Constructions",
+    "sanitation": "Tenkasi Municipal Sanitation",
+    "infrastructure": "Montecarlo Ltd",
+    "signage": "Five Falls Builders",
+    "staffing": "Express HR (Tenkasi)",
+    "building": "M/s. Shencottai Associates"
+  },
+  "Mayiladuthurai": {
+    "civil": "M/s. Mayiladuthurai Civil Corp",
+    "sanitation": "Cauvery Delta Sanitation",
+    "infrastructure": "NCC Ltd (Mayiladuthurai)",
+    "signage": "Temple City Builders",
+    "staffing": "Genius HR (Mayiladuthurai)",
+    "building": "M/s. Poompuhar Associates"
+  },
+  "Kanyakumari": {
+    "civil": "M/s. Cape Constructions",
+    "sanitation": "Kanyakumari Clean Services",
+    "infrastructure": "Dilip Buildcon (KK)",
+    "signage": "Vivekananda Builders",
+    "staffing": "Randstad (Kanyakumari)",
+    "building": "M/s. Nagercoil Associates"
+  }
+}
