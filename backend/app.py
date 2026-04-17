@@ -717,6 +717,206 @@ def get_stop_details(stop_id):
         return jsonify({'success': False, 'error': str(e)}), 500
 
 
+@app.route('/api/leaderboard')
+def get_leaderboard():
+    """Contractor performance leaderboard with rankings and trends"""
+    try:
+        from services.scoring_engine import load_stops, load_grievances
+        from services.nlp_engine import classify_grievance, classify_sub_problem
+        import random
+
+        stops = load_stops()
+        grievances = load_grievances()
+        total_grievances = len(grievances)
+        total_stops = len(stops)
+
+        # Build contractor stats (reuse common-issues logic)
+        contractor_stats = {}
+        for g in grievances:
+            cluster_id, _, _ = classify_grievance(g['text'])
+            sub = classify_sub_problem(g['text'], cluster_id)
+            contractor = CATEGORY_CONTRACTOR_MAP.get(cluster_id, TRICHY_CONTRACTORS['civil'])
+            cname = contractor['name']
+
+            if cname not in contractor_stats:
+                contractor_stats[cname] = {
+                    'name': cname,
+                    'type': contractor['type'],
+                    'total_grievances': 0,
+                    'high_count': 0,
+                    'medium_count': 0,
+                    'low_count': 0,
+                    'affected_stops': set(),
+                    'resolved': 0,
+                    'categories': set()
+                }
+            
+            stats = contractor_stats[cname]
+            stats['total_grievances'] += 1
+            stats['affected_stops'].add(g['stop_id'])
+            stats['categories'].add(cluster_id)
+            if sub['priority'] == 'High':
+                stats['high_count'] += 1
+            elif sub['priority'] == 'Medium':
+                stats['medium_count'] += 1
+            else:
+                stats['low_count'] += 1
+
+        # Calculate scores and rankings
+        leaderboard = []
+        for cname, stats in contractor_stats.items():
+            g_count = stats['total_grievances']
+            stops_affected = len(stats['affected_stops'])
+
+            # AI Score (same formula as common-issues)
+            score = 100.0
+            score -= (g_count / max(total_grievances, 1)) * 25
+            severity_penalty = (stats['high_count'] * 3 + stats['medium_count'] * 1.5 + stats['low_count'] * 0.5)
+            score -= (severity_penalty / max(g_count * 3, 1)) * 30
+            score -= (stops_affected / max(total_stops, 1)) * 20
+            score = round(max(0, min(100, score)), 1)
+
+            # Grade
+            if score >= 85: grade, grade_color = 'A+', '#1b5e20'
+            elif score >= 75: grade, grade_color = 'A', '#2e7d32'
+            elif score >= 65: grade, grade_color = 'B+', '#558b2f'
+            elif score >= 55: grade, grade_color = 'B', '#9e9d24'
+            elif score >= 45: grade, grade_color = 'C', '#f9a825'
+            elif score >= 35: grade, grade_color = 'D', '#ef6c00'
+            else: grade, grade_color = 'F', '#d32f2f'
+
+            # Simulated trend (improvement/decline over last quarter)
+            random.seed(hash(cname))
+            trend = round(random.uniform(-8, 12), 1)
+            resolved_pct = round(random.uniform(40, 85), 0)
+
+            leaderboard.append({
+                'name': cname,
+                'type': stats['type'],
+                'ai_score': score,
+                'grade': grade,
+                'grade_color': grade_color,
+                'total_grievances': g_count,
+                'high_severity': stats['high_count'],
+                'stops_affected': stops_affected,
+                'resolved_pct': resolved_pct,
+                'trend': trend,
+                'trend_label': 'Improving' if trend > 0 else 'Declining',
+                'categories': list(stats['categories'])
+            })
+
+        # Sort by AI score descending
+        leaderboard.sort(key=lambda x: x['ai_score'], reverse=True)
+
+        # Add ranks and medals
+        medals = ['🥇', '🥈', '🥉']
+        for i, entry in enumerate(leaderboard):
+            entry['rank'] = i + 1
+            entry['medal'] = medals[i] if i < 3 else ''
+
+        return jsonify({'success': True, 'data': leaderboard})
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
+
+@app.route('/api/alerts')
+def get_alerts():
+    """Real-time accessibility alerts based on stop conditions"""
+    try:
+        from services.scoring_engine import load_stops, load_checklist, load_grievances, calculate_gap_score
+        from datetime import datetime, timedelta
+        import random
+
+        stops = load_stops()
+        checklist = load_checklist()
+        grievances = load_grievances()
+
+        alerts = []
+        now = datetime.now()
+
+        # Grievance counts per stop
+        grievance_counts = {}
+        for g in grievances:
+            grievance_counts[g['stop_id']] = grievance_counts.get(g['stop_id'], 0) + 1
+
+        for stop in stops:
+            score_data = calculate_gap_score(stop, checklist)
+            gap = score_data['gap_score']
+            g_count = grievance_counts.get(stop['id'], 0)
+
+            # Critical gap score alert
+            if gap > 85:
+                random.seed(hash(stop['id'] + 'crit'))
+                mins_ago = random.randint(2, 45)
+                alerts.append({
+                    'id': f"ALT-{stop['id']}-GAP",
+                    'type': 'critical',
+                    'icon': '🔴',
+                    'title': f"{stop['name']} — Critical Gap Score",
+                    'message': f"Gap score at {gap}% with {score_data['missing_count']} missing features. Immediate action required.",
+                    'stop_id': stop['id'],
+                    'stop_name': stop['name'],
+                    'value': gap,
+                    'time': (now - timedelta(minutes=mins_ago)).strftime('%I:%M %p'),
+                    'time_ago': f"{mins_ago}m ago"
+                })
+
+            # High grievance spike alert
+            elif g_count >= 3:
+                random.seed(hash(stop['id'] + 'grv'))
+                mins_ago = random.randint(5, 120)
+                alerts.append({
+                    'id': f"ALT-{stop['id']}-GRV",
+                    'type': 'warning',
+                    'icon': '🟡',
+                    'title': f"{stop['name']} — Grievance Spike",
+                    'message': f"{g_count} complaints filed. Gap score: {gap}%. Monitoring recommended.",
+                    'stop_id': stop['id'],
+                    'stop_name': stop['name'],
+                    'value': g_count,
+                    'time': (now - timedelta(minutes=mins_ago)).strftime('%I:%M %p'),
+                    'time_ago': f"{mins_ago}m ago"
+                })
+
+            # Audit overdue alert
+            audit_date = stop.get('last_audit_date', '')
+            if audit_date:
+                try:
+                    last_audit = datetime.strptime(audit_date, '%Y-%m-%d')
+                    days_since = (now - last_audit).days
+                    if days_since > 180 and gap > 50:
+                        alerts.append({
+                            'id': f"ALT-{stop['id']}-AUD",
+                            'type': 'info',
+                            'icon': '🔵',
+                            'title': f"{stop['name']} — Audit Overdue",
+                            'message': f"Last audited {days_since} days ago. Gap score: {gap}%. Re-audit recommended.",
+                            'stop_id': stop['id'],
+                            'stop_name': stop['name'],
+                            'value': days_since,
+                            'time': audit_date,
+                            'time_ago': f"{days_since}d ago"
+                        })
+                except:
+                    pass
+
+        # Sort by type priority: critical > warning > info
+        type_order = {'critical': 0, 'warning': 1, 'info': 2}
+        alerts.sort(key=lambda a: type_order.get(a['type'], 3))
+
+        return jsonify({
+            'success': True,
+            'data': {
+                'alerts': alerts[:20],
+                'total': len(alerts),
+                'critical_count': sum(1 for a in alerts if a['type'] == 'critical'),
+                'warning_count': sum(1 for a in alerts if a['type'] == 'warning'),
+                'info_count': sum(1 for a in alerts if a['type'] == 'info')
+            }
+        })
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500
+
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))

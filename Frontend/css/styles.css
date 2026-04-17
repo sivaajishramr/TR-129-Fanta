@@ -2535,3 +2535,258 @@ video.photo-preview {
 .success-icon {
     font-size: 24px;
 }
+
+/* ===== REAL-TIME ALERT BANNER ===== */
+.alert-banner {
+    margin-bottom: 12px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ffcdd2;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(211,47,47,0.12);
+}
+
+.alert-banner.alert-critical { border-color: #ef9a9a; }
+.alert-banner.alert-warning { border-color: #ffe082; }
+
+.alert-banner-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    background: linear-gradient(135deg, #d32f2f, #c62828);
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.alert-banner.alert-warning .alert-banner-header {
+    background: linear-gradient(135deg, #f9a825, #f57f17);
+}
+
+.alert-pulse {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    animation: alertPulse 1.5s ease-in-out infinite;
+    flex-shrink: 0;
+}
+
+@keyframes alertPulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+.alert-banner-text {
+    flex: 1;
+}
+
+.alert-toggle-btn {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.alert-panel {
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.alert-list {
+    padding: 0;
+}
+
+.alert-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 16px;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 12px;
+    transition: background 0.2s;
+}
+
+.alert-item:hover {
+    background: #fafafa;
+}
+
+.alert-item:last-child {
+    border-bottom: none;
+}
+
+.alert-item.alert-critical { border-left: 3px solid #d32f2f; }
+.alert-item.alert-warning { border-left: 3px solid #f9a825; }
+.alert-item.alert-info { border-left: 3px solid #1565c0; }
+
+.alert-icon {
+    font-size: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.alert-content {
+    flex: 1;
+}
+
+.alert-title {
+    font-weight: 700;
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.alert-message {
+    font-size: 11px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.alert-time {
+    font-size: 10px;
+    color: #999;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+/* ===== CONTRACTOR LEADERBOARD ===== */
+.leaderboard-container {
+    padding: 0 16px 16px;
+}
+
+.lb-table {
+    width: 100%;
+}
+
+.lb-header-row {
+    display: grid;
+    grid-template-columns: 40px 1fr 140px 50px 90px 50px 70px 80px;
+    gap: 8px;
+    padding: 10px 12px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 0.5px;
+}
+
+.lb-row {
+    display: grid;
+    grid-template-columns: 40px 1fr 140px 50px 90px 50px 70px 80px;
+    gap: 8px;
+    padding: 12px;
+    border-bottom: 1px solid #f0f0f0;
+    align-items: center;
+    font-size: 12px;
+    transition: background 0.2s;
+}
+
+.lb-row:hover {
+    background: #f8f9ff;
+}
+
+.lb-row.lb-top {
+    background: #fafff8;
+}
+
+.lb-row.lb-last {
+    border-bottom: none;
+}
+
+.lb-col-rank {
+    font-size: 16px;
+    text-align: center;
+}
+
+.lb-col-name {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.lb-col-name strong {
+    font-size: 12px;
+    color: #222;
+}
+
+.lb-col-name small {
+    font-size: 10px;
+    color: #999;
+}
+
+.lb-col-score {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lb-score-bar {
+    flex: 1;
+    height: 6px;
+    background: #eee;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.lb-score-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 1s ease;
+}
+
+.lb-col-score span {
+    font-weight: 700;
+    font-size: 12px;
+    min-width: 28px;
+}
+
+.lb-col-grade {
+    text-align: center;
+    font-size: 14px;
+}
+
+.lb-col-grievances {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+
+.lb-col-grievances small {
+    font-size: 9px;
+}
+
+.lb-col-stops,
+.lb-col-resolved {
+    text-align: center;
+    font-weight: 600;
+}
+
+.lb-col-trend {
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.lb-col-trend.trend-up {
+    color: #2e7d32;
+}
+
+.lb-col-trend.trend-down {
+    color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+    .lb-header-row,
+    .lb-row {
+        grid-template-columns: 30px 1fr 80px 40px;
+    }
+    .lb-col-grievances,
+    .lb-col-stops,
+    .lb-col-resolved,
+    .lb-col-trend {
+        display: none;
+    }
+}

@@ -103,6 +103,20 @@
 
     <!-- Main Content -->
     <main id="main-content" class="main-content">
+
+        <!-- Real-Time Alert Banner -->
+        <div class="alert-banner" id="alert-banner" style="display:none;">
+            <div class="alert-banner-header" onclick="toggleAlertPanel()">
+                <span class="alert-pulse"></span>
+                <span class="alert-banner-text" id="alert-banner-text">🔴 3 Critical Alerts</span>
+                <span class="alert-toggle-btn" id="alert-toggle-btn">▼</span>
+            </div>
+            <div class="alert-panel" id="alert-panel" style="display:none;">
+                <div class="alert-list" id="alert-list">
+                    <!-- Filled by JS -->
+                </div>
+            </div>
+        </div>
         
         <!-- ====== DASHBOARD TAB ====== -->
         <section id="tab-dashboard" class="tab-content active">
@@ -180,6 +194,17 @@
                 </div>
                 <div class="trend-summary" id="trend-summary">
                     <!-- Filled by JS -->
+                </div>
+            </div>
+
+            <!-- Contractor Leaderboard -->
+            <div class="card" style="margin-top: 1.5rem;">
+                <div class="card-header">
+                    <h3>🏅 Contractor Accountability Leaderboard</h3>
+                    <span class="badge" style="background:linear-gradient(135deg,#1a237e,#3949ab);color:#fff;">AI Ranked</span>
+                </div>
+                <div class="leaderboard-container" id="leaderboard-container">
+                    <div class="loading-state">Loading leaderboard...</div>
                 </div>
             </div>
 

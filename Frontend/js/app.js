@@ -332,6 +332,10 @@ async function initApp() {
         // Stops table
         buildStopsTable(stopsData.stops);
         
+        // Load leaderboard & alerts (non-blocking)
+        loadLeaderboard();
+        loadAlerts();
+        
         // Hide loading screen
         setTimeout(() => {
             if (loadingScreen) loadingScreen.classList.add('hidden');
@@ -1046,4 +1050,119 @@ async function submitComplaint() {
     } catch (error) {
         statusDiv.innerHTML = '<span style="color:#d32f2f;">❌ Connection error. Please try again.</span>';
     }
+}
+
+// ===== CONTRACTOR LEADERBOARD =====
+async function loadLeaderboard() {
+    try {
+        const res = await fetch(`${API_BASE}/leaderboard`);
+        const result = await res.json();
+        if (result.success) renderLeaderboard(result.data);
+    } catch (e) {
+        console.error('Failed to load leaderboard:', e);
+    }
+}
+
+function renderLeaderboard(data) {
+    const container = document.getElementById('leaderboard-container');
+    if (!container || !data.length) return;
+    
+    container.innerHTML = `
+        <div class="lb-table">
+            <div class="lb-header-row">
+                <span class="lb-col-rank">#</span>
+                <span class="lb-col-name">Contractor</span>
+                <span class="lb-col-score">AI Score</span>
+                <span class="lb-col-grade">Grade</span>
+                <span class="lb-col-grievances">Grievances</span>
+                <span class="lb-col-stops">Stops</span>
+                <span class="lb-col-resolved">Resolved</span>
+                <span class="lb-col-trend">Trend</span>
+            </div>
+            ${data.map(entry => `
+                <div class="lb-row ${entry.rank <= 3 ? 'lb-top' : ''} ${entry.rank === data.length ? 'lb-last' : ''}">
+                    <span class="lb-col-rank">
+                        ${entry.medal || entry.rank}
+                    </span>
+                    <span class="lb-col-name">
+                        <strong>${entry.name}</strong>
+                        <small>${entry.type}</small>
+                    </span>
+                    <span class="lb-col-score">
+                        <div class="lb-score-bar">
+                            <div class="lb-score-fill" style="width:${entry.ai_score}%;background:${entry.grade_color};"></div>
+                        </div>
+                        <span>${entry.ai_score}</span>
+                    </span>
+                    <span class="lb-col-grade" style="color:${entry.grade_color};font-weight:800;">${entry.grade}</span>
+                    <span class="lb-col-grievances">
+                        ${entry.total_grievances}
+                        ${entry.high_severity > 0 ? `<small style="color:#d32f2f;">${entry.high_severity} high</small>` : ''}
+                    </span>
+                    <span class="lb-col-stops">${entry.stops_affected}</span>
+                    <span class="lb-col-resolved">${entry.resolved_pct}%</span>
+                    <span class="lb-col-trend ${entry.trend > 0 ? 'trend-up' : 'trend-down'}">
+                        ${entry.trend > 0 ? '📈' : '📉'} ${entry.trend > 0 ? '+' : ''}${entry.trend}%
+                    </span>
+                </div>
+            `).join('')}
+        </div>
+    `;
+}
+
+// ===== REAL-TIME ALERTS =====
+async function loadAlerts() {
+    try {
+        const res = await fetch(`${API_BASE}/alerts`);
+        const result = await res.json();
+        if (result.success) renderAlerts(result.data);
+    } catch (e) {
+        console.error('Failed to load alerts:', e);
+    }
+}
+
+function renderAlerts(data) {
+    const banner = document.getElementById('alert-banner');
+    const bannerText = document.getElementById('alert-banner-text');
+    const alertList = document.getElementById('alert-list');
+    
+    if (!banner || !data.alerts.length) return;
+    
+    // Show banner
+    banner.style.display = 'block';
+    
+    // Update banner text
+    const parts = [];
+    if (data.critical_count > 0) parts.push(`🔴 ${data.critical_count} Critical`);
+    if (data.warning_count > 0) parts.push(`🟡 ${data.warning_count} Warning`);
+    if (data.info_count > 0) parts.push(`🔵 ${data.info_count} Info`);
+    bannerText.textContent = `⚡ ${data.total} Active Alerts — ${parts.join(' · ')}`;
+    
+    // Set banner color based on most severe
+    if (data.critical_count > 0) {
+        banner.classList.add('alert-critical');
+    } else if (data.warning_count > 0) {
+        banner.classList.add('alert-warning');
+    }
+    
+    // Render alert list
+    alertList.innerHTML = data.alerts.map(alert => `
+        <div class="alert-item alert-${alert.type}">
+            <span class="alert-icon">${alert.icon}</span>
+            <div class="alert-content">
+                <div class="alert-title">${alert.title}</div>
+                <div class="alert-message">${alert.message}</div>
+            </div>
+            <span class="alert-time">${alert.time_ago}</span>
+        </div>
+    `).join('');
+}
+
+let alertPanelOpen = false;
+function toggleAlertPanel() {
+    const panel = document.getElementById('alert-panel');
+    const btn = document.getElementById('alert-toggle-btn');
+    alertPanelOpen = !alertPanelOpen;
+    panel.style.display = alertPanelOpen ? 'block' : 'none';
+    btn.textContent = alertPanelOpen ? '▲' : '▼';
 }
