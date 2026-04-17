@@ -825,7 +825,6 @@ def get_alerts():
     try:
         from services.scoring_engine import load_stops, load_checklist, load_grievances, calculate_gap_score
         from datetime import datetime, timedelta
-        import random
 
         stops = load_stops()
         checklist = load_checklist()
@@ -834,52 +833,69 @@ def get_alerts():
         alerts = []
         now = datetime.now()
 
-        # Grievance counts per stop
-        grievance_counts = {}
+        # Grievance counts and latest dates per stop
+        grievance_data = {}
         for g in grievances:
-            grievance_counts[g['stop_id']] = grievance_counts.get(g['stop_id'], 0) + 1
+            sid = g['stop_id']
+            if sid not in grievance_data:
+                grievance_data[sid] = {'count': 0, 'latest_date': ''}
+            grievance_data[sid]['count'] += 1
+            if g.get('date', '') > grievance_data[sid]['latest_date']:
+                grievance_data[sid]['latest_date'] = g['date']
+
+        def format_days_ago(date_str):
+            """Convert a date string to human-readable 'X days ago'"""
+            try:
+                dt = datetime.strptime(date_str, '%Y-%m-%d')
+                days = (now - dt).days
+                if days == 0: return 'Today'
+                elif days == 1: return '1 day ago'
+                elif days < 30: return f'{days} days ago'
+                elif days < 365: return f'{days // 30} months ago'
+                else: return f'{days // 365}y {(days % 365) // 30}m ago'
+            except:
+                return 'Unknown'
 
         for stop in stops:
             score_data = calculate_gap_score(stop, checklist)
             gap = score_data['gap_score']
-            g_count = grievance_counts.get(stop['id'], 0)
+            stop_grv = grievance_data.get(stop['id'], {'count': 0, 'latest_date': ''})
+            g_count = stop_grv['count']
+            latest_grv_date = stop_grv['latest_date']
+            audit_date = stop.get('last_audit_date', '')
 
-            # Critical gap score alert
+            # Critical gap score alert — use audit date as reference
             if gap > 85:
-                random.seed(hash(stop['id'] + 'crit'))
-                mins_ago = random.randint(2, 45)
+                ref_date = audit_date or latest_grv_date or '2025-01-01'
                 alerts.append({
                     'id': f"ALT-{stop['id']}-GAP",
                     'type': 'critical',
                     'icon': '🔴',
                     'title': f"{stop['name']} — Critical Gap Score",
-                    'message': f"Gap score at {gap}% with {score_data['missing_count']} missing features. Immediate action required.",
+                    'message': f"Gap score at {gap}% with {score_data['missing_count']} missing features. Last audit: {audit_date or 'Never'}.",
                     'stop_id': stop['id'],
                     'stop_name': stop['name'],
                     'value': gap,
-                    'time': (now - timedelta(minutes=mins_ago)).strftime('%I:%M %p'),
-                    'time_ago': f"{mins_ago}m ago"
+                    'time': ref_date,
+                    'time_ago': format_days_ago(ref_date)
                 })
 
-            # High grievance spike alert
+            # High grievance spike alert — use latest grievance date
             elif g_count >= 3:
-                random.seed(hash(stop['id'] + 'grv'))
-                mins_ago = random.randint(5, 120)
                 alerts.append({
                     'id': f"ALT-{stop['id']}-GRV",
                     'type': 'warning',
                     'icon': '🟡',
                     'title': f"{stop['name']} — Grievance Spike",
-                    'message': f"{g_count} complaints filed. Gap score: {gap}%. Monitoring recommended.",
+                    'message': f"{g_count} complaints filed (latest: {latest_grv_date}). Gap score: {gap}%.",
                     'stop_id': stop['id'],
                     'stop_name': stop['name'],
                     'value': g_count,
-                    'time': (now - timedelta(minutes=mins_ago)).strftime('%I:%M %p'),
-                    'time_ago': f"{mins_ago}m ago"
+                    'time': latest_grv_date,
+                    'time_ago': format_days_ago(latest_grv_date)
                 })
 
             # Audit overdue alert
-            audit_date = stop.get('last_audit_date', '')
             if audit_date:
                 try:
                     last_audit = datetime.strptime(audit_date, '%Y-%m-%d')
@@ -890,12 +906,12 @@ def get_alerts():
                             'type': 'info',
                             'icon': '🔵',
                             'title': f"{stop['name']} — Audit Overdue",
-                            'message': f"Last audited {days_since} days ago. Gap score: {gap}%. Re-audit recommended.",
+                            'message': f"Last audited on {audit_date} ({days_since} days ago). Gap score: {gap}%. Re-audit needed.",
                             'stop_id': stop['id'],
                             'stop_name': stop['name'],
                             'value': days_since,
                             'time': audit_date,
-                            'time_ago': f"{days_since}d ago"
+                            'time_ago': f"{days_since} days ago"
                         })
                 except:
                     pass
