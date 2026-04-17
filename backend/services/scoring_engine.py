@@ -149,8 +149,8 @@ def get_all_scores():
             'grievance_count': g_count
         })
     
-    # Sort by priority score (highest = most urgent)
-    results.sort(key=lambda x: x['priority_score'], reverse=True)
+    # Sort logically: highest gap score first, then most grievances, then highest footfall
+    results.sort(key=lambda x: (x['gap_score'], x['grievance_count'], x['daily_footfall']), reverse=True)
     
     # Add rank
     for i, r in enumerate(results):
