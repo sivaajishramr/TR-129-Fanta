@@ -477,13 +477,19 @@
                 
                 <div class="photo-audit-container">
                     <div class="photo-upload-zone" id="photo-upload-zone" onclick="document.getElementById('photo-file-input').click()">
-                        <input type="file" id="photo-file-input" accept="image/*" style="display:none" onchange="handlePhotoUpload(event)">
+                        <input type="file" id="photo-file-input" accept="image/*,video/*" style="display:none" onchange="handleMediaUpload(event)">
                         <div class="upload-placeholder" id="upload-placeholder">
                             <span class="upload-icon">📷</span>
-                            <span class="upload-title">Drop a bus stop photo here</span>
-                            <span class="upload-subtitle">or click to browse — JPG, PNG up to 10MB</span>
+                            <span class="upload-title">Drop a photo or video of a bus stop</span>
+                            <span class="upload-subtitle">JPG, PNG, MP4, MOV — up to 50MB</span>
+                            <div class="upload-badges">
+                                <span class="upload-type-badge">📸 Photo</span>
+                                <span class="upload-type-badge">🎥 Video</span>
+                            </div>
                         </div>
                         <img id="photo-preview" class="photo-preview" style="display:none" alt="Uploaded bus stop photo">
+                        <video id="video-preview" class="photo-preview" style="display:none" controls muted></video>
+                        <canvas id="video-frame-canvas" style="display:none;"></canvas>
                     </div>
                     
                     <div class="photo-audit-results" id="photo-audit-results" style="display:none;">

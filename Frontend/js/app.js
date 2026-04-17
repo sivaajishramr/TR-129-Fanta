@@ -757,24 +757,78 @@ async function sendChatMessage() {
 }
 
 // ===== PHOTO AUDIT =====
-function handlePhotoUpload(event) {
+function handleMediaUpload(event) {
     const file = event.target.files[0];
     if (!file) return;
     
-    // Preview image
-    const preview = document.getElementById('photo-preview');
+    const imgPreview = document.getElementById('photo-preview');
+    const vidPreview = document.getElementById('video-preview');
     const placeholder = document.getElementById('upload-placeholder');
-    const reader = new FileReader();
     
-    reader.onload = function(e) {
-        preview.src = e.target.result;
-        preview.style.display = 'block';
+    // Reset previews
+    imgPreview.style.display = 'none';
+    vidPreview.style.display = 'none';
+    
+    if (file.type.startsWith('image/')) {
+        // Image upload — direct analysis
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            imgPreview.src = e.target.result;
+            imgPreview.style.display = 'block';
+            placeholder.style.display = 'none';
+        };
+        reader.readAsDataURL(file);
+        analyzePhoto(file);
+        
+    } else if (file.type.startsWith('video/')) {
+        // Video upload — extract frame then analyze
         placeholder.style.display = 'none';
-    };
-    reader.readAsDataURL(file);
-    
-    // Upload and analyze
-    analyzePhoto(file);
+        vidPreview.style.display = 'block';
+        
+        const url = URL.createObjectURL(file);
+        vidPreview.src = url;
+        
+        // Show loading while extracting frame
+        const resultsDiv = document.getElementById('photo-audit-results');
+        const scoreHeader = document.getElementById('audit-score-header');
+        resultsDiv.style.display = 'block';
+        scoreHeader.innerHTML = `
+            <div class="audit-loading">
+                <div class="audit-spinner"></div>
+                <span>🎥 Extracting frame from video for analysis...</span>
+            </div>
+        `;
+        
+        // Extract frame at 2 seconds (or first frame)
+        vidPreview.onloadeddata = function() {
+            vidPreview.currentTime = Math.min(2, vidPreview.duration * 0.3);
+        };
+        
+        vidPreview.onseeked = function() {
+            const canvas = document.getElementById('video-frame-canvas');
+            canvas.width = vidPreview.videoWidth;
+            canvas.height = vidPreview.videoHeight;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(vidPreview, 0, 0);
+            
+            // Also show the extracted frame as a preview
+            imgPreview.src = canvas.toDataURL('image/jpeg', 0.9);
+            imgPreview.style.display = 'block';
+            
+            // Convert canvas to blob and analyze
+            canvas.toBlob(function(blob) {
+                const frameFile = new File([blob], 'video_frame.jpg', { type: 'image/jpeg' });
+                analyzePhoto(frameFile);
+            }, 'image/jpeg', 0.9);
+            
+            URL.revokeObjectURL(url);
+        };
+    }
+}
+
+// Keep old handler name for backwards compatibility
+function handlePhotoUpload(event) {
+    handleMediaUpload(event);
 }
 
 async function analyzePhoto(file) {
@@ -926,9 +980,9 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         zone.classList.remove('drag-over');
         const file = e.dataTransfer.files[0];
-        if (file && file.type.startsWith('image/')) {
+        if (file && (file.type.startsWith('image/') || file.type.startsWith('video/'))) {
             document.getElementById('photo-file-input').files = e.dataTransfer.files;
-            handlePhotoUpload({target: {files: [file]}});
+            handleMediaUpload({target: {files: [file]}});
         }
     });
 });
