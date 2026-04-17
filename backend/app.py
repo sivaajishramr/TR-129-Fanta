@@ -42,8 +42,8 @@ def get_stops():
             # Recalculate summary for filtered stops
             stops = data['stops']
             total = len(stops)
-            critical = sum(1 for s in stops if s.get('priority') == 'Critical')
-            warning = sum(1 for s in stops if s.get('priority') == 'Warning')
+            critical = sum(1 for s in stops if s.get('priority') == 'critical')
+            warning = sum(1 for s in stops if s.get('priority') == 'warning')
             good = total - critical - warning
             avg_gap = round(sum(s.get('gap_score', 0) for s in stops) / max(total, 1), 1)
             data['summary'] = {
@@ -51,8 +51,9 @@ def get_stops():
                 'critical_count': critical,
                 'warning_count': warning,
                 'good_count': good,
-                'avg_gap_score': avg_gap,
+                'average_gap_score': avg_gap,
                 'coverage_percent': 100,
+                'total_grievances': sum(s.get('grievance_count', 0) for s in stops),
                 'district': district
             }
         

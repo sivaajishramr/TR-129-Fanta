@@ -134,6 +134,7 @@ def get_all_scores():
             'lat': stop['lat'],
             'lng': stop['lng'],
             'type': stop['type'],
+            'district': stop.get('district', 'Tiruchirappalli'),
             'daily_footfall': stop.get('daily_footfall', 0),
             'last_audit_date': stop.get('last_audit_date', 'N/A'),
             'gap_score': score_data['gap_score'],
@@ -172,7 +173,7 @@ def get_all_scores():
         'good_count': good_count,
         'average_gap_score': avg_gap,
         'total_grievances': len(grievances),
-        'city': 'Tiruchirappalli (Trichy)',
+        'city': 'All Districts',
         'state': 'Tamil Nadu'
     }
     
