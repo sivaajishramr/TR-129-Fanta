@@ -5,6 +5,7 @@ Backend API Server (Flask)
 from flask import Flask, jsonify, send_from_directory, request
 from flask_cors import CORS
 import os
+import json
 import time
 
 from services.scoring_engine import get_all_scores, load_checklist
